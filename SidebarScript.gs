@@ -234,6 +234,118 @@ function showNextCompanyId() {
 }
 
 /**
+ * Run schema validation and show results
+ */
+function runSchemaValidation() {
+  try {
+    const results = validateAllSchemas();
+    
+    let html = '<h3>Schema Validation Results</h3><div style="margin-top:1rem;">';
+    
+    results.forEach(r => {
+      const statusColor = r.status === 'VALID' ? '#16a34a' : r.status === 'MISSING' ? '#6b7280' : '#dc2626';
+      html += `<div style="padding:0.75rem;border-bottom:1px solid #eee;">`;
+      html += `<strong style="color:${statusColor}">${r.sheet}</strong> - ${r.status}`;
+      
+      if (r.matched !== undefined) {
+        html += `<br><small>Matched: ${r.matched} columns</small>`;
+      }
+      
+      if (r.missing && r.missing.length > 0) {
+        html += `<br><small style="color:#dc2626">Missing: ${r.missing.join(', ')}</small>`;
+      }
+      
+      if (r.unmatched && r.unmatched.length > 0) {
+        html += `<br><small style="color:#f59e0b">Unmatched: ${r.unmatched.slice(0, 3).join(', ')}${r.unmatched.length > 3 ? '...' : ''}</small>`;
+      }
+      
+      if (r.message) {
+        html += `<br><small>${r.message}</small>`;
+      }
+      
+      html += `</div>`;
+    });
+    
+    html += '</div>';
+    
+    SpreadsheetApp.getUi().alert('Schema Validation', 
+      results.filter(r => r.status === 'VALID').length + ' of ' + results.length + ' sheets validated successfully.\n\n' +
+      'Check View > Logs for detailed results.', 
+      SpreadsheetApp.getUi().ButtonSet.OK);
+    
+  } catch (error) {
+    SpreadsheetApp.getUi().alert('Error: ' + error.message);
+  }
+}
+
+/**
+ * Show column mappings for a selected sheet
+ */
+function showColumnMappings() {
+  const ui = SpreadsheetApp.getUi();
+  const sheetNames = Object.keys(SchemaRegistry.SCHEMA);
+  
+  const response = ui.prompt(
+    'View Column Mappings',
+    'Enter sheet name (' + sheetNames.join(', ') + '):',
+    ui.ButtonSet.OK_CANCEL
+  );
+  
+  if (response.getSelectedButton() !== ui.Button.OK) return;
+  
+  const sheetKey = response.getResponseText().toUpperCase().replace(/\s+/g, '_');
+  const schema = SchemaRegistry.SCHEMA[sheetKey];
+  
+  if (!schema) {
+    ui.alert('Unknown sheet: ' + sheetKey);
+    return;
+  }
+  
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName(schema.sheetName);
+    
+    if (!sheet) {
+      ui.alert('Sheet not found: ' + schema.sheetName);
+      return;
+    }
+    
+    const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+    const columnMap = SchemaRegistry.buildColumnMap(sheetKey, headers);
+    
+    let html = `<h3>Column Mappings: ${schema.sheetName}</h3>`;
+    html += '<table style="width:100%;border-collapse:collapse;margin-top:1rem;">';
+    html += '<tr style="background:#f3f4f6;"><th style="padding:0.5rem;text-align:left;border:1px solid #ddd;">Canonical Name</th>';
+    html += '<th style="padding:0.5rem;text-align:left;border:1px solid #ddd;">Actual Header</th>';
+    html += '<th style="padding:0.5rem;text-align:left;border:1px solid #ddd;">Column</th></tr>';
+    
+    for (const [canonical, index] of Object.entries(columnMap).sort((a, b) => a[1] - b[1])) {
+      const actualHeader = headers[index];
+      const matchClass = canonical === actualHeader ? 'color:#16a34a' : 'color:#2563eb';
+      html += `<tr><td style="padding:0.5rem;border:1px solid #eee;">${canonical}</td>`;
+      html += `<td style="padding:0.5rem;border:1px solid #eee;${matchClass}">${actualHeader}</td>`;
+      html += `<td style="padding:0.5rem;border:1px solid #eee;">${index + 1}</td></tr>`;
+    }
+    
+    // Show unmatched headers
+    const unmatched = headers.filter((_, i) => !Object.values(columnMap).includes(i));
+    if (unmatched.length > 0) {
+      html += '</table><h4 style="margin-top:1.5rem;color:#6b7280;">Unmatched Headers:</h4><ul>';
+      unmatched.forEach(h => {
+        html += `<li style="color:#6b7280;">${h}</li>`;
+      });
+      html += '</ul>';
+    }
+    
+    ui.alert('Column Mappings', 'View > Logs for detailed mapping table', ui.ButtonSet.OK);
+    Logger.log(html);
+    
+  } catch (error) {
+    ui.alert('Error: ' + error.message);
+  }
+}
+
+/**
  * Get dashboard stats for quick view
  * OPTIMIZED: Uses getMultipleRecords for single spreadsheet connection
  * Excludes won accounts from prospect counts
