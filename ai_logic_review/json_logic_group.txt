@@ -1,0 +1,109 @@
+
+================================================================================
+FILE_BEGIN: .clasp.json
+METADATA: Size=94 bytes | Last_Modified=2026-03-03 12:30:22.082247
+================================================================================
+{
+  "scriptId": "1A7stiwLmSpcJz_HKt7A4-nH_yIWKZTIroKhXibNMtV106s1yPwj7PkIE",
+  "rootDir": ""
+}
+
+[FILE_END: .clasp.json]
+################################################################################
+
+================================================================================
+FILE_BEGIN: appsscript.json
+METADATA: Size=234 bytes | Last_Modified=2026-03-03 10:44:19.601132
+================================================================================
+{
+    "timeZone": "America/Chicago",
+    "dependencies": {},
+    "exceptionLogging": "STACKDRIVER",
+    "runtimeVersion": "V8",
+    "webapp": {
+      "executeAs": "USER_DEPLOYING",
+      "access": "ANYONE_ANONYMOUS"
+    }
+  }
+
+[FILE_END: appsscript.json]
+################################################################################
+
+================================================================================
+FILE_BEGIN: crm_analysis_blueprint.json
+METADATA: Size=79 bytes | Last_Modified=2026-03-03 10:30:56.906678
+================================================================================
+{
+    "files": {},
+    "cross_references": {},
+    "potential_issues": []
+}
+
+[FILE_END: crm_analysis_blueprint.json]
+################################################################################
+
+================================================================================
+FILE_BEGIN: crm_custom_blueprint.json
+METADATA: Size=2174 bytes | Last_Modified=2026-03-03 10:30:35.804807
+================================================================================
+{
+    "entities": {
+        "Company": {
+            "primary_key": "Company ID",
+            "canonical_name_source": "Prospects.csv",
+            "fields": {
+                "Company ID": "Unique Identifier (CID-XXXX)",
+                "Company Name": "Canonical Name (Title Case)",
+                "Industry": "Categorization from Settings.csv",
+                "Address": "Site Location",
+                "Zip Code": "Postal Code",
+                "Priority Score": "Calculated value for sales focus"
+            },
+            "relationships": {
+                "Contacts": "One-to-Many via Company ID",
+                "Outreach": "One-to-Many via Company ID",
+                "Transactions": "One-to-Many via Company ID"
+            }
+        },
+        "Contact": {
+            "primary_key": "Email",
+            "fields": {
+                "Name": "Full Name",
+                "Company ID": "Link to Company",
+                "Role": "Contact Role",
+                "Phone": "Standardized (XXX) XXX-XXXX"
+            }
+        },
+        "Outreach": {
+            "primary_key": "Outreach ID",
+            "fields": {
+                "Outreach ID": "Unique Identifier (LID-XXXXX)",
+                "Company ID": "Link to Company",
+                "Visit Date": "Standardized Date",
+                "Outcome": "Standardized from Workflow Rules",
+                "Notes": "Rich text outreach logs"
+            }
+        },
+        "Transaction": {
+            "primary_key": "Transaction ID",
+            "fields": {
+                "Transaction ID": "Unique Identifier (TID-XXXXX)",
+                "Company ID": "Link to Company",
+                "Date": "Standardized Date",
+                "Material": "Standardized from Settings.csv",
+                "Net Weight": "Numeric weight",
+                "Price": "Numeric rate",
+                "Total Payment": "Calculated (Weight * Price)"
+            }
+        }
+    },
+    "normalization_rules": {
+        "dates": "MM/DD/YYYY",
+        "phones": "(999) 999-9999",
+        "currency": "Float (no symbols)",
+        "names": "Title Case (Stripped)"
+    }
+}
+
+[FILE_END: crm_custom_blueprint.json]
+################################################################################

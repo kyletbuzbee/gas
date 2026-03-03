@@ -1,0 +1,82 @@
+Object,API_Name,Label,Type,Required,Options (Aligned & Validated),Default_Value,Is_System
+Prospects,companyID,Company ID,Text,FALSE,,,FALSE
+Prospects,address,Address,Text,FALSE,,,FALSE
+Prospects,city,City,Text,FALSE,,,FALSE
+Prospects,zipCode,Zip Code,Text,FALSE,,,FALSE
+Prospects,companyName,Company Name,Text,FALSE,,,FALSE
+Prospects,industry,Industry,Dropdown,FALSE,"Agriculture, Appliance, Automotive, Business to business, Construction, Electrical, Fabrication, Fence, Gutter, HVAC, Junk Removal, Manufacturing, Metal Fabrication, Other, Plumbing, Retail, Roofing, Trailer Dealer, Warehouses, Welding",,FALSE
+Prospects,latitude,Latitude,Number,FALSE,,,FALSE
+Prospects,longitude,Longitude,Text,FALSE,,,FALSE
+Prospects,lastOutcome,Last Outcome,Text,FALSE,,,FALSE
+Prospects,lastOutreachDate,Last Outreach Date,Date,FALSE,,,FALSE
+Prospects,daysSinceLastContact,Days Since Last Contact,Text,FALSE,,,FALSE
+Prospects,nextStepDueCountdown,Next Step Due Countdown,Number,FALSE,,,FALSE
+Prospects,nextStepsDueDate,Next Steps Due Date,Date,FALSE,,,FALSE
+Prospects,contactStatus,Contact Status,Dropdown,FALSE,"Active, Cold, Disqualified, Interested (Hot), Interested (Warm), Lost, Nurture, Outreach, Prospect, Won, Not Contacted",,FALSE
+Prospects,closeProbability,Close Probability,Text,FALSE,,,FALSE
+Prospects,priorityScore,Priority Score,Number,FALSE,,60,FALSE
+Prospects,urgencyBand,UrgencyBand,Dropdown,FALSE,"Overdue, High, Medium, Low",,FALSE
+Prospects,urgencyScore,Urgency Score,Number,FALSE,,,FALSE
+Prospects,totals,Totals,Text,FALSE,,,FALSE
+Outreach,outreachID,Outreach ID,Text,FALSE,,,FALSE
+Outreach,companyID,Company ID,Text,FALSE,,,FALSE
+Outreach,company,Company,Text,FALSE,,,FALSE
+Outreach,visitDate,Visit Date,Date,FALSE,,,FALSE
+Outreach,notes,Notes,Text,FALSE,,,FALSE
+Outreach,outcome,Outcome,Dropdown,FALSE,"Account Won, Disqualified, Follow-Up, Initial Contact, Interested, Interested (Hot), Interested (Warm), Not Interested",,FALSE
+Outreach,stage,Stage,Dropdown,FALSE,"Disqualified, Lost, Nurture, Outreach, Prospect, Won",,FALSE
+Outreach,status,Status,Dropdown,FALSE,"Active, Cold, Disqualified, Hot, Interested (Hot), Interested (Warm), Lost, Warm, Won",,FALSE
+Outreach,nextVisitDate,Next Visit Date,Date,FALSE,,,FALSE
+Outreach,daysSinceLastVisit,Days Since Last Visit,Text,FALSE,,,FALSE
+Outreach,nextVisitCountdown,Next Visit Countdown,Number,FALSE,,,FALSE
+Outreach,outcomeCategory,Outcome Category,Text,FALSE,,,FALSE
+Outreach,followUpAction,Follow Up Action,Dropdown,FALSE,"Check periodic, General follow, Onboard Account, See Notes, Send pricing, Try again",,FALSE
+Outreach,owner,Owner,Text,FALSE,,Kyle Buzbee,FALSE
+Outreach,prospectsMatch,Prospects Match,Text,FALSE,,,FALSE
+Outreach,contactType,Contact Type,Dropdown,FALSE,"Email, Phone, Visit",Visit,FALSE
+Outreach,emailSent,Email Sent,Text,FALSE,,FALSE,FALSE
+Outreach,competitor,Competitor,Dropdown,FALSE,"AIM, Tyler Iron, Huntwell, Other, None",None,FALSE
+Accounts,deployed,Deployed,Text,FALSE,,,FALSE
+Accounts,timestamp,Timestamp,Text,FALSE,,,TRUE
+Accounts,companyName,Company Name,Text,FALSE,,,FALSE
+Accounts,contactName,Contact Name,Text,FALSE,,,FALSE
+Accounts,contactPhone,Contact Phone,Text,FALSE,,,FALSE
+Accounts,contactRole,Contact Role,Text,FALSE,,,FALSE
+Accounts,siteLocation,Site Location,Text,FALSE,,,FALSE
+Accounts,mailingLocation,Mailing Location,Text,FALSE,,,FALSE
+Accounts,rollOffFee,Roll-Off Fee,Dropdown,FALSE,"Yes, No",Yes,FALSE
+Accounts,handlingOfMetal,Handling of Metal,Dropdown,FALSE,"All together, Separate, Employees take, Scrap guy picks up, Haul themselves, Roll-off vendor, Unknown",,FALSE
+Accounts,rolloffContainerSize,Roll Off Container Size,Dropdown,FALSE,"10 yd, 20 yd, 30 yd, 40 yd, Lugger",30 yd,FALSE
+Accounts,notes,Notes,Text,FALSE,,,FALSE
+Accounts,payoutPrice,Payout Price,Text,FALSE,"(Changed from Dropdown to Text to allow notes like ""$0.25 over base"")",,FALSE
+Contacts,name,Name,Text,FALSE,,,FALSE
+Contacts,company,Company,Text,FALSE,,,FALSE
+Contacts,accountType,Account,Dropdown,FALSE,"Lost Accounts, Prospects, Team",,FALSE
+Contacts,role,Role,Text,FALSE,,,FALSE
+Contacts,department,Department,Text,FALSE,,,FALSE
+Contacts,phone,Phone Number,Text,FALSE,,,FALSE
+Contacts,email,Email,Text,FALSE,,,FALSE
+Contacts,address,Address,Text,FALSE,,,FALSE
+Sales,salesId,Sales ID,Text,TRUE,,,FALSE
+Sales,date,Date,Date,TRUE,,,FALSE
+Sales,companyName,Company Name,Text,TRUE,,,FALSE
+Sales,companyId,Company ID,Text,FALSE,,,FALSE
+Sales,material,Material,Text,TRUE,,,FALSE
+Sales,weight,Weight,Number,TRUE,,,FALSE
+Sales,price,Price,Number,TRUE,,,FALSE
+Sales,paymentAmount,Payment Amount,Number,FALSE,,,FALSE
+Active,companyId,Company ID,Text,TRUE,,,FALSE
+Active,companyName,Company Name,Text,TRUE,,,FALSE
+Active,locationName,Location Name,Text,FALSE,,,FALSE
+Active,locationAddress,Location Address,Text,FALSE,,,FALSE
+Active,city,City,Text,FALSE,,,FALSE
+Active,zipCode,Zip Code,Text,FALSE,,,FALSE
+Active,deployedAssets,Current Deployed Asset(s),Text,FALSE,,,FALSE
+Active,containerSize,Container Size,Text,FALSE,,,FALSE
+Transactions,transactionId,Transaction ID,Text,FALSE,,,FALSE
+Transactions,date,Date,Date,TRUE,,,FALSE
+Transactions,company,Company,Text,TRUE,,,FALSE
+Transactions,material,Material,Dropdown,TRUE,"Tin, Long Iron, Short Iron, AL PAINTED SIDING, Steel Cable, #1 COPPER, #2 COPPER, REBAR, Dealer Clips, Dispatch Fee, DRY RUN FEE, P&S, 2-1 COPPER, BRASS UNCLEAN /DIRTY, AL BREAKAG E >60%, AL CLIPS, AL NEOPREN E, AL W/CU URD, ACSR ALUMINU M COATED STEEL REINFOR CED, ACSR NEOPREN E MIX, INSULATE D #1 COPPER 60%, INSULATE D #2 COPPER 42%, INSULATE D #3 COPPER 32%, AL 5052, AL 6061 CLEAN, AL 6063 CLEAN, AL 6063 PAINTED, AL RADIATO R UNCLEAN, AL RADIATO RS CLEAN, AL TRUCK WHEELS, AL WHEELS CLEAN, AUTO COMPRE SSOR, AUTO HARNESS WIRE, ALTERNA TOR, CLEAN ALUMINU M, COMPRESS OR/SE ALED UNIT, ELECTRIC MOTOR #1, ELECTRIC MOTOR #2 LOW GRADE, STAINLES S CLEAN, STAINLES S UNCLEAN, THERMAL EXTRUSI ON, WIRE/FEN CING, YELLOW BRASS CLEAN, AL EC WIRE, AL/CU REEFER CLEAN, AL/CU REEFER UNCLEAN, 85% MCM, AL CAST, SPLIT 50/50",,FALSE
+Transactions,netWeight,Net Weight,Number,TRUE,,,FALSE
+Transactions,price,Price,Number,TRUE,,,FALSE
+Transactions,totalPayment,Total Payment,Number,FALSE,,,FALSE

@@ -1,0 +1,24 @@
+=== Accounts.csv ===
+Deployed,Timestamp,Company Name,Contact Name,Contact Phone,Contact Role,Site Location,Mailing Location,Roll-Off Fee,Handling of Metal,Roll Off Container Size,Notes,Payout Price
+=== Active.csv ===
+Company ID,Company Name,Location Name,Location Address,City,Zip Code,Current Deployed Asset(s),Container Size
+=== Contacts.csv ===
+Name,Company,Account,Role,Department,Phone Number,Email,Address
+=== Dashboard.csv ===
+Stage Pipeline,Count,,category,Count,,Pipeline by Status,Count,,,,,,,,,,,,,
+=== Outreach.csv ===
+Outreach ID,Company ID,Company ,Visit Date,Notes,Outcome,Stage,Status,Next Visit Date,Days Since Last Visit,Next Visit Countdown,Outcome Category,Follow Up Action,Owner,Prospects Match,Contact Type,Email Sent,Competitor
+=== Prices.csv ===
+,,,,,,,,,,
+=== Prospects.csv ===
+Company ID,Address,City,Zip Code,Company Name,Industry,Latitude,Longitude,Last Outcome,Last Outreach Date,Days Since Last Contact,Next Step Due Countdown,Next Steps Due Date,Contact Status,Close Probability,Priority Score,UrgencyBand,Urgency Score,Totals
+=== Raw Prospects.csv ===
+Company ID,Address,City,Zip Code,Company Name,Industry,Latitude,Longitude,Last Outcome,Last Outreach Date,Days Since Last Contact,Next Step Due Countdown,Next Steps Due Date,Contact Status,Close Probability,Priority Score,UrgencyBand,Urgency Score,Totals
+=== Sales.csv ===
+Sales ID,Date,Company Name,Company ID,Material,Weight, Price ,Payment Amount
+=== Settings.csv ===
+Category,Key,Value_1,Value_2,Value_3,Value_4,Description
+=== System_Schema.csv ===
+Object,API_Name,Label,Type,Required,Options (Aligned & Validated),Default_Value,Is_System
+=== Transactions.csv ===
+Transaction ID,Date,Company,Material,Net Weight,Price,Payment Amount

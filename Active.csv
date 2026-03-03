@@ -1,0 +1,231 @@
+Company ID,Company Name,Location Name,Location Address,City,Zip Code,Current Deployed Asset(s),Container Size
+CID-1 W2,1 WAY DIESEL PERFORMANCE,1 WAY DIESEL PERFORMANCE,"13727 North US Highway 59, Nacogdoches, Texas 75965", Nacogdoches,75965,300100,30
+CID-3S 3,3S Grazing,Oakwood Location,"23555 County Road 241, Oakwood, Texas 75855", Oakwood,75855,300030,30
+CID-ABE4,Abel Flores,Bullard JF Job,"County Road 3807, Bullard, Texas 75757", Bullard,75757,300099,30
+CID-ACC5,Accelerated Diesel,Accelerated Diesel - Tyler,"12614 County Rd 431, Tyler, TX 75706", Tyler,75706,200004,30
+CID-ALF6,Alfredo Barajas,Walmart Dist. Job,"14863 Farm to Market Road 645, Palestine, Texas 75803", Palestine,75803,300111,30
+CID-ALL7,Allstar Ford,Allstar,"1650 U.S. 259 Business, Kilgore, Texas 75662", Kilgore,75662,300116,30
+CID-AME8,American Timber & Steel,Shop,"2999 Farm to Market Road 2864, Nacogdoches, Texas 75965", Nacogdoches,75965,300024,30
+CID-ASA9,ASAP INDUSTRIES LLC,ASAP INDUSTRIES LLC,"11345 Texas 19, Lovelady, Texas 75851", Lovelady,75851,300113,30
+CID-ASC10,Asco Equipment,Asco Equipment - Tyler,"2602 E Front St, Tyler, TX 75702", Tyler,75702,200012,30
+CID-BAN11,Bannister Plumbing,Bannister Plumbing-Jacksonville,"4555 North Jackson Street, Jacksonville, Texas 75766", Jacksonville,75766,300084,30
+CID-BEN12,Benjamine Pinson,Benjamine Pinson - Palestine,"1203 W Oak St, Palestine, TX 75801", Palestine,75801,300012,30
+CID-BES13,BestBlock,BestBlock,"2500 West Reagan Street, Palestine, Texas 75801", Palestine,75801,300109,30
+CID-BLA14,Black Label Pro Diesel,Black Label Pro Diesel - Lindale,"12423 Farm to Market Road 16, Lindale, Texas 75771", Lindale,75771,100002,30
+CID-BLU15,Blue Ribbon Fence Company,blue,"1189 Meadows Lane, Longview, Texas 75603", Longview,75603,300063,30
+CID-BO 16,Bo Ervin,SITE,"108 Holly Lake Drive, Nacogdoches, Texas 75965", Nacogdoches,75965,300057,30
+CID-BYR17,Byrider,Byrider - Byrider Longview,"1007 W Marshall Ave, Longview, TX 75604", Longview,75604,200016,30
+CID-C4 18,C4 Steel Solutions,Re-Cal Job,"9549 Farm to Market Road 322, Palestine, Texas 75801", Palestine,75801,300092,30
+CID-CAR19,Carol Hampton,Carol Hampton,"3190 An County Road 4493, Palestine, Texas 75803", Palestine,75803,300036,30
+CID-CHE20,Cherokee County Solid Waste,Cherokee County Solid Waste - Rusk Cr,"420 Cr 1618, Rusk, TX 75785", Rusk,75785,300040,30
+CID-CHR21,Chris Kizer,Chris Kizer - Elkhart,"550 Acr 2113, Elkhart , TX 75839", Elkhart ,75839,300087,30
+CID-CHR22,Chris Venable,Chris Venable,"11855 Farm to Market Road 1255, Grand Saline, Texas 75140", Grand Saline,75140,300073,30
+CID-CIT23,City Of Alba,City Of Alba - Alba,"150 Kirby Street, Alba , TX 75410", Alba ,75410,300050,30
+CID-CLA24,Classic Collision 2031 Crockett,Crockett Shop,"1053 East Loop 304, Crockett, Texas 75835", Crockett,75835,200017,30
+CID-COO25,Cook Compression,Cook Compression - Tyler,"2123 Deerbrook Drive, Tyler, TX 75703", Tyler,75703,200018,30
+CID-COR26,"Cortex Process Equipment, LLC","Cortex Process Equipment, LLC","3733 Shiloh Road, Tyler, Texas 75707", Tyler,75707,300064,30
+CID-CRE27,Crest Process Systems,Crest,"2600 Robertson Road, Tyler, Texas 75701", Tyler,75701,300104,30
+CID-CRO28,Crockett Isd,Crockett Isd - Crocket,"1400 W Austin St, Crocket, TX 75835", Crocket,75835,300016,30
+CID-CRO29,Crowded 6 Ranch,Crowded 6 Ranch - Tyler,"Robbs Cemetery Rd, Tyler, TX 75704", Tyler,75704,400015,30
+CID-DAK30,Dakota Fuller,Fuller Job,"11917 Farm to Market Road 1255, Canton, Texas 75103", Canton,75103,300075,30
+CID-DEL31,Delek Companies,Delek Environmental - Tyler,"1702 Commerce Street, Tyler, TX 75702", Tyler,75702,"200006, 300038, 300079, L400004",30
+CID-DOR32,Dora Gibson,SITE,"1766 Day Road, Elkhart, Texas 75839", Elkhart,75839,300013,30
+CID-DOW33,Dowling Heating & Air Conditioning,Dowling,"14563 Farm to Market 747, Jacksonville, Texas 75766", Jacksonville,75766,300049,30
+CID-DRI34,Drive On Manufacturing,Drive On Manufacturing - Emory,"234 Enterprise Blvd, Emory, TX 75440", Emory,75440,100005,30
+CID-DUA35,Dualfab,Shop,"449 East Greenville Street, Alba, Texas 75410", Alba,75410,300098,30
+CID-EAG36,Eagle Business Machines,Eagle Business Machines - Tyler,"11017 County Road 42, Tyler, Texas 75704", Tyler,75704,300054,30
+CID-EQ 37,EQ Autoworks,Mailing,"4301 State Highway 31 West, Tyler, Texas 75709", Tyler,75709,300076,30
+CID-EQU38,Equipmentshare,Equipmentshare - Gladewater,"1761 S Tyler St, Gladewater, TX 75647", Gladewater,75647,300070,30
+CID-FEL39,Felicia Wray,Brakes Plus,"3910 South Broadway Avenue, Tyler, Texas 75701", Tyler,75701,100003,30
+CID-G&R40,G&R GUTTERS & GARAGE DOORS,New Shop,"2107 Broussard Street, Tyler, Texas 75701", Tyler,75701,"300006, 300120",30
+CID-GOU41,Gourmet Gardens,Gourmet Gardens - Jacksonville,"300 E Tena St, Jacksonville , TX 75766", Jacksonville ,75766,"400005, 400006",30
+CID-GRA42,Grace Community Schools/Church,SITE,"3001 University Boulevard, Tyler, Texas 75701", Tyler,75701,300080,30
+CID-GRE43,Greenway Gutters,SITE,"106 County Road 4814, Ben Wheeler, Texas 75754", Ben Wheeler,75754,300029,30
+CID-H&H44,H&H Construction,H&H Construction - Grapeland,"2415 Fm 1272, Grapeland, TX 75844", Grapeland,75844,300114,30
+CID-HAL45,Hall Truck Center,Hall Truck Center - Tyler,"5721 State Hwy 31 W, Tyler, TX 75709", Tyler,75709,200010,30
+CID-HAN46,Hangers Of Hope,Hangers Of Hope - Loop 323,"920 W Sw Loop 323, Tyler, TX 75701", Tyler,75701,300097,30
+CID-HEN47,Henry AC & Heating,Henry AC & Heating,"An County Road 445, Palestine, Texas 75803", Palestine,75803,300060,30
+CID-HEX48,Hex 6,Hex 6 - Tyler,"5406 Fm850, Tyler, TX 75705", Tyler,75705,100004S,30
+CID-HUG49,Hughes Appliance,Hughes Appliance - Mineola,"1305 West Broad Street, Mineola, Texas 75773", Mineola,75773,200008,30
+CID-JAS50,Jasper Ventures Inc,Jasper Ventures Inc - Troup,"21249 Tx Hwy 110, Troup, TX 75789", Troup,75789,"300019, 300051, 300065",30
+CID-JC 51,JC Fence,J.C Fence,"6136 Texas 300, Longview, Texas 75604", Longview,75604,300015,30
+CID-JOD52,Jody Whitworth,Home,"1385 County Road 3990, Winnsboro, Texas 75494", Winnsboro,75494,200007,30
+CID-JOE53,Joe Tex Xpress Mineola,Joe Tex Xpress Mineola,"1609 U.S. 69, Mineola, Texas 75773", Mineola,75773,300020,30
+CID-KEI54,Keith Hodges Collision,Shop,"16240 State Highway 31 West, Tyler, Texas 75709", Tyler,75709,300107,30
+CID-KIN55,King Ranch Ag & Turf,Ag & Turf,"4195 North Wheeler Street, Jasper, Texas 75951", Jasper,75951,300059,30
+CID-LAM56,Lamar Advertising,Lamar Advertising - Tyler,"2301 East Erwin St, Tyler, TX 75702", Tyler,75702,300052,30
+CID-LEO57,Leons Sign,Leons Sign - Tyler,"851 Ene Loop 323, Tyler, TX 75708", Tyler,75708,"200005, 200015, H0001",30
+CID-LSR58,LSR Equipment,LSR,"11093 US Highway 69 North, Tyler, Texas 75706", Tyler,75706,300023,30
+CID-LUC59,Lucas Roofing,Lucas Roofing - Crockett,"1929 Southwest Loop 304, Crockett, TX 75835", Crockett,75835,300041,30
+CID-MCG60,McGee's Customs,McGee's Shop,"16210 State Highway 31 West, Tyler, Texas 75709", Tyler,75709,300007,30
+CID-MIN61,Mineola ISD,Mineola ISD,"900 West Patten Street, Mineola, Texas 75773", Mineola,75773,300008,30
+CID-MOR62,Morton Salt,SITE,"801 Texas 110, Grand Saline, Texas 75140", Grand Saline,75140,300106,30
+CID-NEC63,Neckover Trailers,Shop,"938 South Railroad Street, Troup, Texas 75789", Troup,75789,300028,30
+CID-OVE64,Overhead Door Systems,Overhead Door Systems - Tyler,"16474 St Hwy 31W Tyler, Tx 75709, Tyler, TX 75709", Tyler,75709,300021,30
+CID-PEN65,Pennie BeCraft,BeCraft Site,"2419 County Road 451, Palestine, Texas 75803", Palestine,75803,200019,30
+CID-PIC66,Pichy's Buildings and Carports,Pichy's Buildings and Carports,"490 County Road 719, Nacogdoches, Texas 75964", Nacogdoches,75964,300025,30
+CID-PRE67,Precision Fence,Precision Fence - Mineola,"2076 Cr 2336, Mineola, TX 75773", Mineola,75773,400001,30
+CID-PRE68,Precision Garage Door Service of Northeast Texas,Precision Garage Door Service,"3808 Timms Street, Tyler, Texas 75701", Tyler,75701,300047,30
+CID-RHO69,Rhonda Whited,Whited location,"1507 Texas 154, Quitman, Texas 75783", Quitman,75783,300085,30
+CID-RTP70,RTP,RTP,"460 Farm to Market Road 2160, Crockett, Texas 75835", Crockett,75835,300094,30
+CID-RUS71,Rush Truck Center,Rush Truck Center - Tyler,"11042 Hwy 69N, Tyler, TX 75706", Tyler,75706,300066,30
+CID-RUS72,Rush Truck Leasing,Rush Truck Leasing - Tyler,"10791 Hwy 69 North, Tyler, TX 75706", Tyler,75706,100005,30
+CID-RUS73,"Rusk County Electric Cooperative., Inc","Rusk County Electric Cooperative., Inc - Henderson","3162 Tx-43, Henderson, TX 75652", Henderson,75652,"200014, 300077",30
+CID-SAL74,Salomon Cisneros,Salmon Cisneros - Palestine,"8660 Us 79, Palestine, TX 75801", Palestine,75801,300071,30
+CID-SAM75,Sam Moore,SITE,"966 County Road 1590, Alba, Texas 75410", Alba,75410,300119,30
+CID-SAN76,Sanderson Farms,Sanderson Farms - Tyler,"13523 Fm 2015, Tyler, TX 75708", Tyler,75708,300037,30
+CID-SEL77,Select Chemistry,Select Chemestry - Tyler,"12032 State Hwy 155, Tyler, TX 75708", Tyler,75708,300002,30
+CID-SOU78,Southern Tire Mart,Southern Tire Mart - Tyler,"516 E Ne Loop 323, Tyler, TX 75706", Tyler,75706,300117,30
+CID-SPA79,Sparc Industries,Sparc Industries - Tyler,"2072 Brandon Dr, Tyler, TX 75703", Tyler,75703,300026,30
+CID-STA80,Star Buildings & Carports,Star Buildings & Carports - Nacogdoches,"2803 Nw Stallings Drive, Nacogdoches, TX 75964", Nacogdoches,75964,"400002, 400017",30
+CID-T&O81,T&O Fence,T&O Fence,"4150 County Road 309, Frankston, Texas 75763", Frankston,75763,300035,30
+CID-TEJ82,Tejas Carports & Roofing,Tejas Carports & Roofing,"4821 FM 698, Nacogdoches, Texas 75964", Nacogdoches,75964,300069,30
+CID-TEJ83,Tejas Mex,Tejas Mex - Nacogdoches,"495 Cr 728, Nacogdoches, TX 75964", Nacogdoches,75964,300067,30
+CID-TEX84,Tex-Fin,Tex-Fin - Crockett,"701 E Loop 304, Crockett, TX 75835", Crockett,75835,300003,30
+CID-TEX85,Texas Department of Criminal Justice,Coffield Unit,"2661 Farm to Market Road 2054, Tennessee Colony, Texas 75884", Tennessee Colony,75884,BLACK,30
+CID-THE86,The Brothers That Just Do Gutters,The Brothers That Just Do Gutters - Tyler,"12540 State Hwy 155 N, Tyler, TX 75708", Tyler,75708,300074,30
+CID-THO87,Thomas Parts,SITE,"2103 Texas 31, Kilgore, Texas 75662", Kilgore,75662,300056,30
+CID-TRI88,Trinity Isd,Trinity Isd - Trinity,"500 E Caroline St, Trinity , TX 75856", Trinity ,75856,300089,30
+CID-TYL89,Tyler Overhead Door,Tyler Overhead Door - Tyler,"11601 Spur 248, Tyler, TX 75707", Tyler,75707,300082,30
+CID-VUL90,Vulcraft Division Of Nucore,Vulcraft Division Of Nucore,"175 County Rd 2345, Grapeland, TX 75844", Grapeland,75844,"200001, 300095",30
+CID-WC 91,WC Tractor,SITE,"1604 East Loop 304, Crockett, Texas 75835", Crockett,75835,300055,30
+CID-WEL92,Wells ISD,Fab Dept,"88 5th Street, Wells, Texas 75976", Wells,75976,300103,30
+CID-STS93,STS Electronic Recycling,STS Electronic Recycling,"89 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-BEC94,Becker Iron & Metal,Becker Iron & Metal,"92 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-SKS95,SKS Demolition,SKS Demolition,"93 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-STO96,Stone Water Roofing,Stone Water Roofing,"94 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-WIL97,Wilders Seamless Gutters,Wilders Seamless Gutters,"95 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-WOO98,Wood County Electric Cooperativ e Inc.,Wood County Electric Cooperativ e Inc.,"100 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-REX99,Rex Dickens,Rex Dickens,"101 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-REX100,Rex,Rex,"103 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-PIC101,Pichy's Buildings and,Pichy's Buildings and,"104 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-RUS102,"Rusk County Electric Cooperativ e., Inc","Rusk County Electric Cooperativ e., Inc","105 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-BEN103,Benjamin Franklin Plumbing,Benjamin Franklin Plumbing,"106 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TNT104,TNT Demolition (Norman Ward),TNT Demolition (Norman Ward),"107 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-SOL105,Solis Brothers Excavation,Solis Brothers Excavation,"108 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-FRI106,Fritcher Constructi on,Fritcher Constructi on,"109 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-FOU107,Four Seasons Containers,Four Seasons Containers,"110 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-XTR108,Xtreme Metals,Xtreme Metals,"111 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-HOU109,Houston County Co-Op,Houston County Co-Op,"112 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-HOU110,Houston County,Houston County,"113 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ROB111,Robbins & Morton,Robbins & Morton,"117 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TAI112,Tailored Foam,Tailored Foam,"120 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ADA113,Adam Marsh,Adam Marsh,"123 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DON114,Don Hamilton,Don Hamilton,"125 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JAY115,Jayden Root,Jayden Root,"128 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-SOU116,Southwest Metal,Southwest Metal,"132 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-PIN117,Pinnacle Gas Treating,Pinnacle Gas Treating,"136 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-LUC118,Lucas,Lucas,"137 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JIM119,Jimmy McMillian,Jimmy McMillian,"138 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-PIN120,Pinehurst Farms,Pinehurst Farms,"140 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MOM121,MOMENT UM MIDSTRE AM,MOMENT UM MIDSTRE AM,"141 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-AES122,Aesop Auto,Aesop Auto,"143 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MOM123,Momentum Midstream Longview Plant,Momentum Midstream Longview Plant,"144 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DEL124,Delek Companie s,Delek Companie s,"146 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-LYL125,Lyle Crowell,Lyle Crowell,"149 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-LOV126,Lovelady Isd,Lovelady Isd,"151 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-QUA127,Quality Paint & Body,Quality Paint & Body,"152 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-KEI128,Keith Isaac,Keith Isaac,"153 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DIA129,Diamond S Ag Services,Diamond S Ag Services,"154 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-HYD130,Hydro Con LLC,Hydro Con LLC,"155 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-WOO131,Wood County Electric Cooperativ,Wood County Electric Cooperativ,"158 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-BOB132,Bobby Snyder,Bobby Snyder,"160 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DOW133,Dowling Heating & Air Conditionin g,Dowling Heating & Air Conditionin g,"161 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DOW134,Dowling Heating & Air,Dowling Heating & Air,"162 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-THE135,The Brothers That Just,The Brothers That Just,"163 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TOL136,Toliver Ford,Toliver Ford,"164 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JUA137,Juan Villasenor Elite Demolition & Abatement,Juan Villasenor Elite Demolition & Abatement,"167 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DON138,Donna Lenhardt,Donna Lenhardt,"168 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JUA139,Juan Villasenor Elite Demolition &,Juan Villasenor Elite Demolition &,"169 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TOW140,Townley Manufactur ing,Townley Manufactur ing,"170 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DOG141,Doggett John Deer,Doggett John Deer,"171 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JAS142,Jason Wink,Jason Wink,"172 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-KEL143,Kellye Enterprise s,Kellye Enterprise s,"174 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-CAS144,Casie Hawthorne,Casie Hawthorne,"175 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-STS145,STS Electronic,STS Electronic,"176 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ARR146,Arrington Lumber,Arrington Lumber,"178 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-BRE147,Brent McArthur,Brent McArthur,"181 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-LEN148,Lennon Constructi on,Lennon Constructi on,"182 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JUA149,Juan Villasenor Elite,Juan Villasenor Elite,"185 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-UNI150,United States Postal Service,United States Postal Service,"186 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-COB151,Cobb Cattle Co.,Cobb Cattle Co.,"187 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-BRU152,Bruners Economy Car Center,Bruners Economy Car Center,"189 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JOE153,Joe Hand,Joe Hand,"190 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-HUG154,Hughes,Hughes,"192 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-COO155,Cook Compressi on,Cook Compressi on,"193 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-HUN156,Hunter Demolition & Wrecking Corp.,Hunter Demolition & Wrecking Corp.,"196 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-RUS157,Rusk County Electric,Rusk County Electric,"199 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-CHE158,Cherokee County Solid,Cherokee County Solid,"200 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-STE159,Stephanie Bathe,Stephanie Bathe,"201 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-CIT160,City of Big Sandy,City of Big Sandy,"202 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JOH161,John Hampson,John Hampson,"203 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DRI162,Drive On Manufactur ing,Drive On Manufactur ing,"204 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DOW163,Dowling Heating &,Dowling Heating &,"205 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-DAY164,Daystar Electric,Daystar Electric,"206 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ROB165,Robertson Mechanica l Contractor s Lic,Robertson Mechanica l Contractor s Lic,"207 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ROB166,Robertson Mechanica l Contractor s Llc,Robertson Mechanica l Contractor s Llc,"208 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JOS167,Joseph Cotten,Joseph Cotten,"209 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-AAR168,Aarons Rent to Own,Aarons Rent to Own,"210 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ROS169,Ross Mills,Ross Mills,"211 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-KAT170,Kathy Hawks,Kathy Hawks,"212 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-SHA171,Shannon Sullivan,Shannon Sullivan,"213 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JOR172,Jordan Westerfield,Jordan Westerfield,"214 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MID173,Midwest Truck & Trailer Maintenan ce,Midwest Truck & Trailer Maintenan ce,"215 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MID174,Midwest Truck & Trailer Maintenan,Midwest Truck & Trailer Maintenan,"217 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ASA175,ASAP INDUSTRI ES LLC,ASAP INDUSTRI ES LLC,"218 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-BEN176,Bennett McKenzie,Bennett McKenzie,"220 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-CLA177,Classic Collision North Jackson,Classic Collision North Jackson,"221 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MIC178,Michael Robertson,Michael Robertson,"222 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-WIL179,Wilders,Wilders,"224 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-WOO180,Wood County Electric,Wood County Electric,"225 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-IMP181,Impressive Image Works,Impressive Image Works,"226 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-RUS182,Rush Truck,Rush Truck,"231 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-AST183,Astro Machine & Tool Works,Astro Machine & Tool Works,"235 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-GRA184,Grace Communit y Schools/C hurch,Grace Communit y Schools/C hurch,"237 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ALL185,Allstar,Allstar,"238 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-1 W186,1 WAY DIESEL PERFORM ANCE,2 WAY DIESEL PERFORM ANCE,"239 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ART187,Artistic Renovatio ns,Artistic Renovatio ns,"240 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TYL188,Tyler Sheet Metal,Tyler Sheet Metal,"241 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-EQU189,Equipment share,Equipment share,"242 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TRI190,Trident Solution Services,Trident Solution Services,"244 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-COR191,"Cortex Process Equipment , LLC","Cortex Process Equipment , LLC","247 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ACC192,Accelerate d Diesel,Accelerate d Diesel,"248 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TEX193,Texas Metal Carports,Texas Metal Carports,"10544 FM-2908, Tyler, Texas 75708",Tyler,75701,300103,30
+CID-RAY194,Rayson Autobody,Rayson Autobody,"251 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-EQ 195,EQ Autoworks Mineola,EQ Autoworks Mineola,"252 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-CAR196,Carla Begley,Carla Begley,"253 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ROB197,Robert,Robert,"254 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ROB198,Robert Fuller,Robert Fuller,"255 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-NIC199,Nicholas Neeley,Nicholas Neeley,"256 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-ELD200,Eldridge Hayter,Eldridge Hayter,"12861 Candleridge Drive, Tyler, Texas 75709",Tyler,75701,300103,30
+CID-TEX201,Texas Water Utilities,Texas Water Utilities,"258 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-NO 202,No Junk,No Junk,"384 Eaves Rd., Big Sandy, Texas 75755",Tyler,75701,300103,30
+CID-NEX203,Nexgen Comfort Services,Nexgen Comfort Services,"260 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-GAR204,Gary Fleet,Gary Fleet,"261 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-H&H205,H&H Constructi on,H&H Constructi on,"262 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MID206,Midtown Appliance,Midtown Appliance,"345 S Bonner Ave, Tyler, Texas 75702",Tyler,75701,300103,30
+CID-STE207,Stephen Brooks,Stephen Brooks,"264 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JOE208,Joe Cruseturne r,Joe Cruseturne r,"265 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-TUR209,Turner Steel Buildings,Turner Steel Buildings,"266 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-MAT210,Matt Anderson,Matt Anderson,"267 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-JOH211,Johnston Gutter,Johnston Gutter,"11945 CR 182, bullard, texas 75757",Tyler,75701,300103,30
+CID-FUT212,Future Infrastructu re,Future Infrastructu re,"269 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-KEI213,Keith Hodges,Keith Hodges,"270 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-KEN214,Kenan Noble,Kenan Noble,"271 5th Street, Wells, Texas 75976",Tyler,75701,300103,30
+CID-NOB215,Noble's Transmission,Noble's Transmission,"12362 SH-64, Tyler, Texas 75704",Tyler,75701,300103,30
+CID-GOT216,Gotcha Covered Metal and Portable Buildings,Gotcha Covered Metal and Portable Buildings,"10450 US-69, Tyler, Texas 75706",Tyler,75701,300103,30
+CID-TYL217,"Tyler Sheet Metal, LLC","Tyler Sheet Metal, LLC","798 E NE Loop 323, Tyler, Texas 75708",Tyler,75701,300103,30
+CID-RAY218,Rayson Autobody LLC,Rayson Autobody LLC,"1326 West Gentry Pkwy, Tyler, Texas 75702",Tyler,75701,300103,30
+CID-RAY219,Ray Engine,Ray Engine,"626 Negem Drive, Tyler, Texas 75702",Tyler,75701,300103,30
+CID-MEN220,Mendez Auto Sales,Mendez Auto Sales,"2022 East Gentry, Tyler, Texas 75702",Tyler,75701,300103,30
+CID-LEW221,Lew's Welding,Lew's Welding,"1716 E Erwin St, Tyler Texas 75702",Tyler,75701,300103,30
+CID-BRA222,Braze Tech,Braze Tech,"11179 C.R. 168, Tyler, Texas 75703",Tyler,75701,300103,30
+CID-JOH223,John Deere,John Deere,"14630 State Hwy 155, Tyler, Texas 75703",Tyler,75701,300103,30
+CID-TYR224,Tyrone Townsend,Tyrone Townsend,"18687 CR 4116, Lindale, Texas 75771",Tyler,75701,300103,30
+CID-ATS225,Ats Outdoor,Ats Outdoor,"14685 State Hwy 155 S, Tyler, Texas 75703",Tyler,75701,300103,30
+CID-AUT226,Auto Express,Auto Express,"14090 State Hwy 110, Whitehouse, Texas 75791",Tyler,75701,300103,30
+CID-COX227,Cox Construction,Cox Construction,"2388 Web Rodgers Road, Wascom, Texas 75692",Tyler,75701,300103,30
+CID-ATK228,Atkinson Family Corp.,Atkinson Family Corp.,"3025 Old Henderson Hwy, Tyler, Texas 75707",Tyler,75701,300103,30
+CID-HUG229,Hughes Automotive,Hughes Automotive,"2100 E 5th St, Tyler, TX 75701",Tyler,75701,300103,30
+CID-SCO230,Scotty and Sons Truck and Trailer Repair,Scotty and Sons Truck and Trailer Repair,"17999 I-20, Canton, TX 75103",Tyler,75701,300103,30
+CID-ZMA231,Zman Carports,Zman Carports,"14751 Hwy 64, Ben Wheeler, Tx 75754",Tyler,75701,300103,30

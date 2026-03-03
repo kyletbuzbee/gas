@@ -1,0 +1,89 @@
+Deployed,Timestamp,Company Name,Contact Name,Contact Phone,Contact Role,Site Location,Mailing Location,Roll-Off Fee,Handling of Metal,Roll Off Container Size,Notes,Payout Price
+TRUE,11/14/2025,Noble's Transmission,Ed Noble,(903) 597-5928,Owner,"12362 SH-64, Tyler, Texas 75704","12362 SH-64, Tyler, Texas 75704",Yes,Separate,30 yd,,Base
+TRUE,11/17/2025,Gotcha Covered Metal and Portable Buildings,Kenny Cargill,(903) 216-7375,Owner,"10450 US-69, Tyler, Texas 75706","10450 US-69, Tyler, Texas 75706",Yes,Separate,20 yd,,Base
+TRUE,11/17/2025,"Tyler Sheet Metal, LLC",Jose L. Ramos,(903) 360-5682,Owner,"798 E NE Loop 323, Tyler, Texas 75708",Cash,No,All together,30 yd,,Base
+TRUE,11/18/2025,Rayson Autobody LLC,Gary Rayson,(903) 526-5883,Owner,"1326 West Gentry Pkwy, Tyler, Texas 75702","1326 West Gentry Pkwy, Tyler, Texas 75702",Yes,Separate,20 yd,,Base
+TRUE,11/18/2025,Ray Engine,Charles,(903) 253-3656 or (903) 531-2336,Owner,"626 Negem Drive, Tyler, Texas 75702","626 Negem Drive, Tyler, Texas 75702",Yes,Separate,10 yd,,Base
+TRUE,11/25/2025,Texas Metal Carports,Sergio,(903) 240-6986,Operations Manager,"10544 FM-2908, Tyler, Texas 75708","10544 FM-2908, Tyler, Texas 75708",No,Separate,30 yd,,$0.25 over base
+TRUE,12/10/2025,Mendez Auto Sales,Pedro Mendez,(903) 539-8056,Owner,"2022 East Gentry, Tyler, Texas 75702","2022 East Gentry, Tyler, Texas 75702",Yes,Separate,20 yd,,Base
+TRUE,12/22/2025,Eldridge Hayter,Eldridge Hayter,(903) 312-6224,Owner,"12861 Candleridge Drive, Tyler, Texas 75709","12861 Candleridge Drive, Tyler, Texas 75709",Yes,Separate,30 yd,The check is to be made out to Eldridge Hayter. He is wanting the roll off tobe initially placed at his house so that he can clean up his yard/business and then it will be moved to his storage location at a different address.,Base
+TRUE,12/23/2025,No Junk,Oln D'Amario,(903) 444-5865,Owner,"384 Eaves Rd., Big Sandy, Texas 75755",Cash (because they will be bring metal in on trailers as well),No,All together,30 yd,I told the customer we could do cash because they will be bringing in metal from their trailers as well so it is more convenient for them to just pick it up at the yard.,$0.50 over base
+TRUE,12/23/2025,Lew's Welding,Blake Silvia,(903) 597-6685,Owner,"1716 E Erwin St, Tyler Texas 75702","1716 E Erwin St, Tyler Tx 75702",No,Separate,30 yd,Al 3003 - $1.20 Al 6061 extrusion - $1.02 Al 5052 - $1.20 Stainless - $0.28,Short Iron: $0.50 over base
+TRUE,12/29/2025,Midtown Appliance,Kenny Callison,(903) 371-9930,Owner,"345 S Bonner Ave, Tyler, Texas 75702","345 S Bonner Ave, Tyler, Tx 75702",Yes,All together,30 yd,,Base
+TRUE,01/09/2026,Braze Tech,Mark Eslicker,(903) 752-5262,Owner,"11179 C.R. 168, Tyler, Texas 75703","11179 C.R. 168, Tyler, Texas 75703",Yes,All together,20 yd,"He mainly produces alloy steel shavings and could really use a 10 yard container, but if one is not available, then we can make the 20 yard roll-off work",$4.00 / CWT
+TRUE,01/12/2026,John Deere,Bart,(903) 581-6621,Service Manager,"14630 State Hwy 155, Tyler, Texas 75703",Cash,Yes,Separate,20 yd,,$0.25 over base
+TRUE,01/13/2026,Tyrone Townsend,Tyrone Townsend,(936) 234-0036,Owner,"18687 CR 4116, Lindale, Texas 75771",Pick up check,Yes,All together,30 yd,The customer is doing house remodeling and would like to be able to pick up the check,Base
+TRUE,01/13/2026,Johnston Gutter,Casey Johnston,(903) 391-2311,Owner,"11945 CR 182, bullard, texas 75757","11946 CR 182, bullard, texas 75757",Yes,Separate,20 yd,Mail check to customer in his name. Call him before we place box becaues he needs to show us where to put it and it is at his house so he needs to be there the first time,Tin-Base Aluminum- $0.68/lb
+TRUE,01/19/2026,Ats Outdoor,Tracy Manning,(903) 592-7201,Manager,"14685 State Hwy 155 S, Tyler, Texas 75703",Cash,Yes,All together,30 yd,They are wanting cash because it is for the employees. See John Deere,Base
+TRUE,01/28/2026,Auto Express,Patrick Batie,(903) 805-1314,Owner,"14090 State Hwy 110, Whitehouse, Texas 75791","14091 State Hwy 110, Whitehouse, Tx 75791",Yes,Separate,20 yd,Customer is wanting a 20 yard container and is ready as soon as one is availabile,Non ferrous- max ------------ Ferrous- $0.50 over base
+TRUE,02/03/2026,Cox Construction,Joey Cox,(903) 930-6827,Owner,"2388 Web Rodgers Road, Wascom, Texas 75692","2388 Web Rodgers Road, Wascom, Texas 75692",Yes,All together,30 yd,"Customer lives in a gated community, but is currently working from home so he needs to be called before we head out there",Base
+TRUE,02/04/2026,Atkinson Family Corp.,Dwayne Atkinson,(903) 597-2088,Owner,"3025 Old Henderson Hwy, Tyler, Texas 75707",Cash,Yes,Separate,30 yd,,"AL 5052: $1.50 (Clean) / $1.40 (Painted)
+AL 6063: $1.10 (Clean) / $1.00 (Painted)
+Siding: $0.68 | Break: $0.10"
+FALSE,02/11/2026,Hughes Automotive,Billy Hughes,(903) 597-0709,Owner,"2100 E 5th St, Tyler, TX 75701","2100 E 5th St, Tyler, TX 75701",Yes,Separate,20 yd,"Called Billy this morning to touch base with him, and he decided that he wanted a 20 yd container. He mainly does mechanical work, so it won't be a very high-producing account, but he does have quite a bit he needs cleaned up at his shop.",
+FALSE,02/23/2026,Scotty and Sons Truck and Trailer Repair,Jerry Stevens,(903) 287-3168,Owner,"17999 I-20, Canton, TX 75103","17999 I-20, Canton, TX 75103",Yes,Separate,30 yd,,Base
+FALSE,02/25/2026,Zman Carports,Lucio Ramon Zarate,(903) 275-6130                                    (903) 833-2323,Owner,"14751 Hwy 64, Ben Wheeler, Tx 75754","5687 FM 858, Ben Wheeler Tx 75754",Yes,All together,30 yd,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,,,,,,,,,,,,
+FALSE,02/27/2026,CID-PRO101,,,,,,Yes,Separate,30 yd,Aluminum welding focus. Confirmed via text: wants roll-off at house ASAP.,Base
+FALSE,02/24/2026,CID-COX101,,,,,,Yes,Separate,30 yd,Box successfully delivered.,Base
+FALSE,02/20/2026,CID-SCO101,,,,,,Yes,Separate,30 yd,Secured account; Tyler Iron bins removed.,Base
+FALSE,02/18/2026,CID-CSC101,,,,,,Yes,Separate,30 yd,Chris Cronin dropped 1500 lbs at Madfos.,Base
+FALSE,02/18/2026,CID-BRA102,,,,,,Yes,Separate,30 yd,Coordinated 20yd box delivery around strict 4:30pm schedule.,Base
+FALSE,02/18/2026,CID-CSC102,,,,,,Yes,Separate,30 yd,"Stopped by Madfos with 1,500 pounds of gutters. Win",Base
+FALSE,02/11/2026,CID-HUG103,,,,,,Yes,Separate,30 yd,"Called Billy this morning to touch base with him, and he decided that he wanted a 20 yd container. He mainly does mechanical work, so it won't be a very high-producing account, but he does have quite a bit he needs cleaned up at his shop.",Base
+FALSE,02/05/2026,CID-TYL140,,,,,,Yes,Separate,30 yd,Talk to a guy and he was not so much interested in a rolloff container but he has about 500 pounds of copper number two and about 2000 pounds of aluminum copper reefers and a bunch of old units and that he’s wanting to get rid of and so I got with Cori and got him his pricing to him and he said that he would be taking it up there within the next couple of days,Base
+FALSE,02/04/2026,CID-GLE103,,,,,,Yes,Separate,30 yd,"Visited him this morning and won the account and he is wanting a 30 yard container, but might switch to a 20 yard container if needed. Pricing is as follows: ""AL 5052: $1.50 (Clean) / $1.40 (Painted)
+AL 6063: $1.10 (Clean) / $1.00 (Painted)
+Siding: $0.68 | Break: $0.10""",Base
+FALSE,02/03/2026,CID-AUT166,,,,,,Yes,Separate,30 yd,"This is a won account, but they had called see when they could get their container and it looks like we are about 2 weeks out with 20 yard containers. They already have a pile they are wanting to put in there.",Base
+FALSE,01/19/2026,CID-ATS101,,,,,,Yes,Separate,30 yd,"Called asking if the owner had gotten back from his vacation, and he told me to go ahead and bring the roll off as soon as possible. They are going to want cash because the money they make from the roll-off, similar to John Deere, will be allocated to employee lunches and various other things.",Base
+FALSE,01/15/2026,CID-JOH108,,,,,,Yes,Separate,30 yd,Spoke to the owner and he said he he gets about 1000 lbs of gutters roughly every 4-6 weeks and is wanting a 20 yard roll off container and to let him know when we are coming outso that he can be there,Base
+FALSE,01/12/2026,CID-JOH103,,,,,,Yes,Separate,30 yd,Confirmed roll off container (10 or 20 yard) at Hwy 155 site. Contact Bart. Jason to pick up. Paying cash.,Base
+FALSE,01/12/2026,CID-TYR101,,,,,,Yes,Separate,30 yd,Contractor needing 30 yard container immediately at Lindale location (CR 4116).,Base
+FALSE,12/23/2025,CID-TYL129,,,,,,Yes,Separate,30 yd,"Brad Shaw took his metal to Madfos and was given special pricing. I would consider this a win because if I hadn't stopped and talked to him then he would have taken to where he normally does (Tyler Iron). Erick is going to send me how much his material weighed. He had short iron, aluminum, breakage, copper #1 & #2, Al/Cu Reefers, ICW, motors, and compressors.",Base
+FALSE,12/23/2025,CID-LEW102,,,,,,Yes,Separate,30 yd,"Account Won.
+Corey and I worked out prices and they are as follows:
+Al 6061 extrusion: $1.02 / lb
+Al 3003: $1 20 / lb
+Al 5052: $1.20 / lb
+Stainless Steel: $0.28 / lb
+Short Iron: $9.00 / 100lbs . The one thing that was holding him back at first was him saying how AIM i literally a mile from where they are and it doesn't cost $50 to take the metal over there, so I waived the $50 roll off fee because he already has an entire load of tin/short iron and another load of aluminum ready to be loaded and dumped",Base
+FALSE,12/23/2025,CID-NOJ101,,,,,,Yes,Separate,30 yd,"Account Won
+
+Corey and I agreed to pay $0.50 over base price for this account. Since June they have done 40k in scrap metal (the owner added up all of his receipts) so I think this account will turn out to be pretty good. They are needing a 30 yeard container and will be bringing scrap in on their trailer on a consistent basis, as well as needing live loads done as well.",Base
+FALSE,12/22/2025,CID-HAU101,,,,,,Yes,Separate,30 yd,Spoke to Eldridge Hayter and confirmed his need for a roll off container for his junk removal business. He said he is ready when we are.,Base
+FALSE,12/10/2025,CID-TYL141,,,,,,Yes,Separate,30 yd,"Spoke to Mr. Shaw for quite a while because he knows Mark and Andy and Dylan fairly well. He told me that he forgets about Madfos because he doesn't see very much action every time he passes by it. He is currently doing a large clean up because he is selling his business and has a fair amount of aluminum, short iron, motors, copper #1 & #2, ICW, Al/Cu radiators and compressors that he is trying to sell. I told him that I would pay him top dollar for it, so I need to get with Corey on what prices I can offer him. Right now Tyler Iron is paying $8.50/100lb and will check with Dylan on NF prices",Base
+FALSE,12/10/2025,CID-PED101,,,,,,Yes,Separate,30 yd,"Spoke to Pedro, and he would like a 20-yard container at the earliest next Wednesday. It is an autobody shop so he will need his metal separated.",Base
+FALSE,11/26/2025,CID-MUR101,,,,,,Yes,Separate,30 yd,"Has his own roll off container and currently takes it to Tyler Iron, asked him what it would take for him to bring his scrap from now on to Madfos and we agreed on a price of $8.75/100lbs. He is going to be cleaning up his shop and will have a good amount of short iron next week and in the future.",Base
+FALSE,11/25/2025,CID-TEX126,,,,,,Yes,Separate,30 yd,"Followed up with Sergio and convinced him that we could offer better service by putting them on a schedule to aleviate some of the issues he has had with calling Tyler Iron and them not showing up days later. Also told him that since he will be needing a 30 yard container dumped every 2 weeks during slow season and 1-2 times a week during peakseason, that we could pay slightly above board price. I have a confirmed price of .25 cents over board price. Confirmed with David and we will have a container dropped off over there tomorrow.",Base
+FALSE,11/18/2025,CID-RAY103,,,,,,Yes,Separate,30 yd,"Spoke with Gary Rayson regarding our services, said he was just using a small bin and it was a hassle trying to load it all up to take to the scrap yard. Walked the property with him and noticed scrap scattered everywhere. I told him how easy of a system it is to have just a container and that we can go through and seperate it all for him. We figured out where the container would best fit and he decided he wanted to use our roll-off container services. Account Won",Base
+FALSE,11/17/2025,CID-GOT101,,,,,,Yes,Separate,30 yd,"Had a long conversation with Kenny Cargill the owner and he wants to proceed forwards with a roll off container. So as soon as we can get one out to him, he would be greatly appreciative of it.",Base
+FALSE,11/17/2025,CID-TYL137,,,,,,Yes,Separate,30 yd,"Talked to the owner Jose Ramos and he said that they typically take about 6,000 lbs of sheet metal to Tyler Iron every month. I told him that we could offer very competitive pricing and because he produces so much scrap metal a month that we could waive the roll off fee. He is needing a 30 yd container as soon as possible",Base
+FALSE,11/11/2025,CID-NOB101,,,,,,Yes,Separate,30 yd,Won,Base
+FALSE,11/07/2025,CID-RAY101,,,,,,Yes,Separate,30 yd,Won,Base

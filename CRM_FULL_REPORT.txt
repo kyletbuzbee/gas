@@ -1,0 +1,30 @@
+=== K&L RECYCLING CRM LOGIC ANALYSIS ===
+
+Scanned directory: .
+Files found: 10
+
+--- CROSS-FILE DEPENDENCIES ---
+Automations.gs calls: ['CONFIG']
+CRMService.gs calls: ['CONFIG']
+DataLayer.gs calls: ['CONFIG']
+Setup.gs calls: ['CONFIG']
+
+--- CRITICAL BUG DETECTION: _rowIndex Injection ---
+[WARNING] SharedUtils.js not found in current directory.
+
+--- CONSOLIDATED LOGIC GROUPS ---
+
+>> GROUP: DATA_ENGINE
+   [0/8 files present]
+
+>> GROUP: BUSINESS_LOGIC
+   [0/6 files present]
+
+>> GROUP: VALIDATION
+   [0/7 files present]
+
+>> GROUP: UI_BACKEND
+   [0/4 files present]
+
+>> GROUP: WORKFLOW_AUTOMATION
+   [0/4 files present]

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.5;
+      font-size: 14px;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+
+    .btn-secondary {
+      background: #e2e8f0;
+      color: #64748b;
+      margin-left: 10px;
+    }
+
+    .btn-secondary:hover {
+      background: #cbd5e1;
+    }
+
+    .form-actions {
+      margin-top: 24px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+
+    .loading.active {
+      display: block;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #e2e8f0;
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 8px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .success-message {
+      display: none;
+      background: #dcfce7;
+      color: #166534;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    .error-message {
+      display: none;
+      background: #fee2e2;
+      color: #dc2626;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Log Outreach Visit</h2>
+
+  <div id="success-msg" class="success-message">
+    Outreach logged successfully!
+  </div>
+
+  <div id="error-msg" class="error-message">
+    Error logging outreach. Please try again.
+  </div>
+
+  <form id="outreach-form">
+    <div class="form-group">
+      <label for="company">Company</label>
+      <select id="company" name="company" required>
+        <option value="">Select a company...</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="visit-date">Visit Date</label>
+      <input type="date" id="visit-date" name="visitDate" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-type">Contact Type</label>
+      <select id="contact-type" name="contactType">
+        <option value="Visit" selected>Visit</option>
+        <option value="Phone">Phone</option>
+        <option value="Email">Email</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="outcome">Outcome</label>
+      <select id="outcome" name="outcome">
+        <option value="Interested (Hot)">Interested (Hot)</option>
+        <option value="Interested (Warm)">Interested (Warm)</option>
+        <option value="Follow-Up">Follow-Up</option>
+        <option value="Not Interested">Not Interested</option>
+        <option value="No Answer">No Answer</option>
+        <option value="Account Won">Account Won</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" placeholder="Enter visit details..."></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="btn btn-secondary" onclick="google.script.host.close()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Save Outreach</button>
+    </div>
+  </form>
+
+  <div id="loading" class="loading">
+    <span class="spinner"></span>
+    Saving...
+  </div>
+
+  <script>
+    // Set default date to today
+    document.getElementById('visit-date').valueAsDate = new Date();
+
+    // Load companies into dropdown
+    function loadCompanies() {
+      google.script.run
+        .withSuccessHandler(function(companies) {
+          const select = document.getElementById('company');
+          companies.forEach(function(company) {
+            const option = document.createElement('option');
+            option.value = JSON.stringify({ id: company.id, name: company.name });
+            option.textContent = company.name + ' (' + company.id + ')';
+            select.appendChild(option);
+          });
+        })
+        .withFailureHandler(function(error) {
+          console.error('Failed to load companies:', error);
+        })
+        .getCompanySearchIndex();
+    }
+
+    // Handle form submission
+    document.getElementById('outreach-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const companySelect = document.getElementById('company');
+      const companyData = JSON.parse(companySelect.value);
+
+      const entry = {
+        companyId: companyData.id,
+        companyName: companyData.name,
+        visitDate: document.getElementById('visit-date').value,
+        contactType: document.getElementById('contact-type').value,
+        outcome: document.getElementById('outcome').value,
+        notes: document.getElementById('notes').value
+      };
+
+      // Show loading
+      document.getElementById('loading').classList.add('active');
+      document.getElementById('outreach-form').style.display = 'none';
+
+      google.script.run
+        .withSuccessHandler(function(result) {
+          document.getElementById('loading').classList.remove('active');
+          document.getElementById('success-msg').style.display = 'block';
+
+          // Close dialog after 1.5 seconds
+          setTimeout(function() {
+            google.script.host.close();
+          }, 1500);
+        })
+        .withFailureHandler(function(error) {
+          document.getElementById('loading').classList.remove('active');
+          document.getElementById('outreach-form').style.display = 'block';
+          document.getElementById('error-msg').style.display = 'block';
+          document.getElementById('error-msg').textContent = 'Error: ' + error.message;
+          console.error('Error saving outreach:', error);
+        })
+        .addOutreachEntry(entry);
+    });
+
+    // Load companies when page loads
+    loadCompanies();
+  </script>
+</body>
+</html>

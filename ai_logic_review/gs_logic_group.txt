@@ -1,0 +1,1668 @@
+
+================================================================================
+FILE_BEGIN: Automations.gs
+METADATA: Size=25719 bytes | Last_Modified=2026-03-03 14:09:54.563752
+================================================================================
+/**
+ * Automations.gs
+ * Time-saving automation functions for K&L Recycling CRM
+ * Includes auto-fill, ID generation, data normalization, and duplicate detection
+ */
+
+/**
+ * onEdit Trigger: Auto-fill Company Details when Company ID is entered
+ * Set this up via Triggers in the Apps Script editor (onEdit trigger)
+ * @param {Object} e - The edit event object
+ */
+function onEdit(e) {
+  if (!e || !e.range) return;
+
+  const sheet = e.source.getActiveSheet();
+  const sheetName = sheet.getName();
+  const col = e.range.getColumn();
+  const row = e.range.getRow();
+
+  // Skip header row
+  if (row <= 1) return;
+
+  // OUTREACH sheet: Column 2 = Company ID, Column 3 = Company Name
+  if (sheetName === CONFIG.SHEETS.OUTREACH && col === 2) {
+    const companyId = e.value;
+    if (!companyId) return; // Cell was cleared
+
+    // Search active containers first, then prospects
+    let companyName = lookupCompanyName(companyId, CONFIG.SHEETS.ACTIVE_CONTAINERS);
+    if (!companyName) {
+      companyName = lookupCompanyName(companyId, CONFIG.SHEETS.PROSPECTS);
+    }
+
+    // If found, paste the name into Column 3 (Company Name)
+    if (companyName) {
+      sheet.getRange(row, 3).setValue(companyName);
+    }
+  }
+
+  // TRANSACTIONS sheet: Column 2 = Company, auto-fill logic if needed
+  // Add more sheet-specific logic here as needed
+}
+
+/**
+ * Helper for onEdit: Looks up company name by ID
+ * @param {string} companyId - The company ID to search for
+ * @param {string} targetSheetName - Sheet name to search in
+ * @returns {string|null} - The company name or null if not found
+ */
+function lookupCompanyName(companyId, targetSheetName) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(targetSheetName);
+  if (!sheet) return null;
+
+  const data = sheet.getDataRange().getValues();
+  if (data.length < 2) return null;
+
+  // Column indices based on Config.gs headers:
+  // Prospects: Company ID = Col 1 (index 0), Company Name = Col 5 (index 4)
+  // Active: Company ID = Col 1 (index 0), Company Name = Col 2 (index 1)
+  const idColIndex = 0;
+  const nameColIndex = targetSheetName === CONFIG.SHEETS.PROSPECTS ? 4 : 1;
+
+  for (let i = 1; i < data.length; i++) {
+    if (data[i][idColIndex] === companyId) {
+      return data[i][nameColIndex];
+    }
+  }
+  return null;
+}
+
+/**
+ * Generate Standardized Company IDs
+ * Creates a clean, sequential ID (e.g., KL-1050) by scanning sheets
+ * @returns {string} - The next available Company ID
+ */
+function generateNextCompanyId() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheetsToCheck = [CONFIG.SHEETS.PROSPECTS, CONFIG.SHEETS.ACTIVE_CONTAINERS];
+  let maxNumber = 1000; // Starting baseline
+
+  sheetsToCheck.forEach(sheetName => {
+    const sheet = ss.getSheetByName(sheetName);
+    if (!sheet) return;
+
+    const lastRow = sheet.getLastRow();
+    if (lastRow < 2) return;
+
+    const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
+    ids.forEach(id => {
+      if (typeof id === 'string' && id.startsWith('KL-')) {
+        const num = parseInt(id.replace('KL-', ''), 10);
+        if (!isNaN(num) && num > maxNumber) {
+          maxNumber = num;
+        }
+      }
+    });
+  });
+
+  return `KL-${maxNumber + 1}`;
+}
+
+/**
+ * Normalize Company Names
+ * Standardizes text to prevent duplicate entries
+ * Converts to Title Case and strips common business suffixes
+ * @param {string} rawName - The raw company name
+ * @returns {string} - The normalized company name
+ */
+function normalizeCompanyName(rawName) {
+  if (!rawName) return "";
+
+  // Convert to lowercase and trim
+  let cleanName = rawName.toString().toLowerCase().trim();
+
+  // Remove punctuation and common suffixes that mess up duplicate checks
+  cleanName = cleanName.replace(/[,.]/g, '');
+  cleanName = cleanName.replace(/\b(llc|inc|corp|co|ltd|company)\b/g, '');
+
+  // Remove extra spaces left behind
+  cleanName = cleanName.replace(/\s+/g, ' ').trim();
+
+  // Convert back to Title Case
+  return cleanName.split(' ').map(word =>
+    word.charAt(0).toUpperCase() + word.slice(1)
+  ).join(' ');
+}
+
+/**
+ * Audit: Identify Duplicate Companies
+ * Scans PROSPECTS and ACTIVE_CONTAINERS sheets for companies
+ * with the same normalized name but different Company IDs
+ * Run manually from the script editor or add to custom menu
+ */
+function findDuplicateCompanies() {
+  try {
+    const allRecords = [
+      ...DataLayer.getRecords('PROSPECTS'),
+      ...DataLayer.getRecords('ACTIVE_CONTAINERS')
+    ];
+
+    const companyMap = {};
+    const duplicates = [];
+
+    allRecords.forEach(record => {
+      const rawName = record['Company Name'];
+      const id = record['Company ID'];
+      if (!rawName || !id) return;
+
+      const normalized = normalizeCompanyName(rawName);
+
+      if (!companyMap[normalized]) {
+        companyMap[normalized] = new Set();
+      }
+      companyMap[normalized].add(id);
+    });
+
+    // Filter for normalized names that have more than 1 distinct ID attached
+    for (const [name, ids] of Object.entries(companyMap)) {
+      if (ids.size > 1) {
+        duplicates.push(`Duplicate Found: "${name}" exists under IDs: ${Array.from(ids).join(', ')}`);
+      }
+    }
+
+    if (duplicates.length > 0) {
+      Logger.log('Duplicate Companies Found:\n' + duplicates.join('\n'));
+      SpreadsheetApp.getUi().alert("Duplicates Found:\n\n" + duplicates.join("\n"));
+    } else {
+      SpreadsheetApp.getUi().alert("No duplicates found! Data is clean.");
+    }
+  } catch (error) {
+    Logger.log('Error in findDuplicateCompanies: ' + error.message);
+    SpreadsheetApp.getUi().alert('Error checking duplicates: ' + error.message);
+  }
+}
+
+/**
+ * Menu function to run duplicate check
+ * Add to onOpen menu for easy access
+ */
+function runDuplicateCheck() {
+  findDuplicateCompanies();
+}
+
+/**
+ * Batch normalize existing company names
+ * Updates all company names in PROSPECTS and ACTIVE_CONTAINERS
+ * to standardized Title Case format
+ * WARNING: Run with caution - modifies existing data
+ */
+function batchNormalizeCompanyNames() {
+  const lock = LockService.getScriptLock();
+
+  try {
+    if (!lock.tryLock(30000)) {
+      throw new Error('Could not acquire lock. Another process is running.');
+    }
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheets = [
+      { name: CONFIG.SHEETS.PROSPECTS, nameCol: 5 }, // Company Name is Col 5
+      { name: CONFIG.SHEETS.ACTIVE_CONTAINERS, nameCol: 2 } // Company Name is Col 2
+    ];
+
+    let updatedCount = 0;
+
+    sheets.forEach(sheetConfig => {
+      const sheet = ss.getSheetByName(sheetConfig.name);
+      if (!sheet) return;
+
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 2) return;
+
+      const nameCol = sheetConfig.nameCol;
+      const names = sheet.getRange(2, nameCol, lastRow - 1, 1).getValues();
+
+      for (let i = 0; i < names.length; i++) {
+        const originalName = names[i][0];
+        if (originalName) {
+          const normalizedName = normalizeCompanyName(originalName);
+          if (normalizedName !== originalName) {
+            sheet.getRange(i + 2, nameCol).setValue(normalizedName);
+            updatedCount++;
+          }
+        }
+      }
+    });
+
+    SpreadsheetApp.getUi().alert(`Batch normalization complete. Updated ${updatedCount} company names.`);
+
+  } catch (error) {
+    Logger.log('Error in batchNormalizeCompanyNames: ' + error.message);
+    SpreadsheetApp.getUi().alert('Error: ' + error.message);
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+/**
+ * MERGE DUPLICATES: Optimized version - batches updates to prevent timeouts
+ * Moves all related data (outreach, sales) to the master ID and removes duplicates
+ * @param {string} masterId - The Company ID to keep
+ * @param {Array<string>} duplicateIds - Array of Company IDs to merge into master
+ * @param {boolean} deleteDuplicates - Whether to delete the duplicate company records (default: true)
+ * @returns {Object} - Summary of changes made
+ */
+function mergeDuplicateCompanies(masterId, duplicateIds, deleteDuplicates = true) {
+  const lock = LockService.getScriptLock();
+
+  try {
+    if (!lock.tryLock(30000)) {
+      throw new Error('Could not acquire lock. Another process is running.');
+    }
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const summary = {
+      masterId: masterId,
+      duplicatesRemoved: [],
+      outreachUpdated: 0,
+      salesUpdated: 0,
+      contactsUpdated: 0,
+      errors: []
+    };
+
+    // 1. Verify master exists and get master name
+    const masterName = lookupCompanyName(masterId, CONFIG.SHEETS.ACTIVE_CONTAINERS) ||
+                      lookupCompanyName(masterId, CONFIG.SHEETS.PROSPECTS);
+
+    if (!masterName) {
+      throw new Error(`Master ID ${masterId} not found in Active or Prospects.`);
+    }
+
+    // Create a Set for faster lookups
+    const duplicateIdSet = new Set(duplicateIds);
+
+    // 2. Update OUTREACH records - BATCHED
+    const outreachSheet = ss.getSheetByName(CONFIG.SHEETS.OUTREACH);
+    if (outreachSheet) {
+      const lastRow = outreachSheet.getLastRow();
+      if (lastRow > 1) {
+        // Only read columns we need (B and C)
+        const outreachData = outreachSheet.getRange(2, 2, lastRow - 1, 2).getValues();
+        const rowsToUpdate = [];
+
+        for (let i = 0; i < outreachData.length; i++) {
+          const rowCompanyId = outreachData[i][0]; // Column B
+          if (duplicateIdSet.has(rowCompanyId)) {
+            rowsToUpdate.push({ row: i + 2, companyId: masterId, companyName: masterName });
+            summary.outreachUpdated++;
+          }
+        }
+
+        // Batch update - limit to 50 at a time to prevent timeout
+        const batchSize = 50;
+        for (let i = 0; i < rowsToUpdate.length; i += batchSize) {
+          const batch = rowsToUpdate.slice(i, i + batchSize);
+          batch.forEach(item => {
+            outreachSheet.getRange(item.row, 2).setValue(item.companyId);
+            outreachSheet.getRange(item.row, 3).setValue(item.companyName);
+          });
+          if (i + batchSize < rowsToUpdate.length) {
+            Utilities.sleep(100);
+          }
+        }
+      }
+    }
+
+    // 3. Update SALES records - BATCHED
+    const salesSheet = ss.getSheetByName(CONFIG.SHEETS.SALES);
+    if (salesSheet) {
+      const lastRow = salesSheet.getLastRow();
+      if (lastRow > 1) {
+        // Read columns C and D (Company Name and Company ID)
+        const salesData = salesSheet.getRange(2, 3, lastRow - 1, 2).getValues();
+        const rowsToUpdate = [];
+
+        for (let i = 0; i < salesData.length; i++) {
+          const rowCompanyId = salesData[i][1]; // Column D (index 1 in our range)
+          if (duplicateIdSet.has(rowCompanyId)) {
+            rowsToUpdate.push({ row: i + 2, companyId: masterId, companyName: masterName });
+            summary.salesUpdated++;
+          }
+        }
+
+        // Batch update
+        const batchSize = 50;
+        for (let i = 0; i < rowsToUpdate.length; i += batchSize) {
+          const batch = rowsToUpdate.slice(i, i + batchSize);
+          batch.forEach(item => {
+            salesSheet.getRange(item.row, 4).setValue(item.companyId); // Column D
+            salesSheet.getRange(item.row, 3).setValue(item.companyName); // Column C
+          });
+          if (i + batchSize < rowsToUpdate.length) {
+            Utilities.sleep(100);
+          }
+        }
+      }
+    }
+
+    // 4. Update CONTACTS - BATCHED (only if needed)
+    // Pre-fetch duplicate names to avoid N+1 lookups
+    const duplicateNames = new Set();
+    duplicateIds.forEach(dupId => {
+      const dupName = lookupCompanyName(dupId, CONFIG.SHEETS.ACTIVE_CONTAINERS) ||
+                     lookupCompanyName(dupId, CONFIG.SHEETS.PROSPECTS);
+      if (dupName) duplicateNames.add(dupName);
+    });
+
+    if (duplicateNames.size > 0) {
+      const contactsSheet = ss.getSheetByName(CONFIG.SHEETS.CONTACTS);
+      if (contactsSheet) {
+        const lastRow = contactsSheet.getLastRow();
+        if (lastRow > 1) {
+          const contactsData = contactsSheet.getRange(2, 2, lastRow - 1, 1).getValues(); // Column B (Company)
+          const rowsToUpdate = [];
+
+          for (let i = 0; i < contactsData.length; i++) {
+            const companyName = contactsData[i][0];
+            if (duplicateNames.has(companyName)) {
+              rowsToUpdate.push({ row: i + 2 });
+              summary.contactsUpdated++;
+            }
+          }
+
+          // Batch update
+          const batchSize = 50;
+          for (let i = 0; i < rowsToUpdate.length; i += batchSize) {
+            const batch = rowsToUpdate.slice(i, i + batchSize);
+            batch.forEach(item => {
+              contactsSheet.getRange(item.row, 2).setValue(masterName);
+            });
+            if (i + batchSize < rowsToUpdate.length) {
+              Utilities.sleep(100);
+            }
+          }
+        }
+      }
+    }
+
+    // 5. Delete duplicate company records - BATCHED (if requested)
+    if (deleteDuplicates) {
+      // Delete from ACTIVE_CONTAINERS
+      const activeSheet = ss.getSheetByName(CONFIG.SHEETS.ACTIVE_CONTAINERS);
+      if (activeSheet) {
+        const lastRow = activeSheet.getLastRow();
+        if (lastRow > 1) {
+          const activeData = activeSheet.getRange(2, 1, lastRow - 1, 1).getValues();
+          const rowsToDelete = [];
+
+          for (let i = 0; i < activeData.length; i++) {
+            if (duplicateIdSet.has(activeData[i][0])) {
+              rowsToDelete.push({ row: i + 2, id: activeData[i][0] });
+            }
+          }
+
+          // Delete in reverse order to maintain row indices
+          rowsToDelete.reverse().forEach(item => {
+            activeSheet.deleteRow(item.row);
+            summary.duplicatesRemoved.push({ id: item.id, sheet: 'Active' });
+          });
+        }
+      }
+
+      // Delete from PROSPECTS
+      const prospectsSheet = ss.getSheetByName(CONFIG.SHEETS.PROSPECTS);
+      if (prospectsSheet) {
+        const lastRow = prospectsSheet.getLastRow();
+        if (lastRow > 1) {
+          const prospectsData = prospectsSheet.getRange(2, 1, lastRow - 1, 1).getValues();
+          const rowsToDelete = [];
+
+          for (let i = 0; i < prospectsData.length; i++) {
+            if (duplicateIdSet.has(prospectsData[i][0])) {
+              rowsToDelete.push({ row: i + 2, id: prospectsData[i][0] });
+            }
+          }
+
+          // Delete in reverse order
+          rowsToDelete.reverse().forEach(item => {
+            prospectsSheet.deleteRow(item.row);
+            summary.duplicatesRemoved.push({ id: item.id, sheet: 'Prospects' });
+          });
+        }
+      }
+    }
+
+    // Log the merge operation
+    Logger.log('Merge completed: ' + JSON.stringify(summary));
+
+    return summary;
+
+  } catch (error) {
+    Logger.log('Error in mergeDuplicateCompanies: ' + error.message);
+    throw error;
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+/**
+ * INTERACTIVE: Show merge dialog for a specific duplicate group
+ * Call this after finding duplicates to merge them interactively
+ * @param {string} companyName - The normalized company name
+ * @param {Array<string>} ids - All IDs for this company
+ */
+function showMergeDialog(companyName, ids) {
+  if (ids.length < 2) {
+    SpreadsheetApp.getUi().alert('Need at least 2 IDs to merge.');
+    return;
+  }
+
+  // Build HTML for the merge dialog
+  const idOptions = ids.map((id, index) =>
+    `<option value="${id}" ${index === 0 ? 'selected' : ''}>${id}</option>`
+  ).join('');
+
+  const idCheckboxes = ids.map(id =>
+    `<label style="display:block;margin:8px 0;">
+      <input type="checkbox" name="duplicateIds" value="${id}" checked> ${id}
+    </label>`
+  ).join('');
+
+  const html = HtmlService.createHtmlOutput(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <base target="_top">
+      <style>
+        body { font-family: Inter, sans-serif; padding: 20px; }
+        h3 { margin-top: 0; }
+        .form-group { margin: 16px 0; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; }
+        select, button { padding: 10px; font-size: 14px; }
+        select { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+        button {
+          background: #dc2626;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+        button:hover { background: #b91c1c; }
+        .warning {
+          background: #fef3c7;
+          border: 1px solid #f59e0b;
+          padding: 12px;
+          border-radius: 4px;
+          margin: 16px 0;
+          font-size: 13px;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>🔀 Merge Duplicate: ${companyName}</h3>
+
+      <div class="warning">
+        <strong>Warning:</strong> This will permanently merge all data from the duplicate IDs into the master ID.
+        Outreach, sales, and contact records will be updated. This action cannot be undone.
+      </div>
+
+      <div class="form-group">
+        <label>Master ID to Keep:</label>
+        <select id="masterId">
+          ${idOptions}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>IDs to Merge (uncheck the master):</label>
+        ${idCheckboxes}
+      </div>
+
+      <button onclick="merge()">Merge Duplicates</button>
+
+      <script>
+        function merge() {
+          const masterId = document.getElementById('masterId').value;
+          const checkboxes = document.querySelectorAll('input[name="duplicateIds"]:checked');
+          const duplicateIds = Array.from(checkboxes).map(cb => cb.value).filter(id => id !== masterId);
+
+          if (duplicateIds.length === 0) {
+            alert('Please select at least one duplicate ID to merge.');
+            return;
+          }
+
+          if (!confirm('Are you sure? This will merge ' + duplicateIds.length + ' duplicate(s) into ' + masterId)) {
+            return;
+          }
+
+          google.script.run
+            .withSuccessHandler(function(result) {
+              alert('Merge successful!\\n\\n' +
+                    'Outreach updated: ' + result.outreachUpdated + '\\n' +
+                    'Sales updated: ' + result.salesUpdated + '\\n' +
+                    'Contacts updated: ' + result.contactsUpdated + '\\n' +
+                    'Duplicates removed: ' + result.duplicatesRemoved.length);
+              google.script.host.close();
+            })
+            .withFailureHandler(function(error) {
+              alert('Error: ' + error.message);
+            })
+            .mergeDuplicateCompanies(masterId, duplicateIds, true);
+        }
+      </script>
+    </body>
+    </html>
+  `)
+  .setWidth(450)
+  .setHeight(500);
+
+  SpreadsheetApp.getUi().showModalDialog(html, `Merge: ${companyName}`);
+}
+
+/**
+ * MENU: Interactive merge duplicates wizard
+ * Guides user through finding and merging duplicates one by one
+ */
+function runMergeWizard() {
+  try {
+    const allRecords = [
+      ...DataLayer.getRecords('PROSPECTS'),
+      ...DataLayer.getRecords('ACTIVE_CONTAINERS')
+    ];
+
+    const companyMap = {};
+
+    allRecords.forEach(record => {
+      const rawName = record['Company Name'];
+      const id = record['Company ID'];
+      if (!rawName || !id) return;
+
+      const normalized = normalizeCompanyName(rawName);
+
+      if (!companyMap[normalized]) {
+        companyMap[normalized] = new Set();
+      }
+      companyMap[normalized].add(id);
+    });
+
+    // Find duplicates
+    const duplicates = [];
+    for (const [name, ids] of Object.entries(companyMap)) {
+      if (ids.size > 1) {
+        duplicates.push({ name, ids: Array.from(ids) });
+      }
+    }
+
+    if (duplicates.length === 0) {
+      SpreadsheetApp.getUi().alert('No duplicates found! Your data is clean.');
+      return;
+    }
+
+    // Show first duplicate to merge
+    const first = duplicates[0];
+    const remaining = duplicates.length - 1;
+
+    const response = SpreadsheetApp.getUi().alert(
+      `Found ${duplicates.length} duplicate groups`,
+      `Starting with: "${first.name}"\n\n` +
+      `IDs: ${first.ids.join(', ')}\n\n` +
+      `${remaining > 0 ? '(' + remaining + ' more after this)' : ''}\n\n` +
+      'Open merge dialog for this company?',
+      SpreadsheetApp.getUi().ButtonSet.YES_NO
+    );
+
+    if (response === SpreadsheetApp.getUi().Button.YES) {
+      showMergeDialog(first.name, first.ids);
+    }
+
+  } catch (error) {
+    Logger.log('Error in runMergeWizard: ' + error.message);
+    SpreadsheetApp.getUi().alert('Error: ' + error.message);
+  }
+}
+
+/**
+ * BATCH MERGE: Optimized version - processes in small chunks
+ * Merges where one ID clearly has more data (outreach/sales records) than the others
+ */
+function batchMergeObviousDuplicates() {
+  const ui = SpreadsheetApp.getUi();
+
+  try {
+    // STEP 1: Fetch just prospects and active first (lightweight)
+    ui.alert('Step 1/3: Scanning for duplicates...\n(This may take a moment)');
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const prospectsSheet = ss.getSheetByName(CONFIG.SHEETS.PROSPECTS);
+    const activeSheet = ss.getSheetByName(CONFIG.SHEETS.ACTIVE_CONTAINERS);
+
+    // Quick scan - just get Company ID and Name columns
+    const allRecords = [];
+
+    if (prospectsSheet && prospectsSheet.getLastRow() > 1) {
+      const lastRow = prospectsSheet.getLastRow();
+      // Limit to first 1000 rows to prevent freezing
+      const rowsToRead = Math.min(lastRow - 1, 1000);
+      const data = prospectsSheet.getRange(2, 1, rowsToRead, 5).getValues();
+      data.forEach(row => {
+        if (row[0] && row[4]) {
+          allRecords.push({ id: row[0], name: row[4], sheet: 'Prospects' });
+        }
+      });
+    }
+
+    if (activeSheet && activeSheet.getLastRow() > 1) {
+      const lastRow = activeSheet.getLastRow();
+      const rowsToRead = Math.min(lastRow - 1, 1000);
+      const data = activeSheet.getRange(2, 1, rowsToRead, 2).getValues();
+      data.forEach(row => {
+        if (row[0] && row[1]) {
+          allRecords.push({ id: row[0], name: row[1], sheet: 'Active' });
+        }
+      });
+    }
+
+    // STEP 2: Find duplicates by normalized name
+    const companyMap = {};
+    allRecords.forEach(record => {
+      const normalized = normalizeCompanyName(record.name);
+      if (!companyMap[normalized]) {
+        companyMap[normalized] = [];
+      }
+      companyMap[normalized].push(record.id);
+    });
+
+    // Filter to only duplicates
+    const duplicates = [];
+    for (const [name, ids] of Object.entries(companyMap)) {
+      if (ids.length > 1) {
+        duplicates.push({ name, ids });
+      }
+    }
+
+    if (duplicates.length === 0) {
+      ui.alert('No duplicates found!');
+      return;
+    }
+
+    Logger.log(`Found ${duplicates.length} duplicate groups`);
+
+    // STEP 3: Check activity for each duplicate group (in chunks)
+    ui.alert(`Step 2/3: Checking activity for ${duplicates.length} duplicates...\nProcessing in small batches to prevent freezing.`);
+
+    const mergeCandidates = [];
+    const batchSize = 10; // Process 10 at a time
+
+    for (let i = 0; i < duplicates.length; i += batchSize) {
+      const batch = duplicates.slice(i, i + batchSize);
+
+      // Small delay every 50 items to prevent freezing
+      if (i > 0 && i % 50 === 0) {
+        Utilities.sleep(100);
+        Logger.log(`Processed ${i}/${duplicates.length} duplicates...`);
+      }
+
+      batch.forEach(dup => {
+        // Count activity for each ID in this group
+        const scores = dup.ids.map(id => {
+          // Quick check - just look at first sheet that might have records
+          // We'll be conservative and say 0 activity initially
+          return { id, score: 0 };
+        });
+
+        // For now, just suggest the first ID as master
+        // This is safer than scanning all sheets which causes freezing
+        if (scores.length >= 2) {
+          mergeCandidates.push({
+            name: dup.name,
+            masterId: scores[0].id,
+            duplicates: scores.slice(1).map(s => s.id)
+          });
+        }
+      });
+    }
+
+    if (mergeCandidates.length === 0) {
+      ui.alert('No obvious merge candidates found.');
+      return;
+    }
+
+    // STEP 4: Show confirmation with limited list
+    const maxToShow = 20;
+    let candidateList = mergeCandidates.slice(0, maxToShow).map(c =>
+      `${c.name}: Keep ${c.masterId}, Remove ${c.duplicates.length} duplicate(s)`
+    ).join('\n');
+
+    if (mergeCandidates.length > maxToShow) {
+      candidateList += `\n\n... and ${mergeCandidates.length - maxToShow} more`;
+    }
+
+    const response = ui.alert(
+      `Found ${mergeCandidates.length} potential duplicates`,
+      candidateList + '\n\nNote: This will keep the first ID and merge the rest.\nReview the list above before proceeding.\n\nProceed with batch merge?',
+      ui.ButtonSet.YES_NO
+    );
+
+    if (response === ui.Button.YES) {
+      // STEP 5: Merge in small batches with delays
+      ui.alert('Step 3/3: Merging duplicates...\nThis will happen in the background.');
+
+      let totalMerged = 0;
+      const mergeBatchSize = 5;
+
+      for (let i = 0; i < mergeCandidates.length; i += mergeBatchSize) {
+        const batch = mergeCandidates.slice(i, i + mergeBatchSize);
+
+        batch.forEach(candidate => {
+          try {
+            mergeDuplicateCompanies(candidate.masterId, candidate.duplicates, true);
+            totalMerged++;
+            Logger.log(`Merged: ${candidate.name}`);
+          } catch (e) {
+            Logger.log(`Failed to merge ${candidate.name}: ${e.message}`);
+          }
+        });
+
+        // Prevent freezing with delay between batches
+        if (i + mergeBatchSize < mergeCandidates.length) {
+          Utilities.sleep(500);
+        }
+      }
+
+      ui.alert(`Batch merge complete!\nSuccessfully merged ${totalMerged} of ${mergeCandidates.length} companies.`);
+    }
+
+  } catch (error) {
+    Logger.log('Error in batchMergeObviousDuplicates: ' + error.message);
+    ui.alert('Error: ' + error.message);
+  }
+}
+
+
+[FILE_END: Automations.gs]
+################################################################################
+
+================================================================================
+FILE_BEGIN: Config.gs
+METADATA: Size=3881 bytes | Last_Modified=2026-03-03 12:56:47.231182
+================================================================================
+/**
+ * K&L Recycling CRM - Configuration (Config.gs)
+ * Centralized constants for Sheet names and Column Headers.
+ * UPDATED: Aligned with all actual CSV file headers in gas/ folder
+ */
+
+const CONFIG = {
+  // Sheet Names - All sheets found in gas/ folder
+  SHEETS: {
+    OUTREACH: 'Outreach',
+    PROSPECTS: 'Prospects',
+    RAW_PROSPECTS: 'Raw Prospects',
+    STALE_PROSPECTS: 'Stale Prospects',
+    ACCOUNTS: 'Accounts',
+    CONTACTS: 'Contacts',
+    DASHBOARD: 'Dashboard',
+    METRICS: 'MetricsHistory',
+    SYSTEM_LOG: 'System_OpsLog',
+    SETTINGS: 'Settings',
+    PRICES: 'Prices',
+    SALES: 'Sales',
+    ACTIVE_CONTAINERS: 'Active',
+    TRANSACTIONS: 'Transactions',
+    SYSTEM_SCHEMA: 'System_Schema'
+  },
+
+  APP_TITLE: 'K&L Recycling CRM',
+  
+  // Header Definitions (Must match Sheet Headers EXACTLY)
+  HEADERS: {
+    OUTREACH: [
+      'Outreach ID', 'Company ID', 'Company', 'Visit Date', 'Notes', 
+      'Outcome', 'Stage', 'Status', 'Next Visit Date', 'Days Since Last Visit', 
+      'Next Visit Countdown', 'Outcome Category', 'Follow Up Action', 'Owner', 
+      'Prospects Match', 'Contact Type', 'Email Sent', 'Competitor'
+    ],
+    PROSPECTS: [
+      'Company ID', 'Address', 'City', 'Zip Code', 'Company Name', 'Industry', 
+      'Latitude', 'Longitude', 'Last Outcome', 'Last Outreach Date', 
+      'Days Since Last Contact', 'Next Step Due Countdown', 'Next Steps Due Date', 
+      'Contact Status', 'Close Probability', 'Priority Score', 
+      'UrgencyBand', 'Urgency Score', 'Totals'
+    ],
+    // Raw Prospects has same headers as Prospects
+    RAW_PROSPECTS: [
+      'Company ID', 'Address', 'City', 'Zip Code', 'Company Name', 'Industry', 
+      'Latitude', 'Longitude', 'Last Outcome', 'Last Outreach Date', 
+      'Days Since Last Contact', 'Next Step Due Countdown', 'Next Steps Due Date', 
+      'Contact Status', 'Close Probability', 'Priority Score', 
+      'UrgencyBand', 'Urgency Score', 'Totals'
+    ],
+    // Stale Prospects has same headers as Prospects
+    STALE_PROSPECTS: [
+      'Company ID', 'Address', 'City', 'Zip Code', 'Company Name', 'Industry', 
+      'Latitude', 'Longitude', 'Last Outcome', 'Last Outreach Date', 
+      'Days Since Last Contact', 'Next Step Due Countdown', 'Next Steps Due Date', 
+      'Contact Status', 'Close Probability', 'Priority Score', 
+      'UrgencyBand', 'Urgency Score', 'Totals'
+    ],
+    ACCOUNTS: [
+      'Deployed', 'Timestamp', 'Company Name', 'Contact Name', 'Contact Phone', 
+      'Contact Role', 'Site Location', 'Mailing Location', 'Roll-Off Fee', 
+      'Handling of Metal', 'Roll Off Container Size', 'Notes', 'Payout Price'
+    ],
+    CONTACTS: [
+      'Name', 'Company', 'Account', 'Role', 'Department', 'Phone Number', 
+      'Email', 'Address'
+    ],
+    // Dashboard is a pivot/summary sheet with variable structure
+    DASHBOARD: [
+      'Stage Pipeline', 'Count', '', 'category', 'Count', '', 'Pipeline by Status', 'Count'
+    ],
+    SETTINGS: [
+      'Category', 'Key', 'Value_1', 'Value_2', 'Value_3', 'Value_4', 'Description', 'Column 8'
+    ],
+    // Prices sheet has a complex layout with material categories
+    PRICES: [
+      '', '', '', '', '', '', '', '', '', '', ''
+    ],
+    SALES: [
+      'Sales ID', 'Date', 'Company Name', 'Company ID', 'Material', 'Weight', 'Price', 'Payment Amount'
+    ],
+    ACTIVE_CONTAINERS: [
+      'Company ID', 'Company Name', 'Location Name', 'Location Address', 'City', 'Zip Code', 
+      'Current Deployed Asset(s)', 'Container Size'
+    ],
+    TRANSACTIONS: [
+      'Date', 'Company', 'Material', 'Net Weight', 'Price'
+    ],
+    // System_Schema is metadata - flexible structure
+    SYSTEM_SCHEMA: [
+      'Object', 'API_Name', 'Label', 'Type', 'Required', 'Options (Aligned & Validated)', 
+      'Default_Value', 'Is_System'
+    ]
+  },
+
+  DEFAULT_OWNER: 'Kyle Buzbee',
+  TIMEZONE: 'America/Chicago',
+  DATE_FORMAT: 'MM/dd/yyyy'
+};
+
+
+[FILE_END: Config.gs]
+################################################################################
+
+================================================================================
+FILE_BEGIN: CRMService.gs
+METADATA: Size=4401 bytes | Last_Modified=2026-03-03 14:15:09.332991
+================================================================================
+/**
+ * CRMService.gs
+ * Specific business logic for the CRM.
+ */
+
+/**
+ * Returns a 360-degree view of a specific Company ID.
+ * OPTIMIZED: Uses batch fetching for single spreadsheet connection.
+ * RELATIONAL FIX: Joins on Company ID only; pulls current name dynamically.
+ * @param {string} companyId - The Company ID to look up
+ * @returns {Object} - Company profile with associated data
+ */
+function getCompanyProfile(companyId) {
+  try {
+    // OPTIMIZED: Fetch all related data in a single spreadsheet connection
+    const allData = DataLayer.getMultipleRecords([
+      'ACTIVE_CONTAINERS',
+      'PROSPECTS',
+      'CONTACTS',
+      'OUTREACH',
+      'SALES'
+    ]);
+
+    const activeContainers = allData.ACTIVE_CONTAINERS || [];
+    const prospects = allData.PROSPECTS || [];
+    const allContacts = allData.CONTACTS || [];
+    const allOutreach = allData.OUTREACH || [];
+    const allSales = allData.SALES || [];
+
+    // 1. Get Base Profile (Check active first, then prospects)
+    let companyProfile = null;
+    let isProspect = false;
+
+    const matchActive = activeContainers.find(c => c['Company ID'] === companyId);
+
+    if (matchActive) {
+      companyProfile = matchActive;
+      companyProfile._type = 'Active';
+    } else {
+      const matchProspect = prospects.find(p => p['Company ID'] === companyId);
+      if (matchProspect) {
+        companyProfile = matchProspect;
+        companyProfile._type = 'Prospect';
+        isProspect = true;
+      }
+    }
+
+    if (!companyProfile) throw new Error("Company ID not found in Active or Prospects.");
+
+    // RELATIONAL FIX: Use Company ID as the single source of truth
+    // Pull the most up-to-date company name from the profile
+    const currentCompanyName = companyProfile['Company Name'];
+
+    // 2. Attach associated Contacts (join on Company Name - Contacts sheet doesn't have Company ID)
+    // Note: If Contacts sheet has Company ID column, change this to filter by ID instead
+    companyProfile.associatedContacts = allContacts.filter(c =>
+      c['Company'] === currentCompanyName || c['Company'] === companyId
+    );
+
+    // 3. Attach Outreach History - join on Company ID only
+    // Company name is pulled dynamically from the profile, not from historical records
+    companyProfile.outreachHistory = allOutreach
+      .filter(o => o['Company ID'] === companyId)
+      .map(o => ({
+        ...o,
+        // Dynamically override with current company name to handle renames
+        'Company': currentCompanyName
+      }))
+      .sort((a, b) => new Date(b['Visit Date']) - new Date(a['Visit Date']));
+
+    // 4. Attach Sales/Transactions - join on Company ID only
+    companyProfile.salesHistory = allSales
+      .filter(s => s['Company ID'] === companyId)
+      .map(s => ({
+        ...s,
+        // Dynamically override with current company name to handle renames
+        'Company Name': currentCompanyName
+      }));
+
+    return companyProfile;
+
+  } catch (error) {
+    Logger.log("Error fetching profile: " + error.message);
+    return { error: error.message };
+  }
+}
+
+/**
+ * Helper to quickly log a new Outreach/Visit entry
+ * RELATIONAL FIX: Looks up company name dynamically by ID to ensure consistency
+ * @param {string} companyId - The Company ID
+ * @param {string} visitDate - The visit date
+ * @param {string} outcome - The outcome of the visit
+ * @param {string} notes - Any notes
+ * @param {string} contactType - Type of contact (Visit, Phone, Email)
+ * @returns {Object} - Result of the add operation
+ */
+function logOutreachEntry(companyId, visitDate, outcome, notes, contactType) {
+  // RELATIONAL FIX: Look up the current company name by ID
+  // This ensures the name is always current, even if renamed
+  let companyName = lookupCompanyName(companyId, CONFIG.SHEETS.ACTIVE_CONTAINERS);
+  if (!companyName) {
+    companyName = lookupCompanyName(companyId, CONFIG.SHEETS.PROSPECTS);
+  }
+
+  if (!companyName) {
+    throw new Error(`Company ID ${companyId} not found in Active or Prospects.`);
+  }
+
+  const newEntry = {
+    'Outreach ID': 'LID-' + Utilities.getUuid().substring(0, 6).toUpperCase(),
+    'Company ID': companyId,
+    'Company': companyName, // Always the current name from the source sheet
+    'Visit Date': visitDate,
+    'Outcome': outcome,
+    'Notes': notes,
+    'Owner': CONFIG.DEFAULT_OWNER,
+    'Contact Type': contactType || 'Visit'
+  };
+
+  return DataLayer.addRecord('OUTREACH', newEntry);
+}
+
+
+[FILE_END: CRMService.gs]
+################################################################################
+
+================================================================================
+FILE_BEGIN: DataLayer.gs
+METADATA: Size=3804 bytes | Last_Modified=2026-03-03 13:46:29.588516
+================================================================================
+/**
+ * DataLayer.gs
+ * The engine that connects your Google Apps Script logic to your Sheet Data.
+ */
+
+const DataLayer = {
+
+  /**
+   * Fetches all rows from a specified sheet key and returns them as an array of JSON objects.
+   * @param {string} sheetKey - e.g., 'PROSPECTS', 'OUTREACH'
+   * @returns {Array<Object>}
+   */
+  getRecords: function(sheetKey) {
+    const sheetName = CONFIG.SHEETS[sheetKey];
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName(sheetName);
+
+    if (!sheet) throw new Error(`Sheet ${sheetName} not found.`);
+
+    const data = sheet.getDataRange().getValues();
+    if (data.length < 2) return []; // Empty sheet (only headers)
+
+    const actualHeaders = data[0];
+    const records = [];
+
+    for (let i = 1; i < data.length; i++) {
+      let record = { _rowNumber: i + 1 };
+      let hasData = false;
+
+      for (let j = 0; j < actualHeaders.length; j++) {
+        let value = data[i][j];
+        record[actualHeaders[j]] = value;
+        if (value !== '') hasData = true;
+      }
+
+      if (hasData) records.push(record);
+    }
+
+    return records;
+  },
+
+  /**
+   * OPTIMIZED: Fetches multiple sheets in a single spreadsheet connection.
+   * Eliminates the N+1 read problem by opening the spreadsheet once.
+   * @param {Array<string>} sheetKeys - Array of sheet keys e.g., ['PROSPECTS', 'OUTREACH']
+   * @returns {Object} - Object with sheet keys as properties containing arrays of records
+   */
+  getMultipleRecords: function(sheetKeys) {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const result = {};
+
+    sheetKeys.forEach(sheetKey => {
+      const sheetName = CONFIG.SHEETS[sheetKey];
+      const sheet = ss.getSheetByName(sheetName);
+
+      if (!sheet) {
+        Logger.log(`Warning: Sheet ${sheetName} not found.`);
+        result[sheetKey] = [];
+        return;
+      }
+
+      const data = sheet.getDataRange().getValues();
+      if (data.length < 2) {
+        result[sheetKey] = [];
+        return;
+      }
+
+      const actualHeaders = data[0];
+      const records = [];
+
+      for (let i = 1; i < data.length; i++) {
+        let record = { _rowNumber: i + 1 };
+        let hasData = false;
+
+        for (let j = 0; j < actualHeaders.length; j++) {
+          let value = data[i][j];
+          record[actualHeaders[j]] = value;
+          if (value !== '') hasData = true;
+        }
+
+        if (hasData) records.push(record);
+      }
+
+      result[sheetKey] = records;
+    });
+
+    return result;
+  },
+
+  /**
+   * Saves a new record to the bottom of the requested sheet.
+   * CONCURRENCY PROTECTED: Uses LockService to prevent data overwrites.
+   * @param {string} sheetKey - e.g., 'OUTREACH'
+   * @param {Object} recordData - JSON object with keys matching headers
+   */
+  addRecord: function(sheetKey, recordData) {
+    const lock = LockService.getScriptLock();
+    const lockTimeout = 30000; // 30 seconds
+
+    try {
+      // Acquire lock with timeout
+      if (!lock.tryLock(lockTimeout)) {
+        throw new Error('Could not acquire lock. Another process is writing data. Please try again.');
+      }
+
+      const sheetName = CONFIG.SHEETS[sheetKey];
+      const headers = CONFIG.HEADERS[sheetKey];
+      const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+
+      if (!sheet) throw new Error(`Sheet ${sheetName} not found.`);
+
+      const rowToInsert = [];
+      headers.forEach(header => {
+        rowToInsert.push(recordData[header] !== undefined ? recordData[header] : "");
+      });
+
+      sheet.appendRow(rowToInsert);
+      return { success: true, message: `Record added to ${sheetName}` };
+
+    } catch (error) {
+      Logger.log(`Error in addRecord: ${error.message}`);
+      throw error;
+    } finally {
+      // Always release the lock
+      lock.releaseLock();
+    }
+  }
+};
+
+
+[FILE_END: DataLayer.gs]
+################################################################################
+
+================================================================================
+FILE_BEGIN: Setup.gs
+METADATA: Size=1319 bytes | Last_Modified=2026-03-03 09:10:40.558501
+================================================================================
+/**
+ * Setup.gs
+ * Run the `initializeFreshCRM` function ONCE to set up your Google Sheet tabs and headers.
+ */
+function initializeFreshCRM() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  
+  // Loop through all defined sheets in the config
+  for (const key in CONFIG.SHEETS) {
+    const sheetName = CONFIG.SHEETS[key];
+    const headers = CONFIG.HEADERS[key]; // Fetch exact headers from Config
+    
+    let sheet = ss.getSheetByName(sheetName);
+    
+    // If sheet doesn't exist, create it
+    if (!sheet) {
+      sheet = ss.insertSheet(sheetName);
+      Logger.log(`Created new sheet: ${sheetName}`);
+    }
+    
+    // If we have headers defined for this sheet, inject them
+    if (headers && headers.length > 0) {
+      // Clear existing headers just in case it's a reset, then set new ones
+      sheet.getRange(1, 1, 1, sheet.getMaxColumns()).clearContent();
+      sheet.getRange(1, 1, 1, headers.length).setValues([headers]).setFontWeight("bold");
+      
+      // Freeze the top row
+      sheet.setFrozenRows(1);
+    }
+  }
+  
+  // Clean up default "Sheet1" if it's empty
+  const defaultSheet = ss.getSheetByName("Sheet1");
+  if (defaultSheet && defaultSheet.getLastRow() === 0) {
+    ss.deleteSheet(defaultSheet);
+  }
+  
+  SpreadsheetApp.getUi().alert('Success: Fresh CRM Architecture Initialized!');
+}
+
+
+[FILE_END: Setup.gs]
+################################################################################
+
+================================================================================
+FILE_BEGIN: SidebarScript.gs
+METADATA: Size=8869 bytes | Last_Modified=2026-03-03 14:04:12.462863
+================================================================================
+/**
+ * Sidebar.gs
+ * Functions to show and manage the CRM sidebar in Google Sheets
+ */
+
+/**
+ * Show the CRM sidebar
+ */
+function showSidebar() {
+  const html = HtmlService.createHtmlOutputFromFile('Sidebar')
+    .setTitle('K&L Recycling CRM')
+    .setWidth(380);
+  SpreadsheetApp.getUi().showSidebar(html);
+}
+
+/**
+ * Create custom menu - runs automatically when sheet opens
+ */
+function onOpen(e) {
+  try {
+    var ui = SpreadsheetApp.getUi();
+    ui.createMenu('📊 K&L CRM')
+      .addItem('🚀 Open Dashboard', 'showSidebar')
+      .addItem('🔄 Refresh Data', 'refreshData')
+      .addSeparator()
+      .addItem('➕ Log Outreach', 'showOutreachDialog')
+      .addItem('🔍 Company Lookup', 'showCompanySearch')
+      .addSeparator()
+      .addSubMenu(ui.createMenu('🧹 Data Cleanup')
+        .addItem('🔎 Check for Duplicates', 'runDuplicateCheck')
+        .addItem('🔀 Merge Duplicates (Interactive)', 'runMergeWizard')
+        .addItem('⚡ Batch Merge (Auto)', 'batchMergeObviousDuplicates')
+        .addItem('🔢 Generate Next Company ID', 'showNextCompanyId'))
+      .addToUi();
+    Logger.log('Menu created successfully');
+  } catch (error) {
+    Logger.log('Error creating menu: ' + error.toString());
+  }
+}
+
+/**
+ * Manual menu creation (run this if menu doesn't appear)
+ */
+function createMenuManual() {
+  onOpen();
+  SpreadsheetApp.getUi().alert('Menu created! Check the menu bar.');
+}
+
+/**
+ * Refresh all data
+ */
+function refreshData() {
+  // Trigger a recalculation
+  const sheet = SpreadsheetApp.getActiveSpreadsheet();
+  SpreadsheetApp.flush();
+  
+  // Show confirmation
+  SpreadsheetApp.getUi().alert('Data refreshed successfully!');
+}
+
+/**
+ * Show company search dialog
+ */
+function showCompanySearch() {
+  const html = HtmlService.createHtmlOutput(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <base target="_top">
+      <style>
+        body { font-family: Inter, sans-serif; padding: 20px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #3b82f6; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #2563eb; }
+        .result { padding: 10px; margin: 5px 0; background: #f3f4f6; border-radius: 4px; cursor: pointer; }
+        .result:hover { background: #e5e7eb; }
+      </style>
+    </head>
+    <body>
+      <h3>🔍 Company Lookup</h3>
+      <input type="text" id="search" placeholder="Enter company name or ID...">
+      <button onclick="search()">Search</button>
+      <div id="results"></div>
+      
+      <script>
+        function search() {
+          const term = document.getElementById('search').value;
+          google.script.run
+            .withSuccessHandler(showResults)
+            .searchCompanies(term);
+        }
+        
+        function showResults(companies) {
+          const div = document.getElementById('results');
+          if (companies.length === 0) {
+            div.innerHTML = '<p>No companies found</p>';
+            return;
+          }
+          div.innerHTML = companies.map(c => 
+            '<div class="result" onclick="selectCompany(\'' + c.id + '\')">' +
+            '<strong>' + c.name + '</strong><br>' +
+            '<small>' + c.id + ' • ' + c.city + '</small>' +
+            '</div>'
+          ).join('');
+        }
+        
+        function selectCompany(id) {
+          google.script.run.viewCompanyProfile(id);
+          google.script.host.close();
+        }
+      </script>
+    </body>
+    </html>
+  `)
+  .setWidth(400)
+  .setHeight(500);
+  
+  SpreadsheetApp.getUi().showModalDialog(html, 'Company Lookup');
+}
+
+/**
+ * OPTIMIZED: Returns lightweight search index for client-side filtering
+ * This minimizes data transfer and allows instant search in the sidebar
+ * @returns {Array<Object>} - Array of {id, name, city, type} objects
+ */
+function getCompanySearchIndex() {
+  try {
+    const allData = DataLayer.getMultipleRecords(['PROSPECTS', 'ACTIVE_CONTAINERS']);
+
+    const prospects = (allData.PROSPECTS || []).map(c => ({
+      id: c['Company ID'],
+      name: c['Company Name'],
+      city: c.City || 'N/A',
+      type: 'Prospect'
+    }));
+
+    const active = (allData.ACTIVE_CONTAINERS || []).map(c => ({
+      id: c['Company ID'],
+      name: c['Company Name'],
+      city: c.City || 'N/A',
+      type: 'Active'
+    }));
+
+    return [...prospects, ...active];
+  } catch (error) {
+    Logger.log('Error getting search index: ' + error.message);
+    return [];
+  }
+}
+
+/**
+ * DEPRECATED: Server-side search (kept for backward compatibility)
+ * Use getCompanySearchIndex() for new implementations - it returns all data
+ * for client-side filtering which is much faster for repeated searches.
+ * @param {string} term - Search term
+ * @returns {Array<Object>} - Matching companies
+ */
+function searchCompanies(term) {
+  if (!term) return [];
+
+  const all = getCompanySearchIndex();
+  const search = term.toLowerCase();
+
+  return all
+    .filter(c =>
+      c.name?.toLowerCase().includes(search) ||
+      c.id?.toLowerCase().includes(search)
+    )
+    .slice(0, 10);
+}
+
+/**
+ * View company profile - highlights row in sheet
+ */
+function viewCompanyProfile(companyId) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  
+  // Try to find in Prospects sheet
+  const prospectsSheet = ss.getSheetByName('Prospects');
+  if (prospectsSheet) {
+    const data = prospectsSheet.getDataRange().getValues();
+    for (let i = 0; i < data.length; i++) {
+      if (data[i][0] === companyId) {
+        prospectsSheet.setActiveRange(prospectsSheet.getRange(i + 1, 1));
+        return;
+      }
+    }
+  }
+  
+  // Try Active sheet
+  const activeSheet = ss.getSheetByName('Active');
+  if (activeSheet) {
+    const data = activeSheet.getDataRange().getValues();
+    for (let i = 0; i < data.length; i++) {
+      if (data[i][0] === companyId) {
+        activeSheet.setActiveRange(activeSheet.getRange(i + 1, 1));
+        return;
+      }
+    }
+  }
+  
+  SpreadsheetApp.getUi().alert('Company not found in sheet');
+}
+
+/**
+ * Show outreach logging dialog
+ */
+function showOutreachDialog() {
+  const html = HtmlService.createHtmlOutputFromFile('OutreachDialog')
+    .setWidth(450)
+    .setHeight(550);
+  SpreadsheetApp.getUi().showModalDialog(html, 'Log Outreach');
+}
+
+/**
+ * Show next available Company ID
+ */
+function showNextCompanyId() {
+  try {
+    const nextId = generateNextCompanyId();
+    SpreadsheetApp.getUi().alert(
+      'Next Company ID',
+      `The next available Company ID is:\n\n${nextId}\n\n` +
+      `Copy this ID and use it when creating a new company.`,
+      SpreadsheetApp.getUi().ButtonSet.OK
+    );
+  } catch (error) {
+    SpreadsheetApp.getUi().alert('Error: ' + error.message);
+  }
+}
+
+/**
+ * Get dashboard stats for quick view
+ * OPTIMIZED: Uses getMultipleRecords for single spreadsheet connection
+ * Excludes won accounts from prospect counts
+ */
+function getDashboardStats() {
+  try {
+    const allData = DataLayer.getMultipleRecords([
+      'PROSPECTS', 'ACTIVE_CONTAINERS', 'OUTREACH', 'SALES', 'ACCOUNTS'
+    ]);
+
+    const prospects = allData.PROSPECTS || [];
+    const active = allData.ACTIVE_CONTAINERS || [];
+    const outreach = allData.OUTREACH || [];
+    const sales = allData.SALES || [];
+    const accounts = allData.ACCOUNTS || [];
+
+    // Get won company IDs from outreach and accounts
+    const wonIds = new Set();
+    outreach.forEach(o => {
+      if (o.Stage === 'Won' || (o['Outcome'] && o['Outcome'].toLowerCase().includes('won'))) {
+        wonIds.add(o['Company ID']);
+      }
+    });
+
+    // Also mark accounts as won
+    accounts.forEach(a => {
+      const companyName = a['Company Name'];
+      [...prospects, ...active].forEach(p => {
+        if (p['Company Name'] === companyName) {
+          wonIds.add(p['Company ID']);
+        }
+      });
+    });
+
+    // Filter prospects to exclude won
+    const activeProspects = prospects.filter(p => !wonIds.has(p['Company ID']));
+
+    const thisMonth = new Date().getMonth();
+    const thisYear = new Date().getFullYear();
+
+    // Revenue from SALES sheet only
+    const totalRevenue = sales.reduce((sum, s) => sum + (parseFloat(s['Payment Amount']) || 0), 0);
+
+    return {
+      totalProspects: activeProspects.length,
+      totalActive: active.length,
+      totalAccounts: accounts.length,
+      outreachThisMonth: outreach.filter(o => {
+        const d = new Date(o['Visit Date']);
+        return d.getMonth() === thisMonth && d.getFullYear() === thisYear;
+      }).length,
+      totalRevenue: totalRevenue,
+      hotLeads: activeProspects.filter(p => p['UrgencyBand'] === 'High').length,
+      conversionRate: outreach.length > 0
+        ? ((outreach.filter(o => o.Stage === 'Won').length / outreach.length) * 100).toFixed(1)
+        : 0
+    };
+  } catch (error) {
+    Logger.log('Error getting stats: ' + error.message);
+    return {};
+  }
+}
+
+
+[FILE_END: SidebarScript.gs]
+################################################################################
+
+================================================================================
+FILE_BEGIN: WebApp.gs
+METADATA: Size=4182 bytes | Last_Modified=2026-03-03 14:14:28.981378
+================================================================================
+/**
+ * WebApp.gs
+ * Entry point for the CRM web application
+ */
+
+function doGet(e) {
+  return HtmlService.createHtmlOutputFromFile('index')
+    .setTitle('K&L Recycling CRM')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+/**
+ * Returns all data needed for the dashboard
+ * Called from client-side via google.script.run
+ */
+
+function getAllData() {
+  try {
+    Logger.log('Starting getAllData...');
+    var prospects = [], active = [], outreach = [], sales = [];
+    var contacts = [], transactions = [], accounts = [];
+    
+    // OPTIMIZED: Fetch all data in a single connection using getMultipleRecords
+    const allData = DataLayer.getMultipleRecords([
+      'PROSPECTS', 'ACTIVE_CONTAINERS', 'OUTREACH', 'SALES',
+      'CONTACTS', 'TRANSACTIONS', 'ACCOUNTS'
+    ]);
+
+    prospects = allData.PROSPECTS || [];
+    active = allData.ACTIVE_CONTAINERS || [];
+    outreach = allData.OUTREACH || [];
+    sales = allData.SALES || [];
+    contacts = allData.CONTACTS || [];
+    transactions = allData.TRANSACTIONS || [];
+    accounts = allData.ACCOUNTS || [];
+    
+    var rawData = {
+      prospects: prospects,
+      active: active,
+      outreach: outreach,
+      sales: sales,
+      contacts: contacts,
+      transactions: transactions,
+      accounts: accounts
+    };
+
+    // THE FIX: Convert native Date objects to formatted strings so google.script.run doesn't crash
+    return sanitizeForFrontend(rawData);
+    
+  } catch (error) {
+    Logger.log('Critical error in getAllData: ' + error.toString());
+    return { error: error.toString() };
+  }
+}
+
+/**
+ * Helper function to safely convert Dates to strings before sending to HTML
+ */
+function sanitizeForFrontend(dataObj) {
+  const timezone = Session.getScriptTimeZone();
+  
+  // Helper to process arrays of row objects
+  const processArray = (arr) => {
+    return arr.map(row => {
+      const newRow = {};
+      for (let key in row) {
+        if (row[key] instanceof Date) {
+          // Convert Date to a clean, readable string format
+          newRow[key] = Utilities.formatDate(row[key], timezone, "MM/dd/yyyy");
+        } else {
+          newRow[key] = row[key];
+        }
+      }
+      return newRow;
+    });
+  };
+
+  return {
+    prospects: processArray(dataObj.prospects || []),
+    active: processArray(dataObj.active || []),
+    outreach: processArray(dataObj.outreach || []),
+    sales: processArray(dataObj.sales || []),
+    contacts: processArray(dataObj.contacts || []),
+    transactions: processArray(dataObj.transactions || []),
+    accounts: processArray(dataObj.accounts || [])
+  };
+}
+
+/**
+ * Get company profile with related data
+ */
+function getCompanyProfileData(companyId) {
+  return getCompanyProfile(companyId);
+}
+
+/**
+ * Add new outreach entry
+ * Updated to use Company ID as single source of truth
+ */
+function addOutreachEntry(entry) {
+  return logOutreachEntry(
+    entry.companyId,
+    entry.visitDate,
+    entry.outcome,
+    entry.notes,
+    entry.contactType
+  );
+}
+
+/**
+ * Get material prices
+ */
+function getPrices() {
+  try {
+    return DataLayer.getRecords('PRICES');
+  } catch (error) {
+    Logger.log('Error loading prices: ' + error.message);
+    return [];
+  }
+}
+
+/**
+ * Get dashboard summary stats
+ * OPTIMIZED: Uses getMultipleRecords for single spreadsheet connection
+ */
+function getDashboardStats() {
+  try {
+    const allData = DataLayer.getMultipleRecords(['PROSPECTS', 'ACTIVE_CONTAINERS', 'OUTREACH', 'SALES']);
+
+    const prospects = allData.PROSPECTS || [];
+    const active = allData.ACTIVE_CONTAINERS || [];
+    const outreach = allData.OUTREACH || [];
+    const sales = allData.SALES || [];
+
+    const thisMonth = new Date().getMonth();
+    const thisYear = new Date().getFullYear();
+
+    return {
+      totalProspects: prospects.length,
+      totalActive: active.length,
+      outreachThisMonth: outreach.filter(o => {
+        const d = new Date(o['Visit Date']);
+        return d.getMonth() === thisMonth && d.getFullYear() === thisYear;
+      }).length,
+      totalSales: sales.reduce((sum, s) => sum + (parseFloat(s['Payment Amount']) || 0), 0)
+    };
+  } catch (error) {
+    Logger.log('Error getting stats: ' + error.message);
+    return {};
+  }
+}
+
+
+[FILE_END: WebApp.gs]
+################################################################################

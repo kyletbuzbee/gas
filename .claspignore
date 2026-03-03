@@ -1,0 +1,5 @@
+*.py
+*.csv
+!.gs
+!.html
+!.json

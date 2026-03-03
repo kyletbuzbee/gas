@@ -1,0 +1,830 @@
+Company ID,Address,City,Zip Code,Company Name,Industry,Latitude,Longitude,Last Outcome,Last Outreach Date,Days Since Last Contact,Next Step Due Countdown,Next Steps Due Date,Contact Status,Close Probability,Priority Score,UrgencyBand,Urgency Score,Totals
+CID-W5 001,353 W Greenville St,Alba,75410,W5 Portable Buildings,Construction,32.79350281,-95.64053345,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BEE101,13368 County Rd 2290,Arp,75750,"Bee Happy Building, LLC",Metal Fabrication,32.33866119,-95.26263428,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RUD001,11014 FM 3226,Arp,75750,Rudd Manufacturing and Custom Welding,Welding,32.31858063,-95.13729095,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TIT101,14108 County Rd 227,Arp,75750,Titan Diesel Fabrication,Manufacturing,32.2713982,-95.0226587,Not Contacted,,,30,2026/04/02,Cold,0,75,High,85,43.8
+CID-LEV101,13365 County Rd 2299,Arp,75750,Levelup Excavation Land Management,Construction,32.2812596,-95.0380984,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HAR102,509 E Longview St,Arp,75750,Harolds Appliance Repair,Plumbing,32.3498799,-95.3078488,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-FUL102,11882 FM 3226,Arp,75750,Full Moon Plumbing,Plumbing,32.305564,-95.1336728,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COM001,11293 Tx-19,Athens,75752,"Commercial Forms, Inc.",Metal Fabrication,32.30655289,-95.84537506,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RED001,1209 W Corsicana St,Athens,75751,Red Dot Buildings,Metal Fabrication,32.20078278,-95.87775421,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MIL001,1517 W Corsicana St,Athens,75751,Miller Metal Works,Metal Fabrication,32.19980621,-95.88336945,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GER001,2120 W Corsicana St,Athens,75751,Gerardo's Welding and General Works,Metal Fabrication,32.19882965,-95.88988495,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PGM001,6061 County Rd 4628,Athens,75752,Pgm Metal Fabrication,Metal Fabrication,32.16863251,-95.83402252,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ETX003,106 Pecan Cir,Athens,75751,Etx Welding LLC,Welding,32.11737442,-95.90319824,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ATH001,900 Tx-7 Ne Loop,Athens,75752,Athens Steel Building Corporation,Metal Fabrication,32.22583008,-95.84205627,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET002,9389 State Highway 31 W,Athens,75751,Metal Mart #38,Metal Fabrication,32.18809891,-95.93650055,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS106,9200 Fm2329,Athens,75751,East Texas Excavation,Metal Fabrication,32.252974,-95.9304625,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-ATH101,900 Ne Loop 7,Athens,75752,Athens Steel Building,Metal Fabrication,32.2254166,-95.8421472,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-RIC001,tx-19,Athens,75124,"Richmon Construction Services, LLC",Metal Fabrication,,-95.83855438,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LON001,2940 State Highway 31 E,Athens,75752,Lonestar Sheds LLC,Construction,32.22748947,-95.81044769,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-D S001,518 Progress Way,Athens,75751,D. S. Brown,Iron & steel industry,32.21162796,-95.81190491,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MCC002,9051 County Rd 41126,Athens,75751,Mccool Welding and Fabrication,Welding,32.12736511,-95.89057159,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HER104,FM 1803,Athens,75752,Herrington Welding,Welding,32.2858764,-95.714084,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-RID001,113 N Washington St,Beckville,75631,Ridgway Cnc,Metal Fabrication,32.24276352,-94.45636749,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ARC001,"1134 State Highway 64, Ben Wheeler, TX 75754",Ben Wheeler,75754,Arcadian Place,Metal Fabrication,32.37623978,-95.49046326,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WOL001,"14432 State Highway 64, Ben Wheeler, TX 75754",Ben Wheeler,75754,Wolf Pipe,Metal Fabrication,32.45405579,-95.71046448,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JM 001,"660 Vz County Rd 4413, Ben Wheeler, TX 75754",Ben Wheeler,75754,Jm Metal Boutique,Metal Fabrication,32.49252319,-95.71655273,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JMM102,"660 Vz County Rd 4813, Ben Wheeler, TX 75754",Ben Wheeler,(903) 676-9084,Jm Machine Builders,Metal Fabrication,32.38627243,-95.56118774,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-K5 001,"5119 State Highway 64, Ben Wheeler, TX 75754",Ben Wheeler,75754,K5 Welding & Fabrication,Welding,32.39561462,-95.56362152,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LAN001,"750 Vz County Rd 4905, Ben Wheeler, TX 75754",Ben Wheeler,75754,Landaverde's Welding,Welding,32.43342209,-95.59563446,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RED104,"285 Private Rd 8612, Ben Wheeler, TX 75754",Ben Wheeler,75754,Red Kingdom Plumbing,Plumbing,32.4280098,-95.6096205,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-LAN103,"750 Van Zandt, Co Rd 4905, Ben Wheeler, TX 75754",Ben Wheeler,75754,Landaverdes Welding,Welding,32.433429,-95.5956638,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-HAN107,"611 Vz County Rd 4907, Ben Wheeler, TX 75754",Ben Wheeler,75754,Hannas Custom Welding,Welding,32.4754664,-95.6993078,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-SOM101,"408 Lyles St, Big Sandy, TX 75755",Big Sandy,75755,Sommers Welding,Welding,32.5800755,-95.1160314,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-WIL001,13501 County Rd 3300,Brownsboro,75756,Wilson Steel Services,Metal Fabrication,32.33448029,-95.58804321,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIL103,13501 County Rd 3300,Brownsboro,75756,Wilson Steel,Metal Fabrication,32.33448029,-95.58804321,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-HWY101,17898 State Hwy 31 E,Brownsboro,75756,Hwy 31 Utilities Excavation,Metal Fabrication,32.2976024,-95.6454011,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-TNT001,20057 Tx-31 E,Brownsboro,75756,Tnt Custom Welding,Welding,32.29816437,-95.51953125,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DUN001,1518 W Commerce St,Buffalo,75831,Dunn Welding & Custom Fab,Welding,31.45406914,-96.07321167,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AME102,"Bullard, TX 75757",Bullard,75757,American Plastiplate,Metal Fabrication,32.1398804,-95.320229,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-LON002,48022 Us-69 N,Bullard,75757,Lonestar Sheds,Construction,32.0773201,-95.28338623,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-VUP101,482 S Doctor M Roper Pkwy,Bullard,75757,Vu Plastics,Other,32.1311919,-95.3079095,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-NEW102,23402 County Rd 121,Bullard,75757,Newburn Appliance,Appliance,32.1354331,-95.2801579,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JOH107,"11945 Cr 182, Bullard, Texas 75757",Bullard,75757,Johnston Gutter,Gutter,32.3635362,-95.4129799,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-JNO101,16321 FM 344 Suite 7,Bullard,75757,Jnovco,Construction,32.1620873,-95.4269717,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BAL101,46376 US Highway 69 N,Bullard,75757,Ballew Plumbing,Plumbing,32.1484983,-95.3139814,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SMO002,1715 Vz County Rd 2511,Canton,75103,Smokeslinger Pits,Metal Fabrication,32.52199554,-95.92697906,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX004,17460 Farm-to-market 17,Canton,75103,Texas Specialty Steel East,Metal Fabrication,32.56876755,-95.83649445,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CAP001,20907 Frontage Rd,Canton,75103,Capitol Steel,Metal Fabrication,32.59760284,-95.91044617,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TAY002,29395 W Dallas St,Canton,75103,Taylor Made Custom Fabrication,Metal Fabrication,32.5914917,-95.91194916,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CAN001,501 E Dallas St,Canton,75103,Canton Pickin Treasures,Metal Fabrication,32.55574799,-95.86104584,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-360001,611 S Trade Days Blvd,Canton,75103,360 Metal Buildings,Metal Fabrication,32.55213547,-95.8625412,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-T T001,100 Groves St,Canton,75103,T & T Iron Works,Welding,32.55774689,-95.86325073,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-REI001,1570 S Trade Days Blvd,Canton,75103,Reid's Welding,Welding,32.5394516,-95.86218262,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SHE106,20907 I 20,Canton,75103,Shedwright,Metal Fabrication,32.59802246,-95.91225433,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-BLA101,12190 I 20,Canton,75103,Black River Outdoors,Metal Fabrication,32.55171967,-95.77919006,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-BIG102,21333 State Highway 64,Canton,75103,Big Tex Buildings,Metal Fabrication,32.51623917,-95.80324554,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-SMI001,17919 I 20,Canton,75103,Smi Buildings,Construction,32.58229446,-95.86665344,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DUR001,311 Vz County Rd 2135,Canton,75103,Durbin Blacksmith,Welding,32.57991409,-95.92012787,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R B001,690 Vz Cr 2510,Canton,75103,R B Fabrication,Welding,32.46817398,-95.84832001,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX134,Interstate 20 N Access Rd,Canton,75103,Texwin Canton,Construction,32.5995636,-95.91153717,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RIL101,720 Vz County Rd 1311,Canton,75103,Riley Dirt Service,Construction,32.5384241,-95.7000912,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ALL004,407 N Adams St,Carthage,75633,Allred Sheet Metal,Metal Fabrication,32.15891266,-94.35189056,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SAM002,942 County Rd 104,Carthage,75633,Sam’s Fab & Machine,Metal Fabrication,32.15403748,-94.39753723,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RAN001,1676 Tx-149,Carthage,75633,Randy’s Portable Buildings of Carthage,Construction,32.19023895,-94.37825775,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SPA001,1084 Tx-7,Center,75935,"Spartan Structures, LLC",Construction,31.81878471,-94.15624237,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CAM001,707 Southview Cir,Center,75935,Campbell Portable Buildings,Construction,31.78851891,-94.18412781,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SMI002,17794 FM 3079,Chandler,75758,Smith-fab Custom Steel Buildings,Metal Fabrication,32.25876236,-95.56250763,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DRA001,2515 Fm-315,Chandler,75758,Dragonslayer Industries,Metal Fabrication,32.21475601,-95.50760651,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SMI106,17794 Fm3079,Chandler,75758,Smithfab Custom Steel Buildings,Metal Fabrication,32.258658,-95.5624666,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-DAN001,691 Sawmill Rd,Chandler,75758,Daniell Welding & Fabrication,Welding,32.30641174,-95.46841431,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-W W001,9388 County Rd 3407,Chandler,75758,W W Custom Welding,Welding,32.2724762,-95.5358963,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RIP101,W 2nd St,Chandler,75758,Riprock Appliance Repair,Plumbing,32.2319094,-95.0502733,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-PAL101,206 Broad St,Chandler,75758,Palady Air,Plumbing,32.3069019,-95.4798737,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-FPO101,241 Tx-31,Chandler,75758,Fpo Plumbing and Heating,HVAC,32.3085049,-95.477632,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DAN102,691 Sawmill Rd,Chandler,75758,Daniell Welding Fabrication,Welding,32.3049411,-95.4718563,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-ALL104,202 N Broad St,Chandler,75758,Allens Appliance Satellite Sales Service,Appliance,32.3067695,-95.4797843,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-AIR103,104 Jones St,Chandler,75758,Air Chandler Heating Cooling,HVAC,32.3065665,-95.4785594,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-PAU001,110 E Pease Ave,Crockett,75835,Paul Machine Welding,Welding,31.32281303,-95.46559906,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-KBL001,701 W Goliad Ave,Crockett,75835,Kbl Services,Welding,31.31486511,-95.46764374,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BUR001,765 County Rd 845,Cushing,75760,Burgess Forge,Welding,31.6788044,-94.85823059,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-D J001,973 US Highway 259,Daingerfield,75638,D&j Dynamic Solutions LLC,Metal Fabrication,32.99990082,-94.71887207,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-150001,6315 FM 1504,Edgewood,75117,1504 Metal Shop,Welding,32.69071579,-95.89989471,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-INF001,7977 Tx-19,Edgewood,75117,Infinity Carports,Construction,32.6720047,-95.8379364,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-C4 002,3202 An County Rd 179,Elkhart,75839,C4 Steel Solutions,Metal Fabrication,31.57663727,-95.49830627,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CAB001,125 FM 2324,Emory,75440,Cabrera Building Supply,Retail,32.83862305,-95.78632355,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET005,1540 FM 515,Emory,75440,Metal Workshop,Metal Fabrication,32.86571884,-95.72354126,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JV 001,430 Rs County Rd 2400,Emory,75440,Jv Metal Buildings LLC,Metal Fabrication,32.79162598,-95.78542328,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-KUL001,4987 FM 275,Emory,75440,Kulp Steel LLC,Metal Fabrication,32.95559311,-95.77000427,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JVM101,430 Rs County Rd 2400,Emory,75440,,Metal Fabrication,32.79162598,Jv Metal Buildings,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-C H001,3593 Tx-19 S,Emory,75440,"C&h Carports, Inc.",Construction,32.82215881,-95.78484344,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CAR001,3740 FM 2324,Emory,75440,"Carolina Carports, Inc.",Business to business,32.83852386,-95.84529877,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIN004,849 E Lennon Dr,Emory,75440,Winslow's Carports & Storage,Construction,32.86860657,-95.75598145,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-COR001,12675 County Rd 2922,Eustace,75124,Cornerstone Outdoor Structures,Construction,32.33425522,-96.04522705,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JEF001,234 County Rd 1171,Fairfield,75840,Jefe's Welding Co LLC,Welding,31.75108528,-96.20821381,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TAY001,10801 County Rd 1268,Flint,75762,Taylor Buildings LLC,Metal Fabrication,32.23028564,-95.34732819,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LOT001,11272 County Rd 137,Flint,75762,Lott Sheet Metal,Metal Fabrication,32.20538712,-95.3456955,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET004,17536 State Highway 155 S,Flint,75762,Metal Buildings Etx,Metal Fabrication,32.22634506,-95.41217041,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JOH001,1074 Evergreen Rd,Gilmer,75645,John Johnson Welding Services,Welding,32.66186142,-94.95658112,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS005,1203 State Highway 155 S,Gilmer,75645,East Texas Duct Manufacturing,Metal Fabrication,32.74569321,-94.93451691,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TOT001,1205 Industrial Blvd,Gilmer,75644,Total Quality Machining,Metal Fabrication,32.7178688,-94.94408417,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JBR001,6880 Highland Rd,Gilmer,75645,Jbr Customs,Metal Fabrication,32.62475586,-94.82624054,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MAY001,7525 US Highway 271 S,Gilmer,75645,Mayhan Fabricators Inc.,Metal Fabrication,32.62519073,-94.92169189,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AW 001,424 Floy Lee Rd,Gilmer,75645,Aw Welding and Fabrication,Welding,32.58477402,-94.83368683,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SUP001,510 US Highway 271 S,Gilmer,75644,Superior Buildings and Carports,Construction,32.72292709,-94.94278717,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LEL001,585 State Highway 155 S,Gilmer,75644,Leland's Sheds of Gilmer - Rustic Ridge Outdoor Solutions,Construction,32.73646164,-94.9382782,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BRA001,6013 FM 1404,Gilmer,75645,Brantley Welding & Fabrication,Welding,32.60934448,-95.00084686,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRA001,968 US Highway 271 S,Gilmer,75644,Tractor Supply Co.,Retail,32.71737289,-94.94372559,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FEM001,520 E Broadway Ave,Gladewater,75647,Femco,Metal Fabrication,32.53466415,-94.93824768,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-KEV001,466 Us-80 E,Gladewater,75647,Kevin's Portable Buildings,Construction,32.52941132,-94.90201569,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TIP001,"2297 Vz Cr 1519, Grand Saline, TX 75140",Grand Saline,75140,Tip Top Metal Shop,Metal Fabrication,32.61829376,-95.65673828,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRA003,"8310 FM 17, Grand Saline, TX 75140",Grand Saline,75140,Grand Fabrication Co.,Metal Fabrication,32.66041946,-95.72898865,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HUF001,13967 Us-287 S,Grapeland,75844,Huff Welding,Welding,31.53301048,-95.48510742,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-VUL001,175 County Rd 2345,Grapeland,75844,Vulcraft Grapeland,Metal Fabrication,31.50601387,-95.48121643,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRI001,"1865 E Main St, Gun Barrel City, TX 75156",Gun Barrel City,75156,Trico Pipe & Steel,Metal Fabrication,32.32971954,-96.06859589,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WAR001,350 Joy Ln,Hallsville,75650,Warfab LLC,Metal Fabrication,32.4754982,-94.58391571,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JAI001,10963 N County Rd 2138,Henderson,75652,Jaime's Welding and Fab,Welding,32.28617859,-94.65725708,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BUL001,1603 Hamlett St,Henderson,75652,Bulldog Bilt LLC,Metal Fabrication,32.18004227,-94.80831909,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FOR001,5597 N County Rd 103,Henderson,75652,Fortis Specialty Services Llc - Henderson Metal Fabrication and Welding,Metal Fabrication,32.23240662,-94.86297607,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HYD001,801 State Highway 64 W,Henderson,75652,Hydroflex LLC,Metal Fabrication,32.16719437,-94.79920197,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CLD001,3169 Us-259 N,Henderson,75654,Cld Carports & Buildings,Construction,32.11316299,-94.77341461,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-B C001,7856 S County Rd 475,Henderson,75654,B & C Welding Services,Welding,31.96816635,-94.9896698,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R T001,808 State Highway 64,Henderson,75652,R T Smith Welding & Press Co.,Welding,32.16835022,-94.80004883,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EDD001,909 Millard St,Henderson,75652,Eddie Flores Welding,Welding,32.17905045,-94.80975342,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FRE001,1801 Norman Dr,Jacksonville,75766,Freedom-fab,Welding,31.94049263,-95.26531982,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX006,200 N Gillespie Ave,Jacksonville,75766,Tex-weld & Fabrication Inc.,Welding,31.96200371,-95.28594971,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS004,105 N Gillespie Ave,Jacksonville,75766,Easy Recycling Services,Metal Fabrication,31.96041298,-95.28687286,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BLU001,1829 Norman Dr,Jacksonville,75766,Blue Goose Customs & Fabrication LLC,Metal Fabrication,31.93882942,-95.2652359,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BER001,262 County Rd 3302,Jacksonville,75766,"Berry's Tin Shop, Inc.",Metal Fabrication,31.95946312,-95.29707336,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LON004,6850 Fm-347,Jacksonville,75766,Lone Star Builders Supply,Metal Fabrication,31.9002037,-95.24979401,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-D R001,308 N Gillespie Ave,Jacksonville,75766,D&r Welding,Welding,31.96395493,-95.28709412,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SRR001,3788 Tx-7,Jewett,75846,Srr Independent Industries,Metal Fabrication,31.24526024,-96.03781128,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PRO002,2971 US Highway 175,Kaufman,75142,Pro Line Panel Systems,Metal Fabrication,32.5555687,-96.28579712,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BIG002,4975 E US Highway 175,Kaufman,75142,Big Sky Metals,Metal Fabrication,32.52765656,-96.27239227,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIN006,5175 Us-175 W,Kaufman,75142,Winslow's Kaufman,Construction,32.52428436,-96.27198029,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AAA001,7008 Austin Ln,Kemp,75143,Aaa Metal Fabrication,Metal Fabrication,32.47585678,-96.24417877,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PUR001,105 Ne 2nd St,Kerens,75144,Purple Anvil Metalworks LLC,Metal Fabrication,32.13299561,-96.22854614,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BAR001,1200 Tx-31,Kilgore,75662,Barnstorm Portable Buildings,Construction,32.40241623,-94.8678894,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PAN001,211 Knowles St,Kilgore,75662,Panther Fabrication,Metal Fabrication,32.3840065,-94.87705231,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DNA001,2702 Tx-42,Kilgore,75662,Dna Fabrication,Metal Fabrication,32.40428925,-94.86871338,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TSI001,322 S Longview St,Kilgore,75662,Tsi Fabrication,Metal Fabrication,32.38583374,-94.87889862,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-S S001,708 Fritz Swanson Rd,Kilgore,75662,S & S Metal Products,Metal Fabrication,32.39362717,-94.87837219,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-THE003,1209 S Main St,Lindale,75771,The Steel Building Guy,Metal Fabrication,32.50421906,-95.40787506,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX008,19267 County Rd 478,Lindale,75771,Texas Metal Building Services,Metal Fabrication,32.5474205,-95.47932434,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-THE002,12648 County Rd 499,Lindale,75771,The Phunny Farm Metal Buildings and More,Metal Fabrication,32.50195694,-95.37471008,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PHI001,18690 US Highway 69 N,Lindale,75771,Phillips Steel Buildings LLC,Metal Fabrication,32.53929901,-95.4156723,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIN001,2010 S Main St,Lindale,75771,Winslow's Custom Buildings,Construction,32.48942566,-95.39876556,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BAR002,1381 E I 20 Access Rd,Longview,75603,"Bar H Welding, LLC",Welding,32.43459702,-94.76537323,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SME001,2706 E Marshall Ave,Longview,75601,Smelley Welding and Fabrication,Welding,32.50274658,-94.68869781,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-C N001,40 Frj Dr,Longview,75602,"C. Niel Welding, Inc.",Welding,32.497715,-94.69142151,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS002,1000 1/2 W Cotton St,Longview,75604,East Texas Carports,Metal Fabrication,32.49580002,-94.76066589,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-STE001,4750 W Marshall Ave,Longview,75604,Steel & Pipe Supply Co Inc.,Metal Fabrication,32.50684738,-94.80783844,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SAC001,10730 Tx-149,Longview,75603,Sac Manufacturing Inc.,Metal Fabrication,32.38361359,-94.65112305,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DEE002,109 Benny St,Longview,75604,Deem Structural Services,Metal Fabrication,32.50583267,-94.76755524,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ALL003,111 Gum Springs Rd,Longview,75602,All Sheet Metal,Metal Fabrication,32.49087143,-94.71424866,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-M J001,1203 Champion Way,Longview,75604,"M & J Valve Services, Inc.",Metal Fabrication,32.48762512,-94.76959229,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TUE001,1301 Pine Tree Rd,Longview,75604,Tuel Sheet Metal,Metal Fabrication,32.51900864,-94.80109406,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LEB001,215 Industrial Dr,Longview,75602,Lebus International Inc.,Metal Fabrication,32.49972916,-94.68756866,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS006,29 Frj Dr,Longview,75602,East Texas Fabrication,Metal Fabrication,32.49571991,-94.69298553,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PPC001,3000 E Marshall Ave,Longview,75601,Ppc Industries,Metal Fabrication,32.50294113,-94.67918396,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-A 1001,4876 FM 1844,Longview,75605,A-1 Construction Co.,Metal Fabrication,32.5915184,-94.81986237,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FUL001,4911 W Marshall Ave,Longview,75604,Fuller Sheet Metal,Metal Fabrication,32.50917053,-94.80969238,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET001,5069 Whitehurst Dr,Longview,75602,Metal Mart #57,Metal Fabrication,32.46424103,-94.64451599,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BUI001,519 W S St,Longview,75601,Buildings4less LLC,Construction,32.4948616,-94.74916077,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRI002,5225 Whitehurst Dr,Longview,75602,Triple L Fab Works,Metal Fabrication,32.46476746,-94.64214325,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-A B001,5201 W Marshall Ave,Longview,75604,A & B Welding,Welding,32.50963974,-94.8120575,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SOU002,600 Foundry Dr,Longview,75604,Southwest Steel Casting Co.,Metal Fabrication,32.50125504,-94.81110382,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LMC001,827 Fisher Rd,Longview,75604,Lmc Fab,Metal Fabrication,32.50230026,-94.8194809,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AME002,9 Gum Valley Cir,Longview,75602,Amega Systems LLC,Metal Fabrication,32.4799118,-94.69602966,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CLA002,9486 FM 2011,Longview,75603,Cladtec,Metal Fabrication,32.36304855,-94.71324921,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PMP001,5915 Tx-281 Se Loop,Longview,75602,"Pmp Buildings, LLC",Construction,32.46423721,-94.66909027,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX009,607 Fisher Rd,Longview,75604,Texas Iron & Steel,Metal Fabrication,32.49708939,-94.81923676,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIN002,7944 US Highway 259 N,Longview,75605,Winslow's Portable Buildings,Construction,32.61722565,-94.75788879,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ATL001,9279 Us-259 S,Longview,75605,"Atlas Building Systems, Inc.",Construction,32.63777924,-94.76073456,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LOW001,187 Fredonia Ave,Lufkin,75904,Lowes Welding Inc.,Welding,31.43048096,-94.72877502,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ALL001,3103 E Denman Ave,Lufkin,75901,All Metal Carports and Covers LLC,Metal Fabrication,31.31282806,-94.68624878,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EJC001,1009 E Denman Ave,Lufkin,75901,Ejcon Corporation,Metal Fabrication,31.32663155,-94.71413422,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ALT001,1310 N John Redditt Dr,Lufkin,75904,Altra Steel Joist & Deck,Metal Fabrication,31.34648705,-94.76348114,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ASP001,2015 Spence St,Lufkin,75904,Aspen Dci,Metal Fabrication,31.36328125,-94.71907806,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GIB001,427 Parks Cir,Lufkin,75904,Gibbs Precision Machine,Metal Fabrication,31.31196785,-94.80261993,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GAR001,604 Winston 8 Ranch Rd,Lufkin,75904,Garcia Brothers Metal Buildings,Metal Fabrication,31.40302277,-94.72118378,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-STA003,711 Industrial Blvd,Lufkin,75904,Star Manufacturing,Metal Fabrication,31.33913612,-94.75885773,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-M C001,14322 County Rd 4015,Mabank,75147,M & C Construction and Welding LLC,Welding,32.47291565,-96.09938812,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FOR002,3942 FM 3080,Mabank,75147,Fortenberry Pipe & Supply LLC,Welding,32.37861633,-96.04224396,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-COO001,300 S Park Blvd,Mabank,75147,Cooper's Tin Shop,Metal Fabrication,32.36614609,-96.10800934,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CUS002,6242 Clear Creek Rd,Mabank,75156,Custom Boat Cradles,Metal Fabrication,32.23655701,-96.06233215,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAG003,802 N Third St,Mabank,75147,Eagle Metal,Metal Fabrication,32.37687302,-96.09351349,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEC001,723 E Mason St,Mabank,75147,Techniform,Construction,32.36058044,-96.08816528,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MCC001,424 E Royall Blvd,Malakoff,75148,Mccluskey's Premier Buildings of Malakoff,Construction,32.17155457,-96.00804138,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-STO001,2710 Karnack Hwy,Marshall,75672,Stor Mor - East Texas Auto Parts,Automotive,32.55338287,-94.33771515,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GAR002,2902 W Pinecrest Dr,Marshall,75670,Garrison Metal Products,Metal Fabrication,32.51939774,-94.39492798,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ETA001,1450 Bromberg St,Mineola,75773,Etas Inc.,Metal Fabrication,32.65139008,-95.48266602,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SOU001,485 Ne Loop 564,Mineola,75773,Southwest Steel Buildings,Metal Fabrication,32.68857574,-95.47248077,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RUG001,170 County Rd 2768,Mineola,75773,Rugged Cross Welding LLC,Welding,32.62519455,-95.41876221,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RED002,224 County Rd 2262,Mineola,75773,"Red Sky Landscaping & Welding - Metal Fencing, Automatic Gate Fabrication, Lawn Services",Agriculture,32.71576691,-95.53057098,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-YEL001,292 County Rd 2900,Mineola,75773,Yellow Jacket Welding & Metal Works,Welding,32.68016052,-95.55986786,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRA002,"13099 Us-259 N, Mount Enterprise, TX 75681",Mount Enterprise,75681,Graceland Portable Buildings of Mt Enterprise,Construction,31.98141289,-94.70935822,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-B L001,"1321 W Ferguson Rd, Mount Pleasant, TX 75455",Mount Pleasant,75455,B&l Welding and Fabrication,Welding,33.15664673,-94.98159027,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TIT001,"104 County Rd 4510, Mount Pleasant, TX 75455",Mount Pleasant,75455,Titan Steel Construction,Metal Fabrication,33.12519836,-94.96697998,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET006,"1440 Nicholson Ave, Mount Pleasant, TX 75455",Mount Pleasant,75455,Metal Works,Metal Fabrication,33.17128754,-94.9569931,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HOM001,"2105 Fm-2348, Mount Pleasant, TX 75455",Mount Pleasant,75455,Homer Metal Buildings,Metal Fabrication,33.10586548,-94.91462708,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-IMF001,"3047 FM 2348, Mount Pleasant, TX 75455",Mount Pleasant,75455,"Imfab, Inc.",Metal Fabrication,33.18004227,-94.9300766,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LON006,"450 County Rd 1312, Mount Pleasant, TX 75455",Mount Pleasant,75455,Lone Star Dock,Metal Fabrication,33.19939041,-95.00712585,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FLE001,"4958 Farm Rd 1402, Mount Pleasant, TX 75455",Mount Pleasant,75455,Flex Steel Industries,Metal Fabrication,33.22522736,-94.94657135,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AST001,"251 Cr 3215, Mt Pleasant, TX 75455",Mt Pleasant,75455,Aston Metal Art,Metal Fabrication,33.15684128,-94.96826172,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIN003,"35 FM 21, Mt Vernon, TX 75457",Mt Vernon,75457,Winslows Custom Buildings,Construction,33.08875656,-95.12747955,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JL 001,4879 State Highway 31 E,Murchison,75778,Jl Services,Metal Fabrication,32.25817108,-95.77777863,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX007,5672 State Highway 31 E,Murchison,75778,Texas Star Fabrication & Equipment,Metal Fabrication,32.2682724,-95.7629776,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PAT001,9350 State Highway 31 E,Murchison,75778,Patriot Manufactured Products,Metal Fabrication,32.28728485,-95.70080566,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-STA001,2803 Nw Stallings Dr,Nacogdoches,75964,Star Buildings and Carports,Construction,31.62874031,-94.68683624,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DOU001,4925 Dps Rd,Nacogdoches,75964,Double d Sales,Construction,31.65534782,-94.68001556,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DEE001,5656 State Highway 7 E,Nacogdoches,75961,Deer Buildings and Carports,Construction,31.61183929,-94.52988434,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-NEW001,5900 Old Lufkin Rd,Nacogdoches,75964,New Vision Carports & Metal Buildings,Business to business,31.55097008,-94.6870575,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-THO001,806 Nw Stallings Dr,Nacogdoches,75964,Thomas Welding,Welding,31.61048889,-94.68399811,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-OPT001,12931 Tx-7,Nacogdoches,75964,Option #1 Metal Buildings,Metal Fabrication,31.49994087,-94.80617523,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TOP001,140 Thompson Ln,Nacogdoches,75961,"Top-tier Metal Buildings, LLC",Metal Fabrication,31.56070137,-94.60147095,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-OLD002,298 Wilson Dr,Nacogdoches,75964,Old Town Metalworks and More (otm) LLC,Metal Fabrication,31.64550781,-94.70545959,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PIC001,490 County Rd 719,Nacogdoches,75964,Pichy's Buildings & Carports,Metal Fabrication,31.58646584,-94.73208618,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAG002,5002 S St,Nacogdoches,75964,"Eagle Carports, Inc. (texas Shop)",Metal Fabrication,31.55991554,-94.681633,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MAC001,563 County Rd 116,Nacogdoches,75965,Mac Custom Structures LLC,Metal Fabrication,31.74029922,-94.64704895,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MUE001,8498 Us-59,Nacogdoches,75964,"Mueller, Inc.",Metal Fabrication,31.48525429,-94.7221756,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-OAK001,491 Us-79 N,Oakwood,75855,Oakwood Steel Fabrication Inc.,Welding,31.59929466,-95.83798981,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RAN002,11163 Us-259 S,Overton,75684,Randy Smith's Carports & More,Construction,32.304142,-94.86564636,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BAR003,103 Woodridge Rd,Palestine,75801,Barnett Performance Welding Services,Welding,31.7171402,-95.69889832,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-H A001,2006 Us-84 E,Palestine,75801,H&a Welding Fabrications LLC,Welding,31.75107193,-95.59772491,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CUS001,4301 Tx-256 Loop,Palestine,75803,Customer Service Portable Buildings,Construction,31.78264046,-95.63041687,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TUR002,710 Tx-256 Loop,Palestine,75803,Turbyfill's Machine Shop Inc.,Welding,31.75216293,-95.65945435,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CHI001,3395 Tx-24,Paris,75462,Chisum Metal Buildings,Metal Fabrication,33.58875656,-95.58518219,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-C4 001,3820 N Main St,Paris,75460,C4 Portable Buildings,Construction,33.70995712,-95.5508728,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DIS001,13451 Tx-11,Pickton,75471,Discount Pipe and Steel,Metal Fabrication,33.03286362,-95.42238617,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-X5 001,14733 Tx-11,Pickton,75471,X5 Industrial,Metal Fabrication,33.02750778,-95.40263367,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BRY001,206 N Greer Blvd,Pittsburg,75686,Bryanmark Construction,Construction,33.00226593,-94.96013641,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MS 001,121 County Rd 2210,Pittsburg,75686,Ms Custom Welding LLC,Metal Fabrication,33.00782776,-94.9868927,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PIT001,3489 Fm557,Pittsburg,75686,Pittsburg Steel,Metal Fabrication,32.98446655,-94.90713501,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AFF001,9106 Us-69 N,Pollok,75969,Affordable Metal Carports LLC,Metal Fabrication,31.43754387,-94.83478546,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AAC001,156 Conti Dr,Quinlan,75474,Aacre Valley Metal Sales,Metal Fabrication,32.90395355,-96.06177521,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRE001,137 E Lipscomb St,Quitman,75783,Greenlaw's,Metal Fabrication,32.79670334,-95.45096588,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ARC002,620 Mcallister St,Quitman,75783,Arc Force Manufacturing,Metal Fabrication,32.78903961,-95.4557724,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SPE001,209 E Goode St,Quitman,75783,Spencer's Fence & Welding,Welding,32.79590988,-95.4502182,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SUN001,18962 Us-84 E,Rusk,75785,Sunday Metal Buildings,Metal Fabrication,31.81430817,-95.09998322,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS003,1548 N Dickinson Dr,Rusk,75785,East Texas Metal Works LLC,Metal Fabrication,31.8178997,-95.1635437,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MIC001,390 County Rd 4367,Scroggins,75480,Michael Mechanical & Welding,Welding,32.96016693,-95.19456482,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET008,"424 W Cedar Creek Pkwy, Seven Points, TX 75143",Seven Points,75143,Metal Worx Llc. Welding and Fabrication,Business to business,32.32048798,-96.2216568,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RON001,"1260 Tx-19, Sulphur Springs, TX 75482",Sulphur Springs,75482,Ronny's Welding Service,Welding,33.10765839,-95.64207458,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX005,"1351 Tx-19, Sulphur Springs, TX 75482",Sulphur Springs,75482,Texwin Sulphur Springs,Construction,33.11168671,-95.63898468,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PMR001,"253 I 30 Service Rd Ne, Sulphur Springs, TX 75482",Sulphur Springs,75482,Pmr Welding and Fabrication,Welding,33.12017059,-95.64594269,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-3B 001,"2584 Tx-19, Sulphur Springs, TX 75482",Sulphur Springs,75482,3b Welding,Welding,33.09179688,-95.65279388,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-XTR002,"300 C M H Rd, Sulphur Springs, TX 75482",Sulphur Springs,75482,Xtreme Structures & Fabrication,Metal Fabrication,33.12431717,-95.65706635,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SUL001,"159 Putman St, Sulphur Springs, TX 75482",Sulphur Springs,75482,Sulta Manufacturing Co.,Metal Fabrication,33.13582611,-95.59864807,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-THE004,"427 I 30 Service Rd Ne, Sulphur Springs, TX 75482",Sulphur Springs,75482,Thee Fab Shop,Metal Fabrication,33.12022018,-95.64901733,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TOM001,"8295 Fm1567, Sulphur Springs, TX 75482",Sulphur Springs,75482,Tommy Williams Pipe & Steel,Metal Fabrication,33.02143478,-95.69341278,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LON007,3200 Airport Rd,Terrell,75160,"Longhorn Fabrication & Design, Inc.",Metal Fabrication,32.69971848,-96.2478714,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FAC001,426 N 1st St,Timpson,75975,Factory Direct,Retail,31.90377235,-94.40299988,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-COL001,7441 FM 1645,Timpson,75975,Colt's Welding Rig,Welding,31.81375122,-94.33065796,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET003,705 W Bradford St,Troup,75789,Metal Building Supplies of America,Metal Fabrication,32.14603806,-95.12770844,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SEC001,10504 County Rd 490,Tyler,75706,"Second Generation Arc N Spark Welding, LLC",Welding,32.41078568,-95.33937836,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GOT001,10598 US Highway 69 N,Tyler,75706,Gotcha Covered Metal and Portable Buildings,Metal Fabrication,32.41891861,-95.35562134,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX002,11865 County Rd 46,Tyler,75704,Texas Steel Carports,Metal Fabrication,32.37438202,-95.36283112,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRA001,14266 County Rd 384,Tyler,75708,Graceland Portable Buildings Tyler Texas,Construction,32.41046906,-95.1699295,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PRO001,16678 State Highway 155 S,Tyler,75703,Prolific Welding,Welding,32.2393837,-95.40462494,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ULR001,2120 Tx-323 W Loop,Tyler,75701,Ulrich Lifestyle Structures - Retail Design Center,Construction,32.30305481,-95.32800293,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HEA001,219 S Glenwood Blvd,Tyler,75702,Heavy Metal Welding & Custom Fabrication,Welding,32.34859467,-95.31789398,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MEL001,2505 W NW Loop 323,Tyler,75702,Melvin Lewis Welding,Welding,32.38261032,-95.32855988,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TUF001,3501 Tx-323 S Loop,Tyler,75701,Tuff Shed Tyler,Construction,32.30941772,-95.34059143,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-THE001,3901 Old Jacksonville Hwy,Tyler,75701,The Home Depot,Retail,32.30759048,-95.32336426,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-YOR001,4368 US Highway 271,Tyler,75708,York Welding and Fab,Welding,32.38507843,-95.27602386,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRA002,536 S Glenwood Blvd,Tyler,75702,Trac Ornamental Iron Inc.,Welding,32.34395599,-95.31212616,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ETX002,10778 US Highway 69 N,Tyler,75706,Etx Steel - Tyler,Metal Fabrication,32.42141342,-95.35738373,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-REG001,10893 Us-271 S,Tyler,75708,Regal Machine,Metal Fabrication,32.41723251,-95.2270813,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MCM001,11719 Laney Rd,Tyler,75708,Mcm Metal Buildings,Metal Fabrication,32.43349457,-95.18991089,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TYL003,11721 US Highway 69 N,Tyler,75706,Tyler Tool & Fastener Inc.,Metal Fabrication,32.43014526,-95.36051941,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CNC001,11790 FM 3270,Tyler,75708,Cnc Fabrication,Metal Fabrication,32.43505096,-95.19416046,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-STA002,11967 State Highway 64,Tyler,75704,Stainless Steel Fabricators,Metal Fabrication,32.35758209,-95.36488342,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MET007,13437 Tx-110 S,Tyler,75707,Metalsmiths,Metal Fabrication,32.28450012,-95.24936676,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LON005,1913 Brandon Dr,Tyler,75703,Lone Star Sheet Metal Works,Metal Fabrication,32.26622391,-95.27862549,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WEL001,3220 Fm-2767,Tyler,75708,Weld Worx LLC,Metal Fabrication,32.35205078,-95.26455688,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-T G001,3227 US Highway 271,Tyler,75708,T&g Welding,Metal Fabrication,32.37818146,-95.28378296,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HOL001,4301 Old Troup Hwy,Tyler,75707,Holliday Sheet Metal Co.,Metal Fabrication,32.30410385,-95.26636505,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-USA001,5636 Shirley Dr,Tyler,75708,USA Fabrication of E Texas,Metal Fabrication,32.38594818,-95.26435089,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS001,676 County Rd 37,Tyler,75706,East Texas Metal Buildings LLC,Metal Fabrication,32.41440582,-95.2952652,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CON002,729 N Fleishel Ave,Tyler,75702,Contract Manufacturers Ltd.,Metal Fabrication,32.3577652,-95.28801727,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WRI101,Address Not Available Online,Tyler,75701,Wright's Gutter Company,Metal Fabrication,32.25876236,-95.56250763,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIL102,2700 Meadowlark Ln,Tyler,75701,Wilder's Seamless Gutters LLC,Metal Fabrication,32.3840065,-94.87705231,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-VME101,3300 S Broadway Ave # 205,Tyler,75701,Vme,Metal Fabrication,32.3128009,-95.3000581,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-VEN001,503 County Rd 3805,Tyler,75169,Venture Metals - Versatile Processing Group,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-VAN001,17580 FM 47,Tyler,,Van Zandt Steel,Metal Fabrication,32.69210434,-96.02734375,Not Contacted,,,30,2026/04/02,Cold,0.1,90,Medium,75,165
+CID-URG101,Private Address,Tyler,75701,Urgent Welding & Fab,Metal Fabrication,31.92214394,-95.01251984,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-UPR103,10263 US Hwy 69 N,Tyler,75706,Up Risen Steel Building,Metal Fabrication,32.4141287,-95.353138,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-YOU101,1818 Capital Dr,Tyler,75701,Your Home by Harrys,Other,32.2964769,-95.3263353,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-YOS101,13739 State Hwy 155,Tyler,75703,Yosemite Roofing Tyler TX,Roofing,32.2814316,-95.3588719,Not Contacted,,,30,2026/04/02,Cold,0,18,Low,25,70.8
+CID-YOR001,4368 US Highway 271,Tyler,75701,"York Welding and Fab4368 US Highway 271, Tyler, TX 7570832.38507843-95.27602386welders(903) 787-0755cid-h A001h&a Welding Fabrications Llc.2006 US-84 E, Palestine, TX 7580131.75107193-95.59772491welders",Welding,,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-TYL134,11721 US Hwy 69 N,Tyler,75706,Tyler Tool Fastener,Metal Fabrication,32.4301269,-95.3605168,Not Contacted,,,30,2026/04/02,Cold,0.4,27,Low,25,76.2
+CID-TYL102,1111 E Olive St,Tyler,75702,Tyler Steel Company,Metal Fabrication,32.36317062,-95.2882843,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-XPR104,216 E Front St,Tyler,75702,Xpress Auto Diesel,Automotive,32.3469249,-95.2987547,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-WIL102,2700 Meadowlark Ln,Tyler,75701,Wilders Seamless Gutters,Gutter,32.323733,-95.2655872,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-TYL101,3535 Shiloh Rd,Tyler,75707,"Tyler Building Systems, LP",Metal Fabrication,32.2947197,-95.25236511,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIL101,Private Address,Tyler,,Wild Horse Welding,Welding,32.05636597,-95.12898254,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WHO102,3401 W Shaw St,Tyler,75701,Wholesale Electric Supply,Electrical,32.3366833,-95.3378853,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-TYL121,3535 Shiloh Rd,Tyler,75707,Tyler Building Systems LP,Metal Fabrication,32.2949157,-95.2524477,Not Contacted,,,30,2026/04/02,Cold,0.4,27,Low,25,76.2
+CID-WEA102,9464 FM 2767,Tyler,75708,Weatherford,Construction,32.3611709,-95.2465645,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-WAL103,5050 Troup Hwy,Tyler,75707,Walmart Auto Care Centers,Automotive,32.2980672,-95.2600891,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-WAL102,15463 State Hwy 64,Tyler,75704,Walker Heating Cooling,HVAC,32.3642441,-95.4252922,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-WAG101,"Tyler, TX 75703",Tyler,75703,Wagner Welding,Welding,32.2556612,-95.3207069,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-VIC126,1910 Se Loop 323,Tyler,75701,Victory Appliance Service,Appliance,32.3110004,-95.2782599,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-VEL102,4202 Republic Dr,Tyler,75701,Velocity Mechanical,Construction,32.3050025,-95.3277647,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TRI135,11836 County Rd 331,Tyler,75708,Tristar Machine,Metal Fabrication,32.4359118,-95.2695157,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-VAL103,13206 FM 3271,Tyler,75704,Valdez Building Systems,Construction,32.4148556,-95.3856811,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-UPT101,227 Tournament Rd,Tyler,75702,Uptown Refrigerationappliance Rpr,Appliance,32.3487721,-95.3387855,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-UNI102,1937 Brandon Dr,Tyler,75703,Universal Air Conditioning Experts,HVAC,32.2661558,-95.2780586,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TYL132,7922 S Broadway Ave,Tyler,75703,Tyler Roofing,Roofing,32.2601666,-95.3060031,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TYL131,414 N Bois D'arc Ave,Tyler,75702,Tyler Recycling Collection Center,Other,32.3541141,-95.303124,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TYL128,11910 County Rd 492,Tyler,75706,Tyler Pipe Coupling,Plumbing,32.43596268,-95.36261749,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TYL127,910 W Erwin St,Tyler,75702,Tyler Mobile Mechanic,Automotive,32.3501584,-95.3109051,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TYL123,829 Barclay Dr,Tyler,75703,Tyler Deck and Fence,Fence,32.2997918,-95.311385,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TYL122,1505 E Erwin St,Tyler,75702,Tyler Car Care,Automotive,32.3509349,-95.2825832,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TGW102,3227 US Highway 271,Tyler,75708,Tg Welding,Metal Fabrication,32.3782868,-95.2837922,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-TYL120,11959 County Rd 219,Tyler,75707,Tyler Auto Repair,Automotive,32.3181167,-95.2103899,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TYL119,2008 Broussard St,Tyler,75701,Tyler Auto,Automotive,32.3001324,-95.3264768,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TUT101,3338 Martha St,Tyler,75702,Tutor Fuller Plumbing,Plumbing,32.3745939,-95.341319,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TEX130,13229 County Rd 285,Tyler,75707,Texas Sheet Metal,Metal Fabrication,32.287545,-95.1810425,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-TRE106,13414 FM 206,Tyler,75709,Trendsetter Recycling,Other,32.3270221,-95.3935408,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TOR119,510 E Valentine St,Tyler,75702,Torreon Auto Electric Repair,Electrical,32.3593673,-95.2957309,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-TOO103,3621 FM 2767,Tyler,75708,Toole Tire,Automotive,32.3537199,-95.2616885,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TNT102,11682 State Highway 64 E,Tyler,75707,Tnt Muffler,Automotive,32.320161,-95.2155351,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TIS102,3013 Earl Campbell Pkwy,Tyler,75701,Tisd Career Training Center,Other,32.3289202,-95.3347607,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SUN101,3240 Birdwell Dr,Tyler,75701,Sunsource,Metal Fabrication,32.313046,-95.2824844,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-THE118,5117 Steel Rd,Tyler,75703,Thedford Construction,Construction,32.2926233,-95.328387,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-THE117,1700 Se Loop 323,Tyler,75701,The Storm Guys Auto Hail Repair Tyler TX,Automotive,32.3084959,-95.280707,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-THE115,3565 N NE Loop 323,Tyler,75708,The Reynolds Tyler,Other,32.3843546,-95.2671296,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-THE113,15388 State Highway 31 W,Tyler,75709,The on Site Mobile Auto Repair,Automotive,32.32786179,-95.42573547,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-THE112,1417 E Erwin St,Tyler,75702,The Mouse Head Lube Center Auto Repair,Plumbing,32.3508147,-95.2833408,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-THE109,2850 Tx-323 S Loop,Tyler,75701,The Catchall,Other,32.3177697,-95.3414825,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SPU101,3182 Tx-124 Loop,Tyler,75707,Spur Machine Works,Metal Fabrication,32.3360584,-95.2570276,Not Contacted,,,30,2026/04/02,Cold,0.2,90,High,85,46.2
+CID-TEX129,8089 Tx-31,Tyler,75705,Texas Rain Pros,Gutter,32.3496968,-95.2552757,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-TEX128,11959 County Rd 219 #13,Tyler,75707,Texas Plumbing Pros,Plumbing,32.3181257,-95.2104423,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TEX127,16720 State Hwy 155 Unit 304,Tyler,75703,Texas Native Metalworks,Welding,32.2383804,-95.4043464,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-SMO001,1800 Cherokee Trace,Tyler,,Smooth Fabrication,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-SIL001,1603 E US Highway 80,Tyler,,Silver Star Fabrication and Services,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-TEX122,10276 Robinson Dr,Tyler,75703,Texas Filter Service,HVAC,32.2993117,-95.336922,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-TEX121,13053 County Rd 411,Tyler,75706,Texas Electrical and Construction Solutions,Electrical,32.4566307,-95.4340418,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-TEX120,3815 Timms St # 106,Tyler,75701,Texas Electric,Electrical,32.3064312,-95.3310239,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-TEN107,3160 Tx-323 Loop,Tyler,75701,Tennison Automotive,Automotive,32.3035015,-95.3083565,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SHA001,#N/A,Tyler,75494,#N/A,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-SHA103,No Address,Tyler,77777,Shane Myers Construction & Fabrication,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-SUP117,4588 Old Troup Hwy #20,Tyler,75707,Super Plumbers,Plumbing,32.3014376,-95.2638116,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SUP116,13087 Tx-110 N,Tyler,75704,Super Duty More Auto Repair,Automotive,32.4568634,-95.46714783,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-STO126,2320 E Erwin St Ste C,Tyler,75702,Stonebridge Heating Air Conditioning,HVAC,32.3519019,-95.2717403,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-STE132,401 Troup Hwy,Tyler,75701,Stewarts Donnybrook Automotive,Electrical,32.3255605,-95.2971055,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-STE101,17320 Old Bullard Rd,Tyler,75703,Steve's Window Cleaning,Other,,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-STE131,5711 S Broadway Ave,Tyler,75703,Stereo Video Center,Other,32.2866569,-95.304565,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SAF001,20 W & Frontage Rd,Tyler,75701,"Safeguard Metal Buildings, Inc. Van Divisioni-",Metal Fabrication,32.49971771,-95.59081268,Not Contacted,,,30,2026/04/02,Cold,0.1,50,Medium,75,125
+CID-SRS101,10145 State Highway 64 E,Tyler,75707,Srs Building Products,Other,32.3319103,-95.2421669,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ROY103,906 E Locust St,Tyler,75702,Roys Metal Recycling,Metal Fabrication,32.3526787,-95.2913314,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-SPE106,1820 Shiloh Rd Ste 1403,Tyler,75703,Speedy Dumpster Solutions Tyler,Other,32.2956835,-95.2806887,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SPE105,9186 Hwy 64,Tyler,75707,Specialty Auto Body,Automotive,32.320161,-95.2155351,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SPE104,2609 Tx-323 S Loop,Tyler,75701,Spea America,Other,32.3217658,-95.3426329,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SMA103,5111 Troup Hwy,Tyler,75707,Smartphone Er Repair Troup Phones Tablets Game Consoles and Laptop Repair,Plumbing,32.2939136,-95.2612257,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SMA102,1801 Tx-323 E Loop,Tyler,75701,Smartphone Er Repair Phones Tablets Game Consoles and Laptop Repairs,Plumbing,32.308552,-95.278554,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-SMA101,3841 State Highway 64 W,Tyler,75704,Smartphone Er Repair Phones Tablets Game Consoles and Laptop Repair 64,Plumbing,32.354855,-95.3463046,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-RAM001,2622 Goodnight Blvd,Tyler,,Ramirez Steel Erector Inc.,Metal Fabrication,32.69997406,-95.97969055,Not Contacted,,,30,2026/04/02,Cold,0.1,90,Medium,75,165
+CID-SID105,120 W 5th St,Tyler,75701,Sidar Builders,Construction,32.3303656,-95.3019164,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SHE105,2020 Capital Dr,Tyler,75701,Shearer Supply Tyler,HVAC,32.2968366,-95.3284383,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SHA102,5575 Old Jacksonville Hwy,Tyler,75703,Shaw Projects Modules Tyler,Other,32.2877895,-95.3302383,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-RRM101,No Address,Tyler,77777,R&r Metal Roofing,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,90,,0,90
+CID-SER125,4827 Troup Hwy,Tyler,75703,Service Department Fairway Auto Center,Automotive,32.2979231,-95.2652471,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SCA102,9395 FM 2767,Tyler,75708,Scandrill,Construction,32.3619622,-95.2467269,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SAN102,2515 E Commerce St,Tyler,75702,Santiago Paint and Body,Automotive,32.3556204,-95.2694287,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SJA102,3055 E 5th St,Tyler,75701,S J Automotive,Automotive,32.3322643,-95.2586293,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RUD102,1502 E Erwin St,Tyler,75702,Rudd Plumbing,Plumbing,32.351506,-95.2825533,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-RUB101,13213 State Hwy 155 Ste A,Tyler,75703,Rubadub Plumbing Tyler,Plumbing,32.2891514,-95.3521922,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-PAC102,10551 Pac Rd,Tyler,75707,Pacclad Petersen,Metal Fabrication,32.2904588,-95.2357853,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-ROT105,12319 County Rd 1114,Tyler,75709,Rotorooter Plumbing Drain,Plumbing,32.3027282,-95.3453352,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ROS109,625 W Dobbs St,Tyler,75701,Rosley Homes,Construction,32.3394841,-95.307606,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ROO153,12654 Old Noonday Rd,Tyler,75703,Roofmaster Maintenance Roofing,Roofing,32.29798,-95.3388137,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ROO152,4028 Stonebridge Dr,Tyler,75707,Roofing Tyler TX,Roofing,32.3039801,-95.2355541,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ROO151,2100 W Shaw St,Tyler,75701,Roofing Contractors Tyler,Roofing,32.3367083,-95.3240476,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RON101,924 W Houston St,Tyler,75702,Ronin Gutter Co.,Gutter,,,Not Contacted,,,30,2026/04/02,Cold,0.1,60,Medium,75,135
+CID-RON106,924 W Houston St,Tyler,75702,Ronin Gutter,Gutter,32.3435239,-95.3114145,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-ROB101,12604 State Highway 155 S,Tyler,75703,Robertson Automotive,Automotive,32.2994348,-95.3433588,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RLM101,1419 Lamar St,Tyler,75701,Rlm General Contractors Tyler,Construction,32.3232514,-95.2845941,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RIL102,12245 County Rd 289,Tyler,75707,Riley Harris Construction,Construction,32.2998185,-95.1720456,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-PAC102,10551 Pac Rd,Tyler,75707,Pac-clad | Petersen,Metal Fabrication,32.4971962,-95.41795349,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RIC148,4801 Troup Hwy,Tyler,75703,Ricoh USA,Other,32.2990821,-95.2669745,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-RIC001,,Tyler,,Richmon Construction Services,Construction,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-REP120,12920 FM 2767,Tyler,75708,Republic Greenwood Farms Landfill,Other,32.3724491,-95.1883372,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-REN104,4097 Us-271,Tyler,75708,Renegade Custom Welding,Welding,32.3839892,-95.279929,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-REG102,3318 Timberlane Dr,Tyler,75701,Regal Roofing,Roofing,32.3237855,-95.2544886,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-REF102,240 S Sw Loop 323 Suite B,Tyler,75701,Referred Roofing and Construction,Roofing,32.3497285,-95.3427534,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-OPT001,12931 Tx-7,Tyler,,Option #,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-RED106,3101 State Highway 31 E,Tyler,75702,Redwood Constructionremodeling,Construction,32.3447571,-95.2602819,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RDT104,11681 US Highway 69 N,Tyler,75706,Rd Tires Welding,Automotive,32.4342206,-95.3674778,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RDR105,11258 County Rd 492,Tyler,75706,Rd Roofing Gutters Tree,Roofing,32.4348317,-95.3515162,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-RBR101,12927 Yancy Ln,Tyler,75707,Rb Roofing,Roofing,32.2899613,-95.1479277,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RAY102,1015 E Nutbush St,Tyler,75702,Rays Automotive,Automotive,32.3682747,-95.2897039,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RAM102,2306 W Shaw St,Tyler,75701,Ramos Roofing Remodeling,Roofing,32.3365088,-95.3272981,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-RAM103,10760 FM 850,Tyler,75705,Ramos Roofing and Remodling,Roofing,32.3548609,-95.2325722,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-OME104,1602 W Houston St,Tyler,75702,Omega Custom Fabrication,Metal Fabrication,32.3433114,-95.318199,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RAC105,2318 Tx-323 E Loop,Tyler,75701,Rac Rent a Center,HVAC,32.3122274,-95.2721374,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-OLD001,2407,Tyler,,Old Bull Steel Worxcounty Road,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-NEW002,2767,Tyler,,New Hope Energy Fabricationfm,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-NEW101,5881 FM 2767,Tyler,75708,New Hope Energy Fabrication,Metal Fabrication,32.3580967,-95.2561494,Not Contacted,,,30,2026/04/02,Cold,0.4,27,Low,25,76.2
+CID-QUA105,205 W Locust St,Tyler,75702,Quantum Photonics,Other,32.3530105,-95.3020182,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-QUA104,9335 Chisholm Trail,Tyler,75703,Quality Seamless Gutters,Gutter,32.2495433,-95.2913799,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-PUR102,2565 W NW Loop 323,Tyler,75702,Purvis Industries,Other,32.3821704,-95.3293381,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-PUR101,605 Chase Dr,Tyler,75701,Pure Excellence Training Academy,Other,32.3074044,-95.3073424,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-PRO114,719 W Front St #69,Tyler,75702,Proton Electric,Electrical,32.3470812,-95.3083903,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-PRO111,527 E Erwin St,Tyler,75702,Protech Air Conditioning and Heating,HVAC,32.3507014,-95.295181,Not Contacted,,,30,2026/04/02,Cold,0.4,21,Low,25,72.6
+CID-PRO110,5454 Oakridge Dr,Tyler,75706,Pro Tone Collision,Automotive,32.3790428,-95.2938957,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-PRE109,3810 Timms St,Tyler,75701,Preventative,Other,32.3062003,-95.3300386,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-PRE001,12551 County Rd 282,Tyler,,Precision Custom Cuts,Other,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-POW102,19248 Hillside Dr,Tyler,75703,Power Clean,Electrical,32.1985752,-95.2540359,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-POS101,1950 Stonegate Cir,Tyler,75703,Post Oak Roofing,Roofing,32.2884137,-95.2723624,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-POO101,1111 E Olive St,Tyler,75702,Poole Construction,Construction,32.3629384,-95.288542,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-PLU145,14630 State Hwy 155 S,Tyler,75703,Plumbings at the Home Depot,Plumbing,32.2950183,-95.3480354,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MIT001,30855 State Highway 64,Tyler,,Mitchell Steel,Metal Fabrication,32.60722351,-95.93074799,Not Contacted,,,30,2026/04/02,Cold,0.1,90,Medium,75,165
+CID-PEP101,3616 S Broadway Ave,Tyler,75701,Pep Boys Auto Service Tires,Automotive,32.3090048,-95.2997898,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-YOR001,4368 US Highway 271,Tyler,75703,Palestine,Welding,,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-MET001,57506,Tyler,75751,Metal Mart #,Metal Fabrication,32.46424103,-94.64451599,Not Contacted,,,30,2026/04/02,Cold,0.1,90,Medium,75,165
+CID-ONS129,830 Tx-323 S Loop,Tyler,75702,Onsight Auto Body,Automotive,32.3863263,-95.3194216,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ONE001,14762 Tx-110,Tyler,75704,One-ten Welding,Welding,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-ONE113,1602 W Front St,Tyler,75702,One Stop Auto Center,Automotive,32.3462484,-95.3185419,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-OMA102,2517 E Commerce St,Tyler,75702,Omar Colision Repaircenter,Plumbing,32.3557206,-95.2700355,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-OLY001,1207 E Coke Rd,Tyler,,Olympic Systems,Other,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-OLD103,218 S Spring Ave,Tyler,75702,Old Geezers Vintage Auto,Automotive,32.3488278,-95.2982359,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-MCE102,8189 FM 2064 N,Tyler,75789,Mcever Machine Works,Metal Fabrication,32.3584,-95.4891,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-OFF104,4329 Old Bullard Rd,Tyler,75703,Office Depot,Other,32.3020919,-95.3060117,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-NIC106,FM 14,Tyler,75708,Nicks Trailer Hitch Shop,Other,32.4122894,-95.2787594,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-NAT101,13240 Tx-110,Tyler,75707,National Wholesale,Other,32.2865486,-95.252715,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MRA101,3412 Tx-323 S Loop,Tyler,75701,Mr Appliance of East Texas,Appliance,32.3093757,-95.3382234,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,40.8
+CID-MOR104,102 N College Ave,Tyler,75702,Morris Roofing and Construction,Roofing,32.3509217,-95.3018785,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-MOR103,2006 W Erwin St,Tyler,75702,Morales Paint Body Shop,Automotive,32.3498489,-95.3231987,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MOO106,4220 Timms St,Tyler,75701,Moose Auto Glass,Automotive,32.3049894,-95.3300961,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-MOO104,3226 Shiloh Rd,Tyler,75707,Moore Supply,Other,32.2959549,-95.2579096,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MOO103,1205 S Bennett Ave,Tyler,75701,Moody Phillips Electric,Electrical,32.3355771,-95.3372809,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-MON101,13917 Hwy 155 S,Tyler,75703,Montrose Concrete,Construction,32.2736243,-95.3715259,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-MOB102,2121 Old Henderson Hwy,Tyler,75702,Mobile Communications America,Other,32.3474582,-95.275549,Not Contacted,,,30,2026/04/02,Cold,0,15,Low,25,69
+CID-MKS101,No Address,Tyler,77777,Mkstunts,Other,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-MIT104,3539 Us-271,Tyler,75708,Mitchell Welding Supply,Welding,32.3800687,-95.2807402,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-MAS103,6256 Reynolds Rd,Tyler,75708,Master Metallizing Machining,Metal Fabrication,32.3860459,-95.277801,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-MIL103,6715 Rhones Quarter Rd,Tyler,75707,Millers Automotive Repair,Automotive,32.2753267,-95.2611294,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-MIK101,3014 Tx-323 Loop,Tyler,75701,Mikasa Construction,Construction,32.3035015,-95.3083565,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-MID101,4707 Chad Dr,Tyler,75703,Midsouth Distributing,Other,32.2979232,-95.2860931,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MAB101,1430 John Carney Dr,Tyler,75701,Mabbco Motors,Metal Fabrication,32.3325722,-95.3277334,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-MER001,155,Tyler,,Merchant Portable Buildings Llcstate Highway,Construction,32.16014862,-95.4553833,Not Contacted,,,30,2026/04/02,Cold,0.1,70,Medium,75,145
+CID-MER102,No Address,Tyler,77777,Merchant Portable Buildings LLC,Other,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-MCC101,1000 Tx-323 S Loop,Tyler,75701,Mccoys Building Supply,Other,32.30328,-95.2896464,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MCC103,11152 County Rd 1113,Tyler,75709,Mc Cown Engineering,Other,32.2926054,-95.3513125,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-MBW001,4205,Tyler,,Mbweldingcounty Road,Welding,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-MBW101,No Address,Tyler,77777,Mbwelding,Welding,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-MBG101,2611 US Highway 271,Tyler,75708,Mb G Fabrication,Manufacturing,32.3776412,-95.2858924,Not Contacted,,,30,2026/04/02,Cold,0,75,High,85,43.8
+CID-MAX101,436 Southgate Ave,Tyler,75702,Max Handyman,Roofing,32.3451648,-95.3325454,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-MAU101,7434 Waterview Sq,Tyler,75703,Mauch Plumbing,Plumbing,32.2704259,-95.3472445,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-IRM101,No Address,Tyler,77777,Ir Metal Buildings,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,90,,0,90
+CID-MAD101,125 S Bonner Ave,Tyler,75702,Maddox Residential Commercial,Electrical,32.3499554,-95.3059643,Not Contacted,,,30,2026/04/02,Cold,0.4,15,Low,25,72
+CID-INT107,6725 Us-271,Tyler,75708,Intol Manufacturing,Metal Fabrication,32.3980575,-95.2676479,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-LOW101,5720 S Broadway Ave,Tyler,75703,Lowes Home Improvement,Retail,32.2858051,-95.3014293,Not Contacted,,,30,2026/04/02,Cold,0,45,High,85,38.4
+CID-LOV101,3128 Tx-124 Loop,Tyler,75707,Love Electric,Electrical,32.3359057,-95.2570329,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-HOO101,2410 N Lyndon Ave,Tyler,75702,Hood Packaging,Metal Fabrication,32.3767923,-95.2775486,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-LON112,No Address,Tyler,77777,Lonestar Sheds of Marshall,Other,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-LON103,6003 Old Bullard Rd # 224,Tyler,75703,Lone Star Electricians,Electrical,32.2834955,-95.3081144,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-LIK101,2459 Mosaic Way Suite A,Tyler,75701,Likewise Coffee,Retail,32.3288971,-95.32992,Not Contacted,,,30,2026/04/02,Cold,0,45,High,85,38.4
+CID-LIF102,2107 Broussard St,Tyler,75701,Lifegas,Other,32.3007815,-95.3276022,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-LEX101,2105 Anthony Dr,Tyler,75701,Lex Etx,HVAC,32.3020427,-95.327706,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-LEN104,1818 Capital Dr,Tyler,75701,Lennox Stores Parts Plus,HVAC,32.2964769,-95.3263353,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-LEE101,11851 Tx-248 Spur,Tyler,75707,Lees Plumbing,Plumbing,32.3162595,-95.2131611,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-LAN106,16720 State Hwy 155 Suite. 1008,Tyler,75703,L and N Excavating,Construction,32.2383804,-95.4043464,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HAR001,1007 E Coke Rd,Tyler,,Harbor Fab,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-KBR101,323 E Mims St,Tyler,75702,Kbr,Construction,32.3718503,-95.2973278,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-KAS101,409 N Glenwood Blvd,Tyler,75702,Kasco Paint and Body,Automotive,32.3536891,-95.3188448,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-KAR101,1630 N NW Loop 323,Tyler,75704,Kars Auto Sales and Service,Automotive,32.36923981,-95.34393311,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-KLR101,4134 Chandler Hwy,Tyler,75702,K L Recycling,Construction,32.3435648,-95.3461935,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JUN110,1802 E Gentry Pkwy,Tyler,90359,Junk Squad Junk Removal Dumpster Rental,Junk Removal,32.36881,-95.2893,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JRC102,2523 E Commerce St,Tyler,75702,Jr Custom Paint Collision Repair,Automotive,32.3555056,-95.2692335,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JON102,3235 Sw Loop 323,Tyler,75701,Jones Paint Body Shop,Automotive,32.3104354,-95.3427191,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-JON101,1614 W Erwin St,Tyler,75702,Jones Auto,Automotive,32.3502727,-95.3186773,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JOH105,3230 G E Dr,Tyler,75701,John Spiller Heating Air Conditioning,HVAC,32.3119853,-95.2678866,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JOH102,114 N Gaston Ave,Tyler,75702,John Deer,Other,32.3511236,-95.3171836,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-JMC101,3127 Andy Ln,Tyler,75701,Jm Classic Roofing,Roofing,32.3139408,-95.2641686,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JLS101,11002 Fm2661,Tyler,75704,Jls Enterprises Electrical,Electrical,32.3235083,-95.4401416,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-JAC104,700 Tx-323 S Loop,Tyler,75702,Jacobe Brothers Construction,Construction,32.3594052,-95.3437877,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JAC103,1700 Tx-323 S Loop,Tyler,75701,Jacobe Brothers,Construction,32.3308695,-95.26511,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-JAC101,3813 Sw Loop 323,Tyler,75701,Jacks Stereo,Other,32.3081822,-95.339781,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-JRW102,16164 Knob Hill Dr,Tyler,75703,J R Welding,Welding,32.3003429,-95.4383525,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-INS103,300 Stanford St,Tyler,75701,Insco Distributing,Other,32.3156729,-95.2983833,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-IND104,1800 Shiloh Rd,Tyler,75703,Indemnity Roofing,Roofing,32.2955329,-95.2806931,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HON101,2425 Sw Loop 323,Tyler,75701,Honest1 Auto Care,Automotive,32.3049062,-95.3320402,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FIS101,2104 Anthony Dr,Tyler,75701,Fissco Supply HVAC Tyler,Metal Fabrication,32.3013572,-95.3273445,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-HOB101,4566 S Broadway Ave,Tyler,75703,Hobbytown,Other,32.2999833,-95.2998572,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-HIS102,12480 Pioneer Dr,Tyler,75704,Histech Automotive,Automotive,32.34132385,-95.37462616,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HIL103,115 S Fleishel Ave,Tyler,75702,Hillside Auto Service,Automotive,32.3506643,-95.2892684,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HIL102,10226 Tx-31,Tyler,75705,Hillard Homes,Construction,32.3497177,-95.2407471,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HER103,303 S Glenwood Blvd,Tyler,75702,Hernandez Roofing,Roofing,32.3480373,-95.3175484,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HEA123,219 S Glenwood Blvd,Tyler,(903) 944-7986,Heavy Metal Welding Custom Fabrication,Welding,32.34859467,-95.31789398,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HEA123,219 S Glenwood Blvd,Tyler,75702,Heavy Metal Welding & Custom Fab.,Welding,32.35461426,-95.08130646,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FAB113,9464 FM 2767,Tyler,75705,Fabrication,Metal Fabrication,32.3611709,-95.2465645,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-HEA107,3130 Troup Hwy,Tyler,75701,Heating and Air Conditioning,HVAC,32.3154265,-95.275712,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-HAR101,5755 Eagles Nest Blvd,Tyler,75703,Hargrove Roofing,Roofing,32.2864615,-95.2798875,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ETX104,10778 US Hwy 69 N,Tyler,75706,Etx Steel Tyler,Metal Fabrication,32.4213845,-95.35735,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-HAM102,16600 Hwy 155 S Suite 4012,Tyler,75703,Hammered Out Welding Academy,Welding,32.2403346,-95.4030283,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-HAL101,3211 Towne Way Dr,Tyler,75701,Hall Collision Center,Automotive,32.31587,-95.3394785,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-GUT001,No Address,Tyler,77777,Gutter Gutter,Gutter,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GUI101,8966 S Broadway Ave,Tyler,75703,Guitar Center,Other,32.2481178,-95.3046146,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-GRI001,303 Bluebird Pkwy,Tyler,,Griffin Products Inc.,Other,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-GRE104,12907 State Hwy 155,Tyler,75703,Greenway Gutter Pros,Gutter,32.293801,-95.3481028,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-GRE102,11654 State Highway 64 W,Tyler,75704,Greater Tyler Auto Auction,Automotive,32.35906219,-95.35965729,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-EPI001,2101 E US Highway 80,Tyler,,Epic Sheetmetal,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-EAS111,4700 Old Troup Hwy,Tyler,75707,East Texas Sheet Metal,Metal Fabrication,32.30048,-95.2640653,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-GOO104,720 Oxford Cir,Tyler,75703,Goodson Mechanical,Construction,32.2694447,-95.2973362,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-GOO102,17320 Old Bullard Rd,Tyler,75703,Good Choice Roofing and Renovations,Roofing,32.2277718,-95.3069424,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-GOO101,No Address,Tyler,77777,Good Choice Roofing,Roofing,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,60,Medium,75,135
+CID-GOL101,1908 W Erwin St,Tyler,75702,Gold Silver Vintage Treasures,Retail,32.3501122,-95.3221494,Not Contacted,,,30,2026/04/02,Cold,0,45,High,85,38.4
+CID-GAT102,2514 E 5th St,Tyler,75701,Gateway Fence,Fence,32.3326787,-95.2684695,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-GAS103,918 S Sw Loop 323,Tyler,75701,Gas and Supply Tyler,Welding,32.339072,-95.339554,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-EAS110,676 County Rd 37,Tyler,75706,East Texas Metal Buildings,Metal Fabrication,32.4144012,-95.2952687,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-GAM102,224 Mike Ave,Tyler,75702,Gamez Roofing More,Roofing,32.3483371,-95.3249425,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-GAM101,4007 S Broadway Ave,Tyler,75701,Game X Change,Other,32.3071591,-95.3022562,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-FRE101,"Tyler, TX 75704",Tyler,75704,Freedom Automotive,Automotive,32.35695648,-95.35968781,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FOU101,3314 County Rd 415,Tyler,75704,Fountain Plumbing,Plumbing,32.3880122,-95.4679494,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-FJR101,10554 State Highway 64 E,Tyler,75707,Fjr Paint Body,Automotive,32.3273064,-95.2360482,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FIX101,3708 Shiloh Rd Suite E1,Tyler,75707,Fix It,Plumbing,32.2960375,-95.2504281,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-DOW101,600 W Front St,Tyler,75702,Downtown Tire and Wheel(low Pros),Metal Fabrication,32.42141342,-95.35738373,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FIR102,1637 S Vine Ave,Tyler,75701,Firestation Service Center,Automotive,32.3309501,-95.3121943,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FIN130,3092 Tx-323 Loop,Tyler,75701,Finch Construction,Construction,32.3035015,-95.3083565,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FIF101,3315 Old Troup Hwy,Tyler,75701,Fifties Oil Change and Service Center,Automotive,32.3136984,-95.272466,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FER101,3092 Old Henderson Hwy,Tyler,75707,Fernandez Auto Service,Automotive,32.3374944,-95.2589565,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FEN104,2308 Glenview Ave,Tyler,75701,Fenix Electric Etx,Electrical,32.3248024,-95.2510746,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-FAS102,600 Tx-323 S Loop,Tyler,75702,Fastenal Fulfillment Center,Manufacturing,32.358716,-95.34373,Not Contacted,,,30,2026/04/02,Cold,0,75,High,85,43.8
+CID-FAR101,3312 Tx-323 S Loop,Tyler,75701,Farmers Roofing and Construction,Roofing,32.310586,-95.3399257,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-FAI101,5380 Old Bullard Rd,Tyler,75703,Fairclaims Roofing Construction,Roofing,32.2908037,-95.3054722,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DLR001,6071 Fm-17,Tyler,75471,Dlr-construction,Metal Fabrication,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-FJA101,1023 W Bow St,Tyler,75702,F J Auto Service,Automotive,32.3585264,-95.3121424,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-EXX101,1222 Tx-323 W Loop,Tyler,75701,Exxon,Other,32.3031444,-95.3148654,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-EXP104,13970 State Hwy 64,Tyler,75704,Expert Auto Electric,Automotive,32.3637182,-95.3982592,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-EVE101,121 S Broadway Ave Suite 618,Tyler,75702,Evergreen Roofing Solar,Roofing,32.3500725,-95.3010626,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-ESP101,1858 Young Pl,Tyler,75708,Espinozas Paint Body Shop,Automotive,32.3797089,-95.2810936,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ERI110,2026 Republic Dr A,Tyler,75701,Eri Consulting,Other,32.3048479,-95.3270662,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ELL106,3706 Frankston Hwy,Tyler,75701,Elliott Electric Supply,Electrical,32.3088873,-95.3332653,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-ELI106,3404 N NE Loop 323,Tyler,75708,Elite Collison Center,Other,32.3852603,-95.2681581,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ELI105,2221 Tx-323 W Loop,Tyler,75701,Elite Auto Glass of Tyler,Automotive,32.3041919,-95.3294347,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ELE112,4520 Red Raider Rd,Tyler,75703,Electricians,Electrical,32.3015367,-95.298656,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-ELE111,119 Mockingbird Ln,Tyler,75701,Electrical Contractors Tyler,Electrical,32.3361298,-95.3016011,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-ELD112,"12861 Candleridge Dr, Tyler, Texas 75709",Tyler,75709,Eldridge Hayter,Junk Removal,32.3635362,-95.4129799,Not Contacted,,,30,2026/04/02,Cold,0,65,High,85,42
+CID-ELS106,12441 FM 2767,Tyler,75708,El Sol Roofing,Roofing,32.3667922,-95.1987366,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-EDW101,802 Tx-323 S Loop,Tyler,75701,Edwards Paint Body,Other,32.3409145,-95.3391406,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-EDT102,1012 Meadow Ln,Tyler,75702,Ed Thompson Construction,Construction,32.3605339,-95.3173778,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-EAS113,1529 E Travis St,Tyler,75701,Easy Roofing,Roofing,32.3421418,-95.2817092,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DEL102,3456 Shiloh Rd,Tyler,75707,"De La Torre Group, Inc.",Metal Fabrication,32.38398361,-95.2804718,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DEL102,3456 Shiloh Rd,Tyler,75707,De La Torre,Metal Fabrication,32.295615,-95.2541017,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-CUT101,No Address,Tyler,77777,Cutting Edge Fabrication LLC,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-CON111,729 N Fleishel Ave,Tyler,75702,Contract Manufacturers,Metal Fabrication,32.3576834,-95.28798,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-EAS109,4097 Us-271 S,Tyler,75708,East Texas Historical Fencing,Fence,32.3839892,-95.279929,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CON103,No Address,Tyler,77777,Conceptual Fabrication,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-EAS105,11125 County Rd 168,Tyler,75703,East Texas Elite Exteriors,Construction,32.2341382,-95.3511884,Not Contacted,,,30,2026/04/02,Cold,0.4,70,Medium,65,102
+CID-EAS102,315 S Vine Ave,Tyler,75702,East Texas Alarm,Other,32.2998703,-95.2650156,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-EAR101,11171 County Rd 2298,Tyler,75707,Ea Roofing and Restoration Contractors,Roofing,32.316635,-95.1474171,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-ESM109,2324 E 5th St,Tyler,75701,E Smooth Professional Hand Car Wash and Detailing Shop Express,Other,32.3325527,-95.271709,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-DYN101,719-745 Tx-31 Suite 173,Tyler,75702,Dynamic Electricians,Electrical,32.3470336,-95.3083724,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-DUR101,823 E Line St,Tyler,75702,Durans Auto Repair,Automotive,32.3539431,-95.2916252,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DOW101,504 E Erwin St,Tyler,75702,Downtown Garage,Automotive,32.350995,-95.2959168,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DON101,6714 S Broadway Ave,Tyler,75703,Dons Tv Appliance,Appliance,32.2760325,-95.3058806,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,40.8
+CID-DOL101,10839 County Rd 1223,Tyler,75709,Dollar Concretellc,Construction,32.3247664,-95.4445632,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DIC101,Us-69,Tyler,75703,Dickson Roofing,Roofing,32.2330195,-95.3116922,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DEW101,502 S Front St,Tyler,75789,Dew Tool Die,Manufacturing,32.3452,-95.4823,Not Contacted,,,30,2026/04/02,Cold,0,75,High,85,43.8
+CID-DEN102,5263 American Legion Rd,Tyler,75708,Dent Source,Other,32.3892541,-95.2647473,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-DEL103,1117 W Erwin St,Tyler,75702,Delatrinidad Auto Body Shop,Automotive,32.3508203,-95.3131442,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BUI102,No Address,Tyler,77777,Buildall Welding,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,90,,0,90
+CID-DEA102,316 S Palace Ave,Tyler,75702,Dealers Electrical Supply,Electrical,32.3477178,-95.309842,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-BOY101,8102 County Rd 313 E,Tyler,75706,Boyd Metals,Metal Fabrication,32.4687072,-95.2469972,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-DBE101,13745 County Rd 26,Tyler,75707,Db Excavation,Construction,32.343935,-95.180379,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DAV102,11247 US Highway 69 N,Tyler,75706,Davids Auto Center,Automotive,32.42831039,-95.3638916,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DAU101,10392 Tx-31,Tyler,75705,Dauphin Plumbing,Plumbing,32.349195,-95.2353739,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-DAM101,14225 State Hwy 155,Tyler,75703,Damron AC Heating,HVAC,32.2743346,-95.3697479,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-DAL101,8856 Jennifer Dr,Tyler,75703,Daly Electronics,Other,32.1998263,-95.2550691,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CUT001,782,Tyler,75803,Cutting Edge Fabrication,Business to business,32.32653046,-94.60791016,Not Contacted,,,30,2026/04/02,Cold,0.1,50,Medium,75,125
+CID-BIL102,No Address,Tyler,77777,Bill Davis Sheetmetal,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-CUS103,12907 State Hwy 155 Suite B,Tyler,75703,Custom Metal Roofing,Roofing,32.293801,-95.3481028,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-CRE102,2600 Robertson Rd,Tyler,75701,Crest Process Systems,Other,32.3324895,-95.3296944,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CRE101,2616 Mcdonald Rd,Tyler,75701,Crest Exteriors,Roofing,32.3229776,-95.2670064,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-COY102,3900 S Cameron Ave,Tyler,75701,Coyote Roofing,Roofing,32.3053275,-95.2863254,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COY101,3047 E 5th St,Tyler,75701,Coy Dodd Air Conditioning,HVAC,32.3322395,-95.25891,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COR102,3468 W Erwin St,Tyler,75702,Core Lumber,Other,32.3519149,-95.3393364,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-COR101,2424 Oak Ln,Tyler,75701,Core Construction,Construction,32.323635,-95.3079349,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COM104,1315 E Gentry Pkwy,Tyler,75702,Complete Auto and Diesel,Automotive,32.3629842,-95.2903689,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COL106,3120 Tx-323 S Loop,Tyler,75701,Collision Center Tyler,Automotive,32.3136279,-95.3392281,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COL105,112 E Line St,Tyler,75702,Collin Bryan Construction Roofing,Roofing,32.3541824,-95.2999184,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-COB101,600 E Houston St,Tyler,75702,Coburns of Tyler,Plumbing,32.3442025,-95.2954035,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CLA101,1717 W Sw Loop 323,Tyler,75701,Classic Toyota Collision Center,Automotive,32.3057789,-95.3208778,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-CLA001,30738 State Highway 64,Tyler,,"Classic Industries, LLC",Other,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-CHU101,No Address,Tyler,77777,Chuck & Mack Welding,Welding,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-CEF101,11812 State Hwy 64,Tyler,75704,Cefco Convenience Store,Other,32.3580762,-95.3619589,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CEC109,2323 Broussard St,Tyler,75701,Ce Carrier Enterprise,HVAC,32.296898,-95.3294553,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AME105,13311 State Highway 64 E,Tyler,75707,Americo Metal Buildings,Metal Fabrication,32.310654,-95.1869834,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AME108,No Address,Tyler,77777,American Steel Carports,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,90,,0,90
+CID-CAN106,719 W Front St,Tyler,75702,Cantrell Roofing,Roofing,32.3471871,-95.3083824,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-CAN105,228 Tournament Rd,Tyler,75702,Cantleys Tv Service,Other,32.3488694,-95.3382793,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CAM101,2606 Old Gladewater Hwy,Tyler,75702,Camilos Remodeling,Construction,32.3764839,-95.2811711,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-CAL105,7581 FM 14,Tyler,75706,Calvary Plumbing,Plumbing,32.3943154,-95.2846725,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-CAL103,N Poplar Ave,Tyler,75702,Caldwel Welding Supply,Welding,32.353629,-95.2951538,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-CWG101,7748 Us-271 N,Tyler,75708,C W G Fence and Decks,Fence,32.4004209,-95.2616245,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BWA101,1130 E NE Loop 323,Tyler,75708,Bwa Truck Trailer,Automotive,32.3882015,-95.2764639,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BUT102,1011 W Front St,Tyler,75702,Butler Alignment Brake,Automotive,32.3472419,-95.3115059,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BUI001,4less Llc519 W S St,Tyler,,Buildings,Construction,32.4948616,-94.74916077,Not Contacted,,,30,2026/04/02,Cold,0.1,70,Medium,75,145
+CID-BUI002,33.00725,Tyler,75686,"Buildall Weldingprivate Address in Pittsburg, Texas",Welding,0,,Not Contacted,,,30,2026/04/02,Cold,0.1,40,Medium,75,115
+CID-BSH101,5380 Old Bullard Rd #600,Tyler,75703,Bsh Electrical,Electrical,32.2907632,-95.3054938,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-BRO104,3900 Troup Hwy,Tyler,75703,Browns Automotive,Automotive,32.307277,-95.2691275,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BRO102,2700 S Broadway Ave,Tyler,75701,Broadway Automotive,Automotive,32.320322,-95.3003472,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BRE101,102 N College Ave Suite #610,Tyler,75702,Brexan,Construction,32.3509055,-95.301837,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BOE101,10979 County Rd 41,Tyler,75706,Boeh Plumbing,Plumbing,32.47729492,-95.34307861,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-BOD102,1717 Tx-323 W Loop,Tyler,75701,Body Shop,Automotive,32.3306999,-95.2665254,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BLU104,3708 Shiloh Rd,Tyler,75707,Blue Star Plumbers,Plumbing,32.2960375,-95.2504281,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-BLU103,6723 Highlands Ct,Tyler,75703,Blue Rose Roofing,Roofing,32.274411,-95.3423202,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BLU102,15669 County Rd 196,Tyler,75703,Blue Line Fence,Fence,32.252092,-95.4063963,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-BIL102,11777 State Highway 64 W,Tyler,75704,Billys Garage Auto Sales,Automotive,32.35731506,-95.36167145,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ACM101,No Address,Tyler,77777,Acm Fabrication,Metal Fabrication,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-BIG101,1225 E 5th St,Tyler,75701,Big 5 Tire Auto Service,Automotive,32.331999,-95.285874,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BES101,5514 S Broadway Ave,Tyler,75703,Best Buy,Other,32.2882236,-95.3010951,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ABL101,12204 County Rd 1114,Tyler,75709,Abl,Metal Fabrication,32.3093318,-95.3381473,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-BER102,6618 Ann Campbell Rd,Tyler,75706,Berry Bright Exteriors and Pressure Washing,Gutter,32.4322725,-95.3130645,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-BEN103,16024 Tx-31,Tyler,75709,Benny Swan Electrical,Electrical,32.3235254,-95.4364725,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-BEN101,16451 County Rd 196,Tyler,75703,Benco Construction,Construction,32.2409219,-95.4065204,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BAR103,1902 Capital Dr,Tyler,75701,Barsco,Other,32.2966117,-95.3269302,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-BAN103,6618 S Broadway Ave,Tyler,75703,Bannister Plumbing Air,HVAC,32.2772543,-95.3060917,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BAK103,13225 Kallan Ave,Tyler,75703,Baker Distributing,HVAC,32.2900776,-95.3505777,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BAD101,517 S Chilton Ave,Tyler,75702,Bad Storm Roofing and Restoration,Roofing,32.3445125,-95.3049851,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BHC101,5380 Old Bullard Rd Suite 600 #169,Tyler,75703,"B & H Custom Buildings, LLC",Construction,32.22548676,-95.00079346,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AUT109,2031 W Gentry Pkwy,Tyler,75702,Autozone Auto Parts,Automotive,32.36553574,-95.32291412,Not Contacted,,,30,2026/04/02,Cold,0,45,High,85,38.4
+CID-AUT108,1600 S Boldt Ave,Tyler,75701,Automatic Gates Service Repairs and Maintenance,Automotive,32.3319583,-95.2702191,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AUT107,1205 E 5th St,Tyler,75701,Autoglass Express,Automotive,32.3320903,-95.2869157,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ATL102,415 S Palace Ave,Tyler,75702,Atlas Automotive,Automotive,32.3459578,-95.3107562,Not Contacted,,,30,2026/04/02,Cold,0,70,Medium,65,102
+CID-ASH101,1414 Gish Ln,Tyler,75707,Ashleys Truck Repair Towing,Plumbing,32.3357341,-95.2556054,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ART102,724 Bellwood Golf Club Rd,Tyler,75709,Artmires Urban Forestry Tree Service,Other,32.3423023,-95.3592606,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-APA001,905 Tx-110 N,Tyler,75692,"Apache Construction, Inc.",Construction,32.24049377,-95.23098755,Not Contacted,,,30,2026/04/02,Cold,0.1,70,Medium,75,145
+CID-APA002,80 W,Tyler,75147,Apache Buildings of Texas Llcus-,Construction,32.48810196,-94.13321686,Not Contacted,,,30,2026/04/02,Cold,0.1,70,Medium,75,145
+CID-APA102,No Address,Tyler,77777,Apache Buildings of Texas LLC,Other,77.77,77.77,Not Contacted,,,30,2026/04/02,Cold,0.1,40,,0,40
+CID-APR101,3362 Tx-323 S Loop,Tyler,75701,Ap Roofing,Roofing,32.3101235,-95.3389027,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ANZ101,2000 Broussard St,Tyler,75701,Anzak,Electrical,32.3001799,-95.3254164,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-AME104,6200 Troup Hwy,Tyler,75707,American Standard,Construction,32.2902811,-95.2534269,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AME103,1620 N Parkdale Dr,Tyler,75702,American Plumbing,Plumbing,32.3668413,-95.3232906,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ALL102,"Tyler, TX 75701",Tyler,75701,Allnone Remodeling,Construction,32.3243856,-95.2997959,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ALL103,12572 County Rd 2293,Tyler,75707,Allen Steele Plumbing,Plumbing,32.2967358,-95.2119666,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ALI103,631 Tx-323 S Loop,Tyler,75702,Alignment King,Automotive,32.3434907,-95.2676605,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ALA101,2206 Thompson Ln,Tyler,75704,Alan Fielding Electric,Electrical,32.3679646,-95.3596878,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-AIR108,3844 Lamb Dr,Tyler,75709,Airpro Elite AC Heating,HVAC,32.3156757,-95.3523568,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AIR107,4431 Cantina Dr,Tyler,75708,Airgas Store,Welding,32.3844339,-95.2660617,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-AIR106,2221 W Sw Loop 323 #103a,Tyler,75701,Aire Serv of Smith County,HVAC,32.3051393,-95.3293599,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AIR104,2903 Crestview Ave,Tyler,75701,Air Comfort Specialists,HVAC,32.3173579,-95.2965752,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ADM101,2540 County Rd 376,Tyler,75708,Admire Roofing,Roofing,32.3775075,-95.2717602,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ADK101,3115 San Jacinto Dr,Tyler,75701,Adkins Electric,Electrical,32.3143785,-95.320137,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-ACT102,12441 State Highway 155 S,Tyler,75703,Action Autobody,Automotive,32.2994427,-95.3415846,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ACE101,15330 County Rd 196,Tyler,75703,Ace Air Conditioning,HVAC,32.2580591,-95.3853081,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ACC102,121 S Broadway Ave Ste 719,Tyler,75702,Accurate Leak and Line East Texas,Plumbing,32.3500726,-95.3010624,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-ACC101,2930 County Rd 2347,Tyler,75701,AC Contractors,HVAC,32.3509994,-95.2631323,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ABC103,1802 Shiloh Rd,Tyler,75703,Abco Roofing Siding,Roofing,32.2955021,-95.2806672,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ABC101,306 N Nw Loop 323,Tyler,75701,Abc Auto Parts,Automotive,32.3565691,-95.343873,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AAA101,320 S Beckham Ave,Tyler,75702,Aa Auto Service,Automotive,32.3475639,-95.2940208,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-A1Q101,5117 Atlanta Ave,Tyler,75703,A1 Quality Roofing,Roofing,32.292754,-95.3018318,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-APL101,4547 Cantina Dr,Tyler,75708,A Plus Commercial Kitchens,Other,32.3843195,-95.2657393,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-903101,13872 FM 14,Tyler,75706,903 HVAC,HVAC,32.4659231,-95.2831766,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-2MA101,4064 S Broadway Ave,Tyler,75701,2m Automotive,Automotive,32.305281,-95.2989375,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SAF101,I-20 W & Frontage Rd,Van,75790,Safeguard Metal Buildings Van Division,Manufacturing,32.49971771,-95.59081268,Not Contacted,,,30,2026/04/02,Cold,0,75,High,85,43.8
+CID-RIC147,215 Quail St,Van,75790,Ricky Gs Auto Repair,Automotive,32.52324295,-95.63428497,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ORE110,861 S Oak St,Van,75790,Oreilly Auto Parts,Automotive,32.51333237,-95.64269257,Not Contacted,,,30,2026/04/02,Cold,0,45,High,85,38.4
+CID-CMA101,3291 Vz County Rd 4912,Van,75790,Cmacs Auto Offroad Detailing,Automotive,32.4873085,-95.59792328,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ASP101,120 W Main St,Van,75790,Aspire Roofing,Roofing,32.31187439,-95.19166565,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FIV001,1425 W Texas Ave,Waskom,75692,Five Starr Metal Builders,Metal Fabrication,32.47870636,-94.07834625,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CHE001,"2001 Cherokee Trace, White Oak, TX 75693",White Oak,75693,Cherokee Steel Fab,Business to business,32.50986481,-94.87145233,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-IMC101,"S Superior Rd, White Oak, TX 75693",White Oak,75693,Imc Metal Building,Metal Fabrication,32.5098929,-94.8741665,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-TEX123,"180 Lake Harris Cir, White Oak, TX 75693",White Oak,75693,Texas Gutter Pros,Gutter,32.5139389,-94.8350021,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-PET102,"1902 Us-80 E, White Oak, TX 75693",White Oak,75693,Peter Pauls Plumbing,Plumbing,32.5255948,-94.8773352,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-WIN107,State Highway 110,Whitehouse,75791,Winston Water Cooler,Other,32.2370944,-95.2284676,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-VER110,101 Glenda St,Whitehouse,75791,Veritas Gas Processing,Other,32.2300727,-95.224246,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-TRU133,604 Quail Ln,Whitehouse,75791,True Line Fencing Construction,Fence,32.2177323,-95.2481066,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-RAI110,910 Peggy Dr,Whitehouse,75791,Rains Plumbing,Plumbing,32.2143457,-95.2164882,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-PRO112,15230 Tx-110,Whitehouse,75791,Project One Roofing,Roofing,32.2579979,-95.2392711,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-NIP101,14969 Tx-110,Whitehouse,75791,Nippers Quality Auto Works,Automotive,32.2614545,-95.23864,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-LAP102,107 Tx-110,Whitehouse,75791,Laptops for Less,Other,32.2278017,-95.2267083,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-KEE101,217 Tx-110 S,Whitehouse,75791,Kee Electric,Electrical,32.2239534,-95.2252772,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42
+CID-HIL104,8713 Fm-346,Whitehouse,75791,Hilltop Concrete,Other,32.221562,-95.2562131,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-GOO103,14540 FM 2964,Whitehouse,75791,Goodfellas Roofing Construction,Roofing,32.2683165,-95.2583701,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-GEN101,1125 Tx-110,Whitehouse,75791,General Roofing Restoration,Roofing,32.245,-95.2336788,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-ETX102,15157 FM 848,Whitehouse,75791,Etx,Gutter,32.259047,-95.1967402,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-EAS112,107 Willingham Rd #3419,Whitehouse,75791,East Texas Welder Repair,Welding,32.2254679,-95.2285528,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,42.6
+CID-CRH101,19747 Tx-110,Whitehouse,75791,Cr Heating and Cooling,HVAC,32.1910978,-95.2011844,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BYN101,204 Shady Ln,Whitehouse,75791,Bynum Plumbing,Plumbing,32.229558,-95.2086775,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BEN102,15040 Tx-110,Whitehouse,75791,Benjamin Franklin Plumbing Whitehouse,Plumbing,32.260143,-95.2397384,Not Contacted,,,30,2026/04/02,Cold,0,50,High,85,39
+CID-AZR101,15632 Tx-110,Whitehouse,75791,Az Roofing,Roofing,32.2525081,-95.237349,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AIM101,15385 Tx-110,Whitehouse,75791,Aim Roofing,Roofing,32.256107,-95.2369048,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-AFF101,12379 County Rd 2175,Whitehouse,75791,Affordable Seamless Gutters,Roofing,32.2031344,-95.2059803,Not Contacted,,,30,2026/04/02,Cold,0,60,High,85,40.8
+CID-A10101,814 Jack Brown,Whitehouse,75791,A10 Construction Land Improvement,Construction,32.2162643,-95.2122961,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-APL102,116 Leisure Ln,Whitehouse,75791,A Plus Plumbing,Plumbing,32.2099877,-95.2154959,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-WIL002,"101 Bluebird Pkwy, Wills Point, TX 75169",Wills Point,75169,"Wilco Equipment Company., Inc.",Welding,32.70093536,-95.96614838,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WIN005,"1501 Goodnight Blvd, Wills Point, TX 75169",Wills Point,75169,Winslow's Wills Point,Construction,32.70191574,-95.99303436,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R 5001,"21121 US Highway 80, Wills Point, TX 75169",Wills Point,75169,R-5 Metal Fabricators Inc.,Business to business,32.698349,-95.95013428,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DEL001,"3170 Vz County Rd 2602, Wills Point, TX 75169",Wills Point,75169,Delvin's Welding,Welding,32.56336594,-96.04727173,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SAM001,"37102 State Highway 64, Wills Point, TX 75169",Wills Point,75169,Samples Fab & Industrial Services,Welding,32.68799591,-95.98368835,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRI136,"22300 I 20, Wills Point, TX 75169",Wills Point,75169,Triple M Trailers,Metal Fabrication,32.60243225,-95.93409729,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-TRA118,"22590 I 20, Wills Point, TX 75169",Wills Point,75169,Trailer Professionals,Metal Fabrication,32.60354233,-95.93842316,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-REG103,"19630 Interstate 20 N Access Rd, Wills Point, TX 75169",Wills Point,75169,Regal Trailer Sales,Metal Fabrication,32.59382629,-95.8911972,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-BRA103,"22488 Interstate-20 Service Rd, Wills Point, TX 75169",Wills Point,75169,Brazos Trailers Dealer,Metal Fabrication,32.60298538,-95.93634033,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-ATL103,"23370 Frontage Rd, Wills Point, TX 75169",Wills Point,75169,Atlas Building Systems,Metal Fabrication,32.60676956,-95.94610596,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-TEX136,"1501 Goodnight Blvd, Wills Point, TX 75169",Wills Point,75169,Texwin Wills Point,Construction,32.70165253,-95.99171448,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-BIG103,"20975 US Highway 80, Wills Point, TX 75169",Wills Point,75169,Big Tex Trailers,Automotive,32.6975441,-95.94155884,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-KNO001,527 County Rd 3374,Winnsboro,75494,Knotts Welding,Welding,33.08560944,-95.31359863,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SHA002,907 Sherrill St,Winnsboro,75494,Shadowhawk Blades,Welding,32.96256638,-95.28557587,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AAR101,18410 FM 2767,Winona,75792,Aaron Mcgaughey,Metal Fabrication,32.3812614,-95.0955328,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-WEL145,17190 I-20,Winona,75792,Welch Excavation Utility,Construction,32.4369502,-95.1182815,Not Contacted,,,30,2026/04/02,Cold,0,70,High,85,42.6
+CID-SWE001,186 Private Rd 5934,Yantis,75497,Sweet Iron Welding,Welding,32.90612793,-95.63812256,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LAP101,No Address,#N/A,75789,Lapeyre Custom Welding,Metal Fabrication,32.75333352,-89.57529168,Not Contacted,,,30,2026/04/02,Cold,0,90,High,85,46.2
+CID-STA101,Private Address,,,Stallion Metal Steel Buildings,Metal Fabrication,31.53943825,-94.70188141,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CLA101,Private Address,,,"Claiborne's Custom Services Texas, LLC",Welding,32.03261948,-95.11399078,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LAN002,750 Van Zandt Co Rd 4905,,75103,Landaverde's Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GIL001,1645 W Broad St,,75103,Gilbreath Welding & Services,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-YEL002,292 Co Rd 2900,,75103,Yellow Jacket Welding & Metal Works,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-T T002,100 Groves St,,75103,T & T Iron Works,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-REI002,1570 S Trade Days Blvd,,75103,Reid's Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R B002,690 VZCR 2510,,75103,R B Fabrication,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TNT002,20057 TX‑31 E,,75103,TNT Custom Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HAN001,611 Co Rd 4907,,75103,Hanna's Custom Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R D001,101 S Houston St,,75103,R D's Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-YEL003,2749 US‑80,,75103,Yellow Jacket Welding & Metal Works,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AIR001,703 N Palestine St,,75103,Airgas Store,Welding Supply,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-REI003,17059 TX‑19,,75103,Reid's Welding Shop,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PRI001,8903 FM Rd 16,,75103,Primrose Fabrication LLC,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HER001,1803 South,,75103,Herrington Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-W W002,9388 Co Rd 3407,,75103,W W Custom Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R M001,2749 US‑80,,75103,R&M Welding LLC,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BOO001,2502 Co Rd 2309,,75103,Boomers Welding and Fabrication,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-150002,6315 FM 1504,,75103,1504 Metal Shop,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GAS001,17899 I‑20,,75103,Gas and Supply – Canton,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MIT002,30855 State Hwy 64,,75103,Mitchell Steel,Steel Erector,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DUA001,449 E Greenville St,,75103,DUALFAB LLC,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EAS007,8500 State Hwy 31 E,,75103,East Texas Iron Works,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MIC002,25159 State Hwy 64,,75103,Michels Mfg LLC,Manufacturer,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DIL001,916 N Needmore St,,75103,Dillon Manufacturing,Manufacturer,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RED003,224 Co Rd 2262,,75103,Red Sky Landscaping & Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MUF001,28078 State Hwy 64,,75103,Muffler & Hitch Shop,Automotive,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DOU002,—,,75103,Double W Welding & Excavation Solutions,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SHA003,545 RSCR 1278,,75103,Shaw Lawn Care & Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-KEI001,—,,75103,Keith’s Welding & Sandblasting,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FAR001,—,,75103,Farnham Fabrication & Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TID001,880 W Main St,,75103,Tidwell Handyman Services,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TMG001,—,,75103,TMG Custom Gates and Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GUR001,385 VZ County Rd 2918,,75103,Gurley’s Home Services LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ROS001,5150 Co Rd 3911,,75103,Ross Construction,Construction,,,Not Contacted,,,30,2026/04/02,"Construction, Contractor, Building contractor, General contractor, Excavating contractor, Demolition",,,,,
+CID-HIG001,221 TX‑243,,75103,Higginbotham Brothers – Canton,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CHA001,1211 FM 1616,,75103,Champion Collision Center,Automotive,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BAS001,415 W Pine St,,75103,Bass Construction,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MEA001,1912 W Frank St,,75103,Means Home Center,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-K5 002,5119 State Hwy 64,,75103,K5 Welding & Fabrication,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JMP001,—,,75103,JMP Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BYR001,—,,75103,Byrd Welding LLC,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRA003,301 Veterans Memorial Pkwy,,75103,Tractor Supply Co.,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-REG002,19630 I‑20 N Access Rd,,75103,Regal Trailer Sales,Agriculture,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ALL002,—,,75103,AllFab Welding Inc,Welding,,,Not Contacted,,,30,2026/04/02,"Trailer, Trailers, Utility trailer",,,,,
+CID-HOR001,—,,75103,Horton Custom Welding LLC,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MOU001,—,,75103,Mount Liberty Welding Services,Welding,,,Not Contacted,,,30,2026/04/02,"Welder, Welders, Welding supply store, Welding gas supplier",,,,,
+CID-DOO001,321 VZ County Rd 4500,,75103,Door Controls USA,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TWI001,—,,75103,Twisted H Mettle,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LOW002,11375 State Hwy 31 E,,75103,Lowe Automotive,Automotive,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-DIA001,—,,75103,Diamond A Enterprises LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HWY001,17898 State Hwy 31 E,,75103,Hwy 31 Utilities & Excavation LLC,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RIL001,720 VZ County Rd 1311,,75103,Riley Dirt Service,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-4L 001,392 Private Rd,,75103,4L Exteriors,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SAN001,2548 FM 857,,75103,Sanchez Concrete LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-KYL001,13004 Co Rd 3513,,75103,Kyle’s Excavation,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JDR001,186 Industrial Ln,,75103,JDR Contracting,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-T6 001,20965 Co Rd 450,,75103,T6 Land Management LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-RED004,9307 Co Rd 3622,,75103,Red Hill Construction,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FRA001,284 VZ County Rd 1214,,75103,Franklin Paving & Excavating,,,,Not Contacted,,,30,2026/04/02,"Construction, Contractor, Building contractor, General contractor, Excavating contractor, Demolition",,,,,
+CID-BIS001,3589 VZ County Rd 1701,,75103,Bison Concrete & Construction,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-OTW001,718 S Pacific St,,75103,OTW Restoration LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-PAD001,19386 Co Rd 3404,,75103,Padgett Masonry LLC,,,,Not Contacted,,,30,2026/04/02,"Construction, Contractor, Building contractor, General contractor, Excavating contractor, Demolition",,,,,
+CID-BRE001,—,,75103,Breaking Ground Outdoor Services,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GIB002,501 E Garland St,,75103,Gibson Service Company,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SAM003,945 VZ Co Rd 1906,,75103,Sammons Services,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WAS001,12080 Co Rd 3612,,75103,Waste Away Services LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MAI001,11298 Stuart St,,75103,Mainline Storage,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-X A001,11004 FM 773,,75103,X Amp Construction,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-LAN003,—,,75103,Landpro Services,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ACH001,—,,75103,Achor Construction,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SCR001,14768 TX‑110,,75103,Scrap Metal Solutions LLC,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-OVI001,—,,75103,Oviedo’s Demolition,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CON001,—,,75103,Concrete Solutions,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-KYL002,—,,75103,Kyle’s Excavation,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-3G 001,—,,75103,3G Excavation LLC,Construction,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TCX001,—,,75103,TCX Land Management,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MEY001,—,,75103,Meyer Excavating LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HOB001,—,,75103,Hobbs Services,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRA004,8310 FM 17,,75103,Grand Fabrication Co.,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-R 5002,21121 US‑80,,75103,R‑5 Metal Fabricators Inc.,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TAY003,29395 W Dallas St,,75103,Taylor Made Custom Fabrication,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ARC003,620 McAllister St,,75103,Arc Force Manufacturing,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SAM004,37102 State Hwy 64,,75103,Samples Fab & Industrial Services,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX001,17460 FM 17,,75103,Texas Specialty Steel East,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-VAN002,17580 FM 47,,75103,Van Zandt Steel,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ZMA001,5687 FM 858,,75103,ZMan Carports,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-INF002,2228 US‑80,,75103,Infinity Building Supply,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CLA003,30738 State Hwy 64,,75103,Classic Industries LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HUD001,29866 State Hwy 64,,75103,Huddle Steel Buildings,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-WOL002,14432 State Hwy 64,,75103,Wolf Pipe,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ETA002,1450 Bromberg St,,75103,ETAS Inc,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-S S002,4499 Van Zandt Co Rd 2318,,75103,S&S Fabrication,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-VEN002,503 Co Rd 3805,,75103,Venture Metals,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRE002,137 E Lipscomb St,,75103,Greenlaw’s,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-CAP002,20907 I‑20 Frontage Rd,,75103,Capitol Steel,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-NAT001,7977 TX‑19,,75103,National Metal Buildings,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-JV 002,430 Rains Co Rd 2400,,75103,JV Metal Buildings LLC,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-360002,611 S Trade Days Blvd Ste B,,75103,360 Metal Buildings,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-FOR003,3942 FM 3080,,75103,Fortenberry Pipe & Supply LLC,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SMO003,1715 Co Rd 2511,,75103,Smokeslinger Pits,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-C H002,2910 FM 314,,75103,C&H Fire Pits,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX003,19267 Co Rd 478,,75103,Texas Metal Building Services,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BRA002,22488 I‑20 N Access Rd,,75103,Brazos Trailers,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-AND001,1111 Goodnight Blvd,,75103,Anderson Fencing & Custom Welding,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-GRI002,303 Bluebird Pkwy,,75103,Griffin Products Inc,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-BIG001,21333 State Hwy 64,,75103,Big Tex Buildings,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TEX010,610 VZ Co Rd 2411,,75103,Texas Mobile Welding LLC,Welding,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-EPI002,15301 I‑20,,75103,EPIC Industrial,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-A T001,399 VZ Co Rd 2805,,75103,A to B Custom Fencing & Entryways,Fence,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-SEL001,29466 State Hwy 64,,75103,Select Mechanical Services Inc,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-ED 001,22662 Co Rd 4142,,75103,Ed’s Security Fencing,Fence,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HAT001,1534 FM 2909,,75103,Hatfield Restorations,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-HUC001,—,,75103,Huckleberry Fabrication LLC,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TRI003,—,,75103,Triple F Services,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-INV001,—,,75103,Invictus Innovations,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-TIP002,2297 VZCR 1519,,75103,Tip Top Metal Shop,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-MEY002,—,,75103,Meyer Metal Buildings & Construction,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-W7 001,—,,75103,W7 Steel,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+CID-H S001,—,,75103,H&S Fabrication,Metal Fabrication,,,Not Contacted,,,30,2026/04/02,Cold,,,,,
+,,,,,,,,Not Contacted,,,30,2026/04/02,Cold,,,,,

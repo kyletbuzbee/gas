@@ -1,0 +1,61 @@
+Category,Key,Value_1,Value_2,Value_3,Value_4,Description
+INDUSTRY_SCORE,Metal Fabrication,90,"Metal, Metal fabricator, Metal supplier, Steel fabricator, Iron works, Metal construction company",,,High priority target
+INDUSTRY_SCORE,Automotive,70,"Auto, Automotive, Auto repair, Auto repair shop, Auto body shop, Auto parts store, Mechanic",,,Volume scrap source
+INDUSTRY_SCORE,Welding,70,"Welder, Welders, Welding supply store, Welding gas supplier",,,High value alloys likely
+INDUSTRY_SCORE,HVAC,70,"HVAC, Heating contractor, Air conditioning contractor, HVAC supplier, Furnace repair service",,,Seasonal volume
+INDUSTRY_SCORE,Roofing,60,"Roofing, Roof, Roofing contractor, Roofing supply store",,,
+INDUSTRY_SCORE,Gutter,60,"Gutter, Gutter service, Gutter cleaning service",,,
+INDUSTRY_SCORE,Manufacturing,75,"Manufacturing, Machine shop, Industrial equipment supplier",,,
+INDUSTRY_SCORE,Electrical,65,"Electrician, Electrical installation service, Lighting contractor",,,Copper/Wire sources
+INDUSTRY_SCORE,Construction,70,"Construction, Contractor, Building contractor, General contractor, Excavating contractor, Demolition",,,Project based
+INDUSTRY_SCORE,Plumbing,50,"Plumber, Plumbing, Drainage service, Septic system service",,,
+INDUSTRY_SCORE,Retail,45,"Retail, Appliance repair service, Convenience store, Body shop",,,Low priority
+INDUSTRY_SCORE,Appliance,60,,,,
+INDUSTRY_SCORE,Fence,70,"Fence, Fencing, Iron fence",,,Added for data coverage
+INDUSTRY_SCORE,Agriculture,60,"Agriculture, Farming, Tractor",,,Added for data coverage
+INDUSTRY_SCORE,Trailer Dealer,70,"Trailer, Trailers, Utility trailer",,,Added for data coverage
+INDUSTRY_SCORE,Junk Removal,65,"Junk, Cleanout, Scrap removal",,,Added for data coverage
+INDUSTRY_SCORE,Warehouses,55,"Warehouse, Logistics, Storage",,,Added for data coverage
+INDUSTRY_SCORE,Other,50,"Business to business, Other, TBD",,,Catch-all
+URGENCY_BAND,Overdue,-9999,-1,Red,,Past due items
+URGENCY_BAND,High,0,7,Orange,,Immediate action required
+URGENCY_BAND,Medium,8,30,Yellow,,Upcoming this month
+URGENCY_BAND,Low,31,9999,Green,,Long term nurture
+WORKFLOW_RULE,Account Won,Won,Active,1,High,Contract signed or bin dropped
+WORKFLOW_RULE,Interested (Hot),Nurture,Interested (Hot),7,High,Ready to close soon
+WORKFLOW_RULE,Interested (Warm),Nurture,Interested (Warm),14,Medium,Needs nurturing
+WORKFLOW_RULE,Interested,Nurture,Interested (Warm),14,Medium,Legacy data fallback
+WORKFLOW_RULE,Initial Contact,Outreach,Interested (Warm),30,Medium,First meeting complete
+WORKFLOW_RULE,Follow-Up,Nurture,Interested (Warm),14,Medium,Ongoing conversation
+WORKFLOW_RULE,No Answer,Outreach,Cold,3,High,Try again soon
+WORKFLOW_RULE,Not Interested,Lost,Disqualified,180,Low,Check back in 6 months
+WORKFLOW_RULE,Disqualified,Lost,Disqualified,0,,Do not contact
+VALIDATION_LIST,Container Sizes,20 yd,30 yd,40 yd,Lugger,Standard bin types
+VALIDATION_LIST,Payout Types,Base,Formula,Spot Price,,
+GLOBAL_CONST,Stale_Prospect_Days,60,,,,Days before a prospect is marked stale
+GLOBAL_CONST,Max_Batch_Size,50,,,,Max rows to process in one script execution
+VALIDATION_LIST,Outcomes,"Account Won, Disqualified, Follow-Up, Initial Contact, Interested, Interested (Hot), Interested (Warm), No Answer, Not Interested",,,,All valid outcome values for Outreach
+VALIDATION_LIST,Stages,Outreach,Nurture,Won,Lost,
+VALIDATION_LIST,Statuses,"Active, Cold, Disqualified, Interested (Hot), Interested (Warm), Lost, Won, Not Contacted",,,,All valid contact status values
+VALIDATION_LIST,Competitors,"AIM, Tyler Iron, Huntwell, Other, None",,,,Top competitors mentioned in notes
+VALIDATION_LIST,Current_Handling,"Employees take, Scrap guy picks up, Haul themselves","Roll-off vendor, Unknown",,,How prospect currently disposes scrap
+VALIDATION_LIST,Route_Zones,"Hwy 31 W, Spur 364, S Broadway, Loop 323 N","Loop 323 S, Flint, Whitehouse, Lindale",,,Territory grouping for routing
+FOLLOWUP_TEMPLATE,Interested→Send pricing,7,,,,Default pricing follow-up
+FOLLOWUP_TEMPLATE,Has Vendor→Follow 90d,90,,,,Longer nurture cadence
+FOLLOWUP_TEMPLATE,Other→General follow,14,,,,Default catch-all
+FOLLOWUP_TEMPLATE,No scrap→Check periodic,180,,,,Disqualified - periodic check (not total no-contact)
+GLOBAL_CONST,Default_Next_Step_Days,14,,,,Days offset when outcome type not mapped
+GLOBAL_CONST,Timezone,America/Chicago,,,,Prevents date drift in AppScript
+GLOBAL_CONST,BRAIN_COMPETITORS,"aim,tyler iron,huntwell",,,,Competitors to track in notes
+GLOBAL_CONST,BRAIN_MATERIALS,"copper,brass,radiator,radiators,wire,aluminum,alloy",,,,High-value materials to detect
+GLOBAL_CONST,BRAIN_LOGISTICS,"roll off,container,lugger,bin,drop off,pickup,truck,trailer,space issue,corner",,,,Logistics keywords to detect
+GLOBAL_CONST,BRAIN_STALE_DAYS,14,,,,Days without contact before hot lead is stale
+GLOBAL_CONST,BRAIN_HOT_SCORE,80,,,,Priority score threshold for hot leads
+GLOBAL_CONST,BRAIN_RECENT_DAYS,30,,,,Days of notes to analyze for insights
+GLOBAL_CONST,BRAIN_LOGISTICS_THRESHOLD,2,,,,Minimum logistics keywords to trigger alert
+VALIDATION_LIST,Materials,"Tin, Long Iron, Short Iron, AL PAINTED SIDING, Steel Cable, #1 COPPER, #2 COPPER, REBAR, Dealer Clips, Dispatch Fee, DRY RUN FEE, P&S, 2-1 COPPER, BRASS UNCLEAN /DIRTY, AL BREAKAG E >60%, AL CLIPS, AL NEOPREN E, AL W/CU URD, ACSR ALUMINU M COATED STEEL REINFOR CED, ACSR NEOPREN E MIX, INSULATE D #1 COPPER 60%, INSULATE D #2 COPPER 42%, INSULATE D #3 COPPER 32%, AL 5052, AL 6061 CLEAN, AL 6063 CLEAN, AL 6063 PAINTED, AL RADIATO R UNCLEAN, AL RADIATO RS CLEAN, AL TRUCK WHEELS, AL WHEELS CLEAN, AUTO COMPRE SSOR, AUTO HARNESS WIRE, ALTERNA TOR, CLEAN ALUMINU M, COMPRESS OR/SE ALED UNIT, ELECTRIC MOTOR #1, ELECTRIC MOTOR #2 LOW GRADE, STAINLES S CLEAN, STAINLES S UNCLEAN, THERMAL EXTRUSI ON, WIRE/FEN CING, YELLOW BRASS CLEAN, AL EC WIRE, AL/CU REEFER CLEAN, AL/CU REEFER UNCLEAN, 85% MCM, AL CAST, SPLIT 50/50",,,,Recyclable materials list
+VALIDATION_LIST,Transaction_Types,Sale,Dispatch Fee,Dry Run Fee,P&S,Transaction categories
+VALIDATION_LIST,High_Value_Materials,"#1 COPPER, #2 COPPER, AL 6061 CLEAN, AL 6063 CLEAN, STAINLES S CLEAN, BRASS UNCLEAN /DIRTY, YELLOW BRASS CLEAN",,,,Materials with highest payout
+VALIDATION_LIST,Fee_Types,Dispatch Fee,-50,-75,DRY RUN FEE,Standard service fees
+GLOBAL_CONST,Transaction_Sheet_Name,Transactions,,,,Name of the transactions sheet
+GLOBAL_CONST,Default_Material,Tin,,,,Default material for new transactions
