@@ -31,6 +31,10 @@ function onOpen(e) {
         .addItem('🔀 Merge Duplicates (Interactive)', 'runMergeWizard')
         .addItem('⚡ Batch Merge (Auto)', 'batchMergeObviousDuplicates')
         .addItem('🔢 Generate Next Company ID', 'showNextCompanyId'))
+      .addSeparator()
+      .addSubMenu(ui.createMenu('🔧 Developer Tools')
+        .addItem('✅ Validate Schemas', 'runSchemaValidation')
+        .addItem('📝 View Column Mappings', 'showColumnMappings'))
       .addToUi();
     Logger.log('Menu created successfully');
   } catch (error) {
